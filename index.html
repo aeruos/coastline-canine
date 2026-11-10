@@ -41,6 +41,7 @@ html { scroll-behavior: smooth; }
 body { background-color: #f7fbfb; color: #2d3748; }
 section[id] { scroll-margin-top: 90px; }
 </style>
+<script id="wix-site-script" src="https://manage.wix.com/_api/headless-business-setup/v1/headless-business/site-script.js" data-client-id="d658a45a-e9d2-4ef6-9042-f4cf062c1c07" async></script>
 </head>
 
 <body class="min-h-screen flex flex-col justify-between antialiased font-sans">
@@ -58,6 +59,7 @@ section[id] { scroll-margin-top: 90px; }
     <a href="#about" class="hover:text-brand-ocean transition-colors">Meet Trainer</a>
     <a href="#programs" class="hover:text-brand-ocean transition-colors">6-Week Programs</a>
     <a href="#behaviors" class="hover:text-brand-ocean transition-colors">Behaviors</a>
+    <a href="#pricing" class="hover:text-brand-ocean transition-colors">Pricing</a>
   </div>
 
   <!-- Action Button -->
@@ -131,19 +133,51 @@ No shock collars, prong collars, e-collars, or intimidation—ever. Just positiv
 </div>
 </section>
 
-<!-- PROGRAMS SECTION -->
-<section id="programs" class="py-16 px-6 max-w-5xl mx-auto space-y-8">
+<!-- BEHAVIORS SECTION -->
+<section id="behaviors" class="py-16 px-6 max-w-5xl mx-auto space-y-10">
 <div class="text-center space-y-2">
-<span class="text-xs font-extrabold uppercase tracking-widest text-brand-ocean">Signature Offerings</span>
+<span class="text-xs font-extrabold uppercase tracking-widest text-brand-ocean">Behavior Solutions</span>
+<h2 class="text-3xl sm:text-4xl font-display font-extrabold text-brand-oceanDark">Common Behaviors We Transform</h2>
+<p class="text-sm text-brand-muted max-w-xl mx-auto">Focused 1-on-1 solutions for real everyday challenges—no vague promises, just practical skills.</p>
+</div>
+
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+<div class="bg-white rounded-2xl border border-brand-seafoamDark/80 p-6 shadow-sm hover:shadow-md transition-all space-y-3">
+<div class="w-12 h-12 rounded-2xl bg-brand-seafoam flex items-center justify-center text-2xl">🐕‍🦺</div>
+<h3 class="font-display font-bold text-lg text-brand-ocean">Leash Pulling & Reactivity</h3>
+<p class="text-xs text-brand-muted leading-relaxed">Enjoy calm, pleasant walks around local distractions and neighborhood triggers.</p>
+</div>
+
+<div class="bg-white rounded-2xl border border-brand-seafoamDark/80 p-6 shadow-sm hover:shadow-md transition-all space-y-3">
+<div class="w-12 h-12 rounded-2xl bg-brand-seafoam flex items-center justify-center text-2xl">🏠</div>
+<h3 class="font-display font-bold text-lg text-brand-ocean">In-Home Manners</h3>
+<p class="text-xs text-brand-muted leading-relaxed">Stop jumping on guests, door darting, and counter surfing with reliable household rules.</p>
+</div>
+
+<div class="bg-white rounded-2xl border border-brand-seafoamDark/80 p-6 shadow-sm hover:shadow-md transition-all space-y-3">
+<div class="w-12 h-12 rounded-2xl bg-brand-seafoam flex items-center justify-center text-2xl">🧠</div>
+<h3 class="font-display font-bold text-lg text-brand-ocean">Focus & Impulse Control</h3>
+<p class="text-xs text-brand-muted leading-relaxed">Build emotional regulation so your dog listens even when exciting things happen around them.</p>
+</div>
+</div>
+</section>
+
+<!-- PROGRAMS & PRICING SECTION -->
+<section id="programs" class="py-16 px-6 max-w-5xl mx-auto space-y-8">
+<div id="pricing" class="text-center space-y-2">
+<span class="text-xs font-extrabold uppercase tracking-widest text-brand-ocean">Signature Offerings & Pricing</span>
 <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-brand-oceanDark">Our 6-Week 1-on-1 Programs</h2>
 <p class="text-sm text-brand-muted max-w-xl mx-auto">Custom-tailored coaching designed to get you long-lasting results in your home environment.</p>
 </div>
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 <!-- Program 1 -->
-<div class="bg-white rounded-3xl border-2 border-brand-seafoamDark p-8 shadow-sm space-y-4 flex flex-col justify-between">
+<div class="bg-white rounded-3xl border-2 border-brand-seafoamDark p-8 shadow-sm space-y-6 flex flex-col justify-between">
 <div class="space-y-4">
-<div class="inline-block bg-brand-seafoam text-brand-ocean px-3 py-1 rounded-full text-xs font-bold">In-Home & Private Setup</div>
+<div class="flex items-center justify-between">
+<span class="bg-brand-seafoam text-brand-ocean px-3 py-1 rounded-full text-xs font-bold">In-Home & Private Setup</span>
+<span class="font-display font-extrabold text-2xl text-brand-oceanDark">$650</span>
+</div>
 <h3 class="text-2xl font-display font-bold text-brand-oceanDark">Foundations & Real-World Manners</h3>
 <p class="text-brand-muted text-sm leading-relaxed">Perfect for puppies or adult dogs needing solid household manners, polite leash walking, and reliable obedience around real-world distractions.</p>
 <ul class="space-y-2 text-sm text-brand-muted">
@@ -152,13 +186,16 @@ No shock collars, prong collars, e-collars, or intimidation—ever. Just positiv
 <li class="flex items-center gap-2"><span>✅</span> Customized homework & trainer support</li>
 </ul>
 </div>
-<a href="#contact" class="block w-full text-center bg-brand-seafoam hover:bg-brand-seafoamDark text-brand-oceanDark font-bold py-3 rounded-xl transition-all">Inquire About Availability</a>
+<a href="#contact" class="block w-full text-center bg-brand-seafoam hover:bg-brand-seafoamDark text-brand-oceanDark font-bold py-3 rounded-xl transition-all">Book This Program</a>
 </div>
 
 <!-- Program 2 -->
-<div class="bg-white rounded-3xl border-2 border-brand-seafoamDark p-8 shadow-sm space-y-4 flex flex-col justify-between">
+<div class="bg-white rounded-3xl border-2 border-brand-seafoamDark p-8 shadow-sm space-y-6 flex flex-col justify-between">
 <div class="space-y-4">
-<div class="inline-block bg-brand-seafoam text-brand-ocean px-3 py-1 rounded-full text-xs font-bold">Specialized Care</div>
+<div class="flex items-center justify-between">
+<span class="bg-brand-seafoam text-brand-ocean px-3 py-1 rounded-full text-xs font-bold">Specialized Care</span>
+<span class="font-display font-extrabold text-2xl text-brand-oceanDark">$750</span>
+</div>
 <h3 class="text-2xl font-display font-bold text-brand-oceanDark">Reactive-to-Relaxed Coaching</h3>
 <p class="text-brand-muted text-sm leading-relaxed">Specialized, gentle behavior modification for dogs who bark, lunge, or stress out when seeing other dogs or people on walks.</p>
 <ul class="space-y-2 text-sm text-brand-muted">
@@ -167,22 +204,25 @@ No shock collars, prong collars, e-collars, or intimidation—ever. Just positiv
 <li class="flex items-center gap-2"><span>✅</span> Low-stress management techniques</li>
 </ul>
 </div>
-<a href="#contact" class="block w-full text-center bg-brand-seafoam hover:bg-brand-seafoamDark text-brand-oceanDark font-bold py-3 rounded-xl transition-all">Inquire About Availability</a>
+<a href="#contact" class="block w-full text-center bg-brand-seafoam hover:bg-brand-seafoamDark text-brand-oceanDark font-bold py-3 rounded-xl transition-all">Book This Program</a>
 </div>
 </div>
 </section>
 
-<!-- CONTACT SECTION -->
+<!-- CONTACT & FORM SECTION -->
 <section id="contact" class="py-16 px-6 max-w-3xl mx-auto">
-<div class="bg-brand-oceanDark text-white rounded-3xl p-8 sm:p-12 shadow-md space-y-6 text-center">
-<h2 class="text-3xl font-display font-extrabold">Ready to Help Your Dog Thrive?</h2>
-<p class="text-brand-seafoam text-sm sm:text-base max-w-lg mx-auto leading-relaxed">
-Take the first step with a free 15-minute phone consultation. Let's talk about your dog's unique needs and find the right path forward.
+<div class="bg-white rounded-3xl border-2 border-brand-seafoamDark p-8 sm:p-12 shadow-md space-y-6">
+<div class="text-center space-y-2">
+<span class="text-xs font-extrabold uppercase tracking-widest text-brand-ocean">Get in Touch</span>
+<h2 class="text-3xl font-display font-extrabold text-brand-oceanDark">Ready to Help Your Dog Thrive?</h2>
+<p class="text-sm text-brand-muted max-w-lg mx-auto leading-relaxed">
+Fill out the form below or email us directly at <a href="mailto:info@coastlinecaninetraining.com" class="text-brand-ocean font-bold underline">info@coastlinecaninetraining.com</a> to schedule your free 15-minute consultation.
 </p>
-<div class="pt-2">
-<a href="mailto:info@coastlinecaninetraining.com" class="inline-block bg-brand-accent hover:bg-amber-600 text-white font-bold px-8 py-4 rounded-2xl shadow transition-all">
-Email Us to Book a Consultation
-</a>
+</div>
+
+<!-- Wix Headless Form Container -->
+<div class="wix-embed-container pt-4">
+  <div data-wix-widget="contact-form" class="w-full"></div>
 </div>
 </div>
 </section>
