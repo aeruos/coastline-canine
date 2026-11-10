@@ -38,7 +38,7 @@ tailwind.config = {
 
 <style>
 html { scroll-behavior: smooth; }
-body { background-color: #ffffff; color: #2d3748; }
+body { background-color: #f7fbfb; color: #2d3748; }
 section[id] { scroll-margin-top: 90px; }
 </style>
 <script id="wix-site-script" src="https://manage.wix.com/_api/headless-business-setup/v1/headless-business/site-script.js" data-client-id="d658a45a-e9d2-4ef6-9042-f4cf062c1c07" async></script>
@@ -58,7 +58,8 @@ section[id] { scroll-margin-top: 90px; }
   <div class="hidden md:flex items-center gap-8 font-semibold text-sm text-brand-oceanDark">
     <a href="#about" class="hover:text-brand-ocean transition-colors">Meet Trainer</a>
     <a href="#programs" class="hover:text-brand-ocean transition-colors">Programs & Pricing</a>
-    <a href="#behaviors" class="hover:text-brand-ocean transition-colors">Behaviors</a>
+    <a href="#prep" class="hover:text-brand-ocean transition-colors">Prep Guide</a>
+    <a href="#faq" class="hover:text-brand-ocean transition-colors">FAQ</a>
   </div>
 
   <!-- Action Button -->
@@ -132,7 +133,7 @@ No shock collars, prong collars, e-collars, or intimidation—ever. Just positiv
 </div>
 </section>
 
-<!-- PRICING & PROGRAMS SECTION (MATCHING YOUR SCREENSHOT EXACTLY) -->
+<!-- PRICING & PROGRAMS SECTION -->
 <section id="programs" class="py-16 px-6 max-w-6xl mx-auto space-y-10">
   <div class="text-center space-y-3">
     <span class="text-xs font-extrabold uppercase tracking-widest text-brand-ocean">Pricing & Programs</span>
@@ -184,9 +185,8 @@ No shock collars, prong collars, e-collars, or intimidation—ever. Just positiv
       </a>
     </div>
 
-    <!-- Card 2: Elite Hybrid Program (FLAGSHIP) -->
+    <!-- Card 2: Elite Hybrid Program -->
     <div class="relative bg-white rounded-3xl border-2 border-brand-ocean p-8 shadow-md flex flex-col justify-between space-y-6 transform md:-translate-y-2">
-      <!-- Top Badge -->
       <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-oceanDark text-white px-4 py-1.5 rounded-full text-[10px] font-extrabold uppercase tracking-widest text-center shadow-sm">
         Most Popular Flagship
       </div>
@@ -276,51 +276,164 @@ No shock collars, prong collars, e-collars, or intimidation—ever. Just positiv
   </div>
 </section>
 
-<!-- BEHAVIORS HIGHLIGHTS -->
-<section id="behaviors" class="py-16 px-6 max-w-5xl mx-auto space-y-10">
-<div class="text-center space-y-2">
-<span class="text-xs font-extrabold uppercase tracking-widest text-brand-ocean">Behavior Solutions</span>
-<h2 class="text-3xl sm:text-4xl font-display font-extrabold text-brand-oceanDark">Common Behaviors We Transform</h2>
-<p class="text-sm text-brand-muted max-w-xl mx-auto">Focused 1-on-1 solutions for real everyday challenges—no vague promises, just practical skills.</p>
-</div>
+<!-- PREP GUIDE SECTION (FROM SCREENSHOT 1) -->
+<section id="prep" class="py-16 px-6 max-w-5xl mx-auto space-y-10">
+  <div class="text-center space-y-3">
+    <span class="inline-block bg-brand-seafoam text-brand-ocean px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+      Prep Guide
+    </span>
+    <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-brand-oceanDark">What to Pack & Have Ready</h2>
+    <p class="text-sm sm:text-base text-brand-muted max-w-xl mx-auto">
+      A few simple things to help your dog feel comfortable, relaxed, and ready to learn from minute one.
+    </p>
+  </div>
 
-<div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-<div class="bg-white rounded-2xl border border-brand-seafoamDark/80 p-6 shadow-sm hover:shadow-md transition-all space-y-3">
-<div class="w-12 h-12 rounded-2xl bg-brand-seafoam flex items-center justify-center text-2xl">🐕‍🦺</div>
-<h3 class="font-display font-bold text-lg text-brand-ocean">Leash Pulling & Reactivity</h3>
-<p class="text-xs text-brand-muted leading-relaxed">Enjoy calm, pleasant walks around local distractions and neighborhood triggers.</p>
-</div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- Item 01 -->
+    <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark/80 p-8 shadow-sm relative space-y-4">
+      <div class="flex items-center justify-between">
+        <span class="w-10 h-10 rounded-xl bg-brand-seafoam flex items-center justify-center font-display font-extrabold text-brand-ocean text-sm">01</span>
+        <span class="text-2xl">🥓</span>
+      </div>
+      <h3 class="text-xl font-display font-extrabold text-brand-oceanDark">Something Delicious</h3>
+      <p class="text-xs sm:text-sm text-brand-muted leading-relaxed">
+        Bringing high-value treats your dog loves (like small pieces of string cheese, chicken, or soft training morsels) helps us celebrate their good choices and keeps learning fun and stress-free.
+      </p>
+    </div>
 
-<div class="bg-white rounded-2xl border border-brand-seafoamDark/80 p-6 shadow-sm hover:shadow-md transition-all space-y-3">
-<div class="w-12 h-12 rounded-2xl bg-brand-seafoam flex items-center justify-center text-2xl">🏠</div>
-<h3 class="font-display font-bold text-lg text-brand-ocean">In-Home Manners</h3>
-<p class="text-xs text-brand-muted leading-relaxed">Stop jumping on guests, door darting, and counter surfing with reliable household rules.</p>
-</div>
+    <!-- Item 02 -->
+    <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark/80 p-8 shadow-sm relative space-y-4">
+      <div class="flex items-center justify-between">
+        <span class="w-10 h-10 rounded-xl bg-brand-seafoam flex items-center justify-center font-display font-extrabold text-brand-ocean text-sm">02</span>
+        <span class="text-2xl">🐕</span>
+      </div>
+      <h3 class="text-xl font-display font-extrabold text-brand-oceanDark">A Standard 6-Foot Leash</h3>
+      <p class="text-xs sm:text-sm text-brand-muted leading-relaxed">
+        A standard 6-foot leather or flat nylon leash allows for clear, gentle communication. We kindly ask to leave retractable leashes at home so we can practice safe, predictable leash handling together.
+      </p>
+    </div>
 
-<div class="bg-white rounded-2xl border border-brand-seafoamDark/80 p-6 shadow-sm hover:shadow-md transition-all space-y-3">
-<div class="w-12 h-12 rounded-2xl bg-brand-seafoam flex items-center justify-center text-2xl">🧠</div>
-<h3 class="font-display font-bold text-lg text-brand-ocean">Focus & Impulse Control</h3>
-<p class="text-xs text-brand-muted leading-relaxed">Build emotional regulation so your dog listens even when exciting things happen around them.</p>
-</div>
-</div>
+    <!-- Item 03 -->
+    <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark/80 p-8 shadow-sm relative space-y-4">
+      <div class="flex items-center justify-between">
+        <span class="w-10 h-10 rounded-xl bg-brand-seafoam flex items-center justify-center font-display font-extrabold text-brand-ocean text-sm">03</span>
+        <span class="text-2xl">🎯</span>
+      </div>
+      <h3 class="text-xl font-display font-extrabold text-brand-oceanDark">Comfortable Everyday Gear</h3>
+      <p class="text-xs sm:text-sm text-brand-muted leading-relaxed">
+        Whatever collar or harness your dog currently wears day-to-day. We'll take a look at fit and comfort together during our first visit to make sure your dog feels completely at ease.
+      </p>
+    </div>
+
+    <!-- Item 04 -->
+    <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark/80 p-8 shadow-sm relative space-y-4">
+      <div class="flex items-center justify-between">
+        <span class="w-10 h-10 rounded-xl bg-brand-oceanDark text-white flex items-center justify-center font-display font-extrabold text-sm">04</span>
+        <span class="text-2xl">⏰</span>
+      </div>
+      <h3 class="text-xl font-display font-extrabold text-brand-oceanDark">A Light Meal Beforehand</h3>
+      <p class="text-xs sm:text-sm text-brand-muted leading-relaxed">
+        Consider feeding your dog about half their usual meal right before our session. A slightly empty tummy makes treats much more motivating and keeps your dog comfortable while moving around.
+      </p>
+    </div>
+  </div>
 </section>
 
-<!-- CONTACT & FORM SECTION -->
-<section id="contact" class="py-16 px-6 max-w-3xl mx-auto">
-<div class="bg-white rounded-3xl border-2 border-brand-seafoamDark p-8 sm:p-12 shadow-md space-y-6">
-<div class="text-center space-y-2">
-<span class="text-xs font-extrabold uppercase tracking-widest text-brand-ocean">Get in Touch</span>
-<h2 class="text-3xl font-display font-extrabold text-brand-oceanDark">Ready to Help Your Dog Thrive?</h2>
-<p class="text-sm text-brand-muted max-w-lg mx-auto leading-relaxed">
-Fill out the form below or email us directly at <a href="mailto:info@coastlinecaninetraining.com" class="text-brand-ocean font-bold underline">info@coastlinecaninetraining.com</a> to schedule your free 15-minute consultation.
-</p>
-</div>
+<!-- FAQ SECTION (FROM SCREENSHOT 2) -->
+<section id="faq" class="py-16 px-6 max-w-4xl mx-auto space-y-10">
+  <div class="text-center space-y-3">
+    <span class="text-xs font-extrabold uppercase tracking-widest text-brand-ocean">FAQ</span>
+    <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-brand-oceanDark">Frequently Asked Questions</h2>
+    <p class="text-sm sm:text-base text-brand-muted max-w-xl mx-auto">Everything you need to know before starting your 6-week journey.</p>
+  </div>
 
-<!-- Wix Headless Form Container -->
-<div class="wix-embed-container pt-4">
-  <div data-wix-widget="contact-form" class="w-full"></div>
-</div>
-</div>
+  <div class="space-y-4">
+    <!-- Question 1 -->
+    <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark/80 p-6 sm:p-8 shadow-sm space-y-3">
+      <h3 class="text-lg font-display font-extrabold text-brand-oceanDark">Where do training sessions take place?</h3>
+      <p class="text-xs sm:text-sm text-brand-muted leading-relaxed">
+        Sessions take place in your home, around your neighborhood, or at our private training setup in Nipomo depending on your dog's specific needs and program choice.
+      </p>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark/80 p-6 sm:p-8 shadow-sm space-y-3">
+      <h3 class="text-lg font-display font-extrabold text-brand-oceanDark">What training methods do you use?</h3>
+      <p class="text-xs sm:text-sm text-brand-muted leading-relaxed">
+        We use positive reinforcement and low-stress, Fear Free handling techniques. The goal is clear communication and reliable impulse control without heavy-handed coercion.
+      </p>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark/80 p-6 sm:p-8 shadow-sm space-y-3">
+      <h3 class="text-lg font-display font-extrabold text-brand-oceanDark">What areas do you serve?</h3>
+      <p class="text-xs sm:text-sm text-brand-muted leading-relaxed">
+        Primary service areas include Nipomo, Santa Maria, Arroyo Grande, and surrounding South San Luis Obispo County locations.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT & FORM SECTION (MATCHING SCREENSHOT 3 EXACTLY) -->
+<section id="contact" class="py-16 px-6 max-w-3xl mx-auto">
+  <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark p-8 sm:p-12 shadow-md space-y-8">
+    
+    <div class="text-center space-y-3">
+      <span class="text-xs font-extrabold uppercase tracking-widest text-brand-ocean">GET STARTED</span>
+      <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-brand-oceanDark leading-tight">
+        Schedule Your Free 15-Min Phone Consultation
+      </h2>
+      <p class="text-xs sm:text-sm text-brand-muted max-w-lg mx-auto leading-relaxed">
+        Fill out this quick form and I'll call you within 24 hours to chat about your dog and answer any questions—zero pressure.
+      </p>
+    </div>
+
+    <form action="mailto:info@coastlinecaninetraining.com" method="post" enctype="text/plain" class="space-y-6">
+      <!-- Your Name -->
+      <div class="space-y-2">
+        <label class="block text-xs font-bold text-brand-oceanDark uppercase tracking-wider">Your Name *</label>
+        <input type="text" required placeholder="e.g. Jane Doe" 
+          class="w-full bg-[#faf9f6] border border-gray-200 rounded-2xl px-5 py-3.5 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-brand-ocean">
+      </div>
+
+      <!-- Phone Number -->
+      <div class="space-y-2">
+        <label class="block text-xs font-bold text-brand-oceanDark uppercase tracking-wider">Phone Number *</label>
+        <input type="tel" required placeholder="Best number for your 15-min call" 
+          class="w-full bg-[#faf9f6] border border-gray-200 rounded-2xl px-5 py-3.5 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-brand-ocean">
+      </div>
+
+      <!-- Program of Interest -->
+      <div class="space-y-2">
+        <label class="block text-xs font-bold text-brand-oceanDark uppercase tracking-wider">Program of Interest</label>
+        <select class="w-full bg-[#faf9f6] border border-gray-200 rounded-2xl px-5 py-3.5 text-sm text-gray-800 focus:outline-none focus:border-brand-ocean">
+          <option>Private Foundations (6 Weeks - $320)</option>
+          <option>Elite Hybrid Program (6 Weeks - $1,300)</option>
+          <option>Behavior Modification (6 Weeks - $600)</option>
+        </select>
+      </div>
+
+      <!-- Dog's Name, Age & Breed -->
+      <div class="space-y-2">
+        <label class="block text-xs font-bold text-brand-oceanDark uppercase tracking-wider">Dog's Name, Age & Breed</label>
+        <input type="text" placeholder="e.g. Milo, 1-year Golden Retriever mix" 
+          class="w-full bg-[#faf9f6] border border-gray-200 rounded-2xl px-5 py-3.5 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-brand-ocean">
+      </div>
+
+      <!-- What would you like help with? -->
+      <div class="space-y-2">
+        <label class="block text-xs font-bold text-brand-oceanDark uppercase tracking-wider">What would you like help with?</label>
+        <textarea rows="4" placeholder="Tell me a little about what's going on (e.g. leash pulling, jumping, nervousness)..." 
+          class="w-full bg-[#faf9f6] border border-gray-200 rounded-2xl px-5 py-3.5 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-brand-ocean resize-none"></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="w-full bg-[#0d5c63] hover:bg-[#05373c] text-white font-extrabold text-xs tracking-widest uppercase py-4 rounded-2xl shadow-md transition-all">
+        REQUEST MY FREE CONSULTATION
+      </button>
+    </form>
+
+  </div>
 </section>
 
 <!-- FOOTER -->
