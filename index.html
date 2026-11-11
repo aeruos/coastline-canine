@@ -99,13 +99,28 @@ section[id] { scroll-margin-top: 90px; }
     <div class="absolute top-0 right-0 w-32 h-32 bg-brand-seafoam/40 rounded-bl-full -mr-8 -mt-8 pointer-events-none"></div>
 
     <div class="relative z-10 space-y-6">
-      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-seafoam text-brand-ocean text-xs font-extrabold tracking-wider uppercase border border-brand-seafoamDark">
-        <span>👋</span> Meet Your Trainer
-      </div>
+      <!-- Top Row with Meet Your Trainer Pill + Fear Free Certified Professional Badge -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+        <div class="space-y-4">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-seafoam text-brand-ocean text-xs font-extrabold tracking-wider uppercase border border-brand-seafoamDark">
+            <span>👋</span> Meet Your Trainer
+          </div>
 
-      <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-brand-oceanDark leading-tight">
-        Training That Fits Real Life—Without the Stress
-      </h2>
+          <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-brand-oceanDark leading-tight">
+            Training That Fits Real Life—Without the Stress
+          </h2>
+        </div>
+
+        <!-- FEAR FREE CERTIFIED PROFESSIONAL BADGE -->
+        <div class="shrink-0">
+          <img 
+            src="FF_CertPro_RGB_REV@2x.webp" 
+            alt="Fear Free Certified Professional" 
+            class="h-24 sm:h-28 w-auto object-contain drop-shadow-sm"
+            onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 420 250%22><rect x=%226%22 y=%226%22 width=%22408%22 height=%22238%22 rx=%2238%22 fill=%22%2313436b%22 stroke=%22%2313436b%22 stroke-width=%2212%22/><path d=%22M18 165 H402 V206 A26 26 0 0 1 376 232 H44 A26 26 0 0 1 18 206 Z%22 fill=%22%2353a8dc%22/><rect x=%2214%22 y=%2214%22 width=%22392%22 height=%22222%22 rx=%2230%22 fill=%22none%22 stroke=%22%23ffffff%22 stroke-width=%225%22/><text x=%22205%22 y=%2292%22 text-anchor=%22middle%22 fill=%22%23ffffff%22 font-family=%22Outfit, sans-serif%22 font-size=%2264%22 font-weight=%22700%22>FearFree</text><text x=%22350%22 y=%2252%22 fill=%22%23ffffff%22 font-family=%22sans-serif%22 font-size=%2216%22>®</text><circle cx=%2295%22 cy=%22132%22 r=%2220%22 fill=%22none%22 stroke=%22%23ffffff%22 stroke-width=%224%22/><path d=%22M84 132 l8 8 l22 -22%22 fill=%22none%22 stroke=%22%2353a8dc%22 stroke-width=%227%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/><text x=%22238%22 y=%22146%22 text-anchor=%22middle%22 fill=%22%2353a8dc%22 font-family=%22Plus Jakarta Sans, sans-serif%22 font-size=%2240%22 font-weight=%22800%22 letter-spacing=%222%22>CERTIFIED</text><text x=%22210%22 y=%22211%22 text-anchor=%22middle%22 fill=%22%23ffffff%22 font-family=%22Plus Jakarta Sans, sans-serif%22 font-size=%2235%22 font-weight=%22800%22 letter-spacing=%221.5%22>PROFESSIONAL</text></svg>';"
+          />
+        </div>
+      </div>
 
       <div class="space-y-4 text-brand-muted text-sm sm:text-base leading-relaxed">
         <p>
