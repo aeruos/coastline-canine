@@ -59,7 +59,10 @@ section[id] { scroll-margin-top: 90px; }
       <a href="#faq" class="hover:text-brand-ocean transition-colors">FAQ</a>
     </div>
 
-    <div>
+    <div class="flex items-center gap-4">
+      <a href="tel:+18053576476" class="hidden sm:inline-flex items-center gap-1.5 font-extrabold text-sm text-brand-oceanDark hover:text-brand-ocean transition-colors">
+        <span>📞</span> (805) 357-6476
+      </a>
       <a href="#contact" class="bg-brand-ocean hover:bg-brand-oceanDark text-white font-bold text-sm px-5 py-2.5 rounded-xl shadow-sm transition-all">
         Free Consultation
       </a>
@@ -389,7 +392,7 @@ section[id] { scroll-margin-top: 90px; }
         Schedule Your Free 15-Min Phone Consultation
       </h2>
       <p class="text-xs sm:text-base text-brand-muted max-w-xl mx-auto leading-relaxed pt-1">
-        Fill out this quick form and I'll call you within 24 hours to chat about your dog and answer any questions—zero pressure.
+        Fill out this quick form and I'll call you within 24 hours, or call/text directly at <a href="tel:+18053576476" class="font-bold text-brand-ocean underline">(805) 357-6476</a>.
       </p>
     </div>
 
@@ -516,7 +519,7 @@ section[id] { scroll-margin-top: 90px; }
 <!-- FOOTER -->
 <footer class="bg-white border-t border-brand-border py-8 px-6 text-center text-xs text-brand-muted space-y-2">
   <p>&copy; 2026 Coastline Canine Training. Serving Nipomo, Arroyo Grande, Santa Maria, and South SLO County.</p>
-  <p>100% Fear Free Certified Dog Training &bull; <a href="mailto:info@coastlinecaninetraining.com" class="text-brand-ocean underline">info@coastlinecaninetraining.com</a></p>
+  <p>100% Fear Free Certified Dog Training &bull; <a href="tel:+18053576476" class="text-brand-ocean font-bold underline">(805) 357-6476</a> &bull; <a href="mailto:info@coastlinecaninetraining.com" class="text-brand-ocean underline">info@coastlinecaninetraining.com</a></p>
 </footer>
 
 <script>
@@ -556,7 +559,7 @@ section[id] { scroll-margin-top: 90px; }
         throw new Error('Submission failed');
       }
     } catch (error) {
-      feedback.textContent = 'Something went wrong. Please email us directly at info@coastlinecaninetraining.com.';
+      feedback.textContent = 'Something went wrong. Please call/text (805) 357-6476 or email info@coastlinecaninetraining.com.';
       feedback.classList.remove('hidden');
       submitBtn.disabled = false;
       submitBtn.textContent = 'REQUEST MY FREE CONSULTATION';
