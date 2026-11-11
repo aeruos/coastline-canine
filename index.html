@@ -391,11 +391,19 @@ section[id] { scroll-margin-top: 90px; }
           class="w-full bg-[#faf9f6] border border-gray-200 rounded-xl px-4 py-3.5 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-brand-ocean focus:ring-1 focus:ring-brand-ocean transition-all">
       </div>
 
-      <!-- Phone Number -->
-      <div class="space-y-2">
-        <label for="clientPhone" class="block text-sm font-bold text-brand-oceanDark">Phone Number *</label>
-        <input id="clientPhone" name="Phone_Number" type="tel" required placeholder="Best number for your 15-min call" 
-          class="w-full bg-[#faf9f6] border border-gray-200 rounded-xl px-4 py-3.5 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-brand-ocean focus:ring-1 focus:ring-brand-ocean transition-all">
+      <!-- Phone Number & Email Address -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="space-y-2">
+          <label for="clientPhone" class="block text-sm font-bold text-brand-oceanDark">Phone Number *</label>
+          <input id="clientPhone" name="Phone_Number" type="tel" required placeholder="Best number for your 15-min call" 
+            class="w-full bg-[#faf9f6] border border-gray-200 rounded-xl px-4 py-3.5 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-brand-ocean focus:ring-1 focus:ring-brand-ocean transition-all">
+        </div>
+
+        <div class="space-y-2">
+          <label for="clientEmail" class="block text-sm font-bold text-brand-oceanDark">Email Address *</label>
+          <input id="clientEmail" name="email" type="email" required placeholder="e.g. jane@example.com" 
+            class="w-full bg-[#faf9f6] border border-gray-200 rounded-xl px-4 py-3.5 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-brand-ocean focus:ring-1 focus:ring-brand-ocean transition-all">
+        </div>
       </div>
 
       <!-- Preferred Day & Time to Call -->
@@ -483,7 +491,7 @@ section[id] { scroll-margin-top: 90px; }
 
       <!-- Confirmation Message -->
       <div id="formFeedback" class="hidden text-center p-4 rounded-xl bg-brand-seafoam text-brand-oceanDark text-xs sm:text-sm font-semibold">
-        Thank you! Your consultation request has been sent. I'll call you within 24 hours!
+        Thank you! Your consultation request has been sent. I'll call you during your preferred window!
       </div>
     </form>
 
