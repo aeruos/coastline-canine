@@ -3,19 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Coastline Canine Training | Certified Dog Training on the Central Coast</title>
-  <meta name="description" content="Fear-Free, positive reinforcement dog training in Nipomo and the California Central Coast. Puppy foundations, obedience, and behavior modification." />
+  <title>Coastline Canine Training | Fear-Free Dog Training on the Central Coast</title>
+  <meta name="description" content="Certified, Fear-Free positive reinforcement dog training serving Nipomo, Arroyo Grande, Pismo Beach, and Santa Maria. Puppy foundations, obedience, and behavior support." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --navy: #1b365d;
-      --ocean: #2b6cb0;
-      --sand: #f7f4ef;
+      --navy: #0f2942;
+      --ocean: #1e6091;
+      --teal: #2a9d8f;
+      --sand: #fbf9f5;
+      --sand-dark: #f0ebe1;
       --white: #ffffff;
-      --coral: #e06d53;
-      --coral-dark: #c8563d;
-      --slate: #334155;
-      --muted: #64748b;
-      --border: #e2e8f0;
+      --coral: #e76f51;
+      --coral-hover: #d65a3b;
+      --text: #1e293b;
+      --muted: #526071;
+      --border: #e5e0d5;
+      --shadow: 0 12px 32px -8px rgba(15, 41, 66, 0.08);
     }
 
     * {
@@ -29,23 +35,45 @@
     }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color: var(--slate);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text);
       background-color: var(--sand);
-      line-height: 1.6;
+      line-height: 1.65;
+    }
+
+    h1, h2, h3, h4, .brand {
+      font-family: 'Outfit', sans-serif;
+    }
+
+    /* Top Announcement Bar */
+    .top-bar {
+      background-color: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 0.55rem 1rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+    }
+
+    .top-bar a {
+      color: #90e0ef;
+      text-decoration: underline;
+      font-weight: 600;
     }
 
     /* Header & Navigation */
     header {
-      background-color: var(--white);
+      background-color: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
       border-bottom: 1px solid var(--border);
       position: sticky;
       top: 0;
-      z-index: 100;
+      z-index: 1000;
     }
 
-    .nav-container {
-      max-width: 1120px;
+    .nav-wrap {
+      max-width: 1160px;
       margin: 0 auto;
       padding: 1rem 1.5rem;
       display: flex;
@@ -56,88 +84,100 @@
     }
 
     .brand {
-      font-size: 1.35rem;
+      font-size: 1.45rem;
       font-weight: 800;
       color: var(--navy);
       text-decoration: none;
-      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
 
     .brand span {
-      color: var(--ocean);
+      color: var(--teal);
     }
 
     nav {
       display: flex;
       align-items: center;
-      gap: 1.5rem;
+      gap: 1.75rem;
       flex-wrap: wrap;
     }
 
     nav a {
       text-decoration: none;
-      color: var(--slate);
+      color: var(--text);
       font-weight: 600;
       font-size: 0.95rem;
       transition: color 0.2s;
     }
 
     nav a:hover {
-      color: var(--ocean);
+      color: var(--teal);
     }
 
-    .btn-nav {
+    .btn-cta {
       background-color: var(--coral);
       color: var(--white) !important;
-      padding: 0.55rem 1.15rem;
-      border-radius: 8px;
+      padding: 0.65rem 1.3rem;
+      border-radius: 999px;
       font-weight: 700;
+      box-shadow: 0 4px 12px rgba(231, 111, 81, 0.28);
+      transition: transform 0.15s, background-color 0.2s;
     }
 
-    .btn-nav:hover {
-      background-color: var(--coral-dark);
+    .btn-cta:hover {
+      background-color: var(--coral-hover);
+      transform: translateY(-1px);
     }
 
     /* Hero Section */
     .hero {
-      background: linear-gradient(135deg, var(--navy) 0%, var(--ocean) 100%);
+      background: linear-gradient(135deg, var(--navy) 0%, var(--ocean) 60%, var(--teal) 100%);
       color: var(--white);
-      padding: 4.5rem 1.5rem;
-      text-align: center;
+      padding: 5.5rem 1.5rem 5rem;
+      position: relative;
+      overflow: hidden;
     }
 
-    .hero-inner {
-      max-width: 780px;
+    .hero-container {
+      max-width: 1120px;
       margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 3rem;
+      align-items: center;
     }
 
-    .badge {
-      display: inline-block;
-      background-color: rgba(255, 255, 255, 0.15);
-      color: var(--white);
-      padding: 0.35rem 0.9rem;
+    .pill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      padding: 0.4rem 1rem;
       border-radius: 999px;
       font-size: 0.85rem;
       font-weight: 600;
-      margin-bottom: 1.25rem;
+      margin-bottom: 1.35rem;
     }
 
     .hero h1 {
-      font-size: clamp(2rem, 4.5vw, 3.1rem);
-      line-height: 1.18;
-      margin-bottom: 1.15rem;
+      font-size: clamp(2.25rem, 4.5vw, 3.4rem);
+      line-height: 1.12;
+      margin-bottom: 1.25rem;
       font-weight: 800;
     }
 
     .hero p {
       font-size: 1.15rem;
-      opacity: 0.95;
+      opacity: 0.94;
       margin-bottom: 2rem;
+      max-width: 580px;
     }
 
-    .hero-actions {
+    .hero-buttons {
       display: flex;
-      justify-content: center;
       gap: 1rem;
       flex-wrap: wrap;
     }
@@ -145,65 +185,75 @@
     .btn-primary {
       background-color: var(--coral);
       color: var(--white);
-      padding: 0.9rem 1.75rem;
-      border-radius: 8px;
+      padding: 0.95rem 1.85rem;
+      border-radius: 999px;
       text-decoration: none;
       font-weight: 700;
       font-size: 1.05rem;
       border: none;
       cursor: pointer;
-      transition: background-color 0.2s;
+      transition: background-color 0.2s, transform 0.15s;
+      display: inline-block;
     }
 
     .btn-primary:hover {
-      background-color: var(--coral-dark);
+      background-color: var(--coral-hover);
+      transform: translateY(-2px);
     }
 
-    .btn-secondary {
-      background-color: rgba(255, 255, 255, 0.14);
+    .btn-outline {
+      background-color: rgba(255, 255, 255, 0.12);
       color: var(--white);
-      padding: 0.9rem 1.75rem;
-      border-radius: 8px;
+      padding: 0.95rem 1.85rem;
+      border-radius: 999px;
       text-decoration: none;
       font-weight: 600;
       font-size: 1.05rem;
-      border: 1px solid rgba(255, 255, 255, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      transition: background-color 0.2s;
     }
 
-    /* Sections */
-    section {
-      max-width: 1120px;
-      margin: 0 auto;
-      padding: 4rem 1.5rem;
+    .btn-outline:hover {
+      background-color: rgba(255, 255, 255, 0.22);
     }
 
-    .section-header {
-      text-align: center;
-      max-width: 680px;
-      margin: 0 auto 2.75rem;
+    .hero-card {
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 20px;
+      padding: 2rem;
     }
 
-    .section-header h2 {
-      font-size: 2rem;
-      color: var(--navy);
-      margin-bottom: 0.65rem;
+    .hero-card h3 {
+      font-size: 1.35rem;
+      margin-bottom: 1rem;
     }
 
-    .section-header p {
-      color: var(--muted);
-      font-size: 1.05rem;
-    }
-
-    /* Programs Grid */
-    .grid {
+    .trust-list {
+      list-style: none;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-      gap: 1.5rem;
+      gap: 0.85rem;
     }
 
-    .card {
-      background-color: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1.85rem;
-      box
+    .trust-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+      font-size: 0.98rem;
+    }
+
+    .trust-list li strong {
+      color: #ffd166;
+    }
+
+    /* Main Sections */
+    section {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 4.5rem 1.5rem;
+    }
+
+    .section-title {
+      text-align: center;
+      max-width: 68
