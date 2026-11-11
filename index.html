@@ -1,86 +1,209 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Coastline Canine Training | 6-Week 1-on-1 Dog Training in Nipomo, CA</title>
-
-<!-- FAVICON (Browser Tab Icon) -->
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
-
-<script src="https://cdn.tailwindcss.com"></script>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
-
-<script>
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        brand: {
-          ocean: '#0d5c63',
-          oceanDark: '#05373c',
-          seafoam: '#e2f4f4',
-          seafoamDark: '#b8e3e3',
-          accent: '#f2a65a',
-          sand: '#faf9f6',
-          muted: '#4a5568',
-          border: '#e2e8f0'
-        }
-      },
-      fontFamily: {
-        sans: ['Plus Jakarta Sans', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
-        display: ['Outfit', 'sans-serif']
-      }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coastline Canine Training | Certified Dog Training on the Central Coast</title>
+  <meta name="description" content="Fear-Free, positive reinforcement dog training in Nipomo and the California Central Coast. Puppy foundations, obedience, and behavior modification." />
+  <style>
+    :root {
+      --navy: #1b365d;
+      --ocean: #2b6cb0;
+      --sand: #f7f4ef;
+      --white: #ffffff;
+      --coral: #e06d53;
+      --coral-dark: #c8563d;
+      --slate: #334155;
+      --muted: #64748b;
+      --border: #e2e8f0;
     }
-  }
-}
-</script>
 
-<style>
-html { scroll-behavior: smooth; }
-body { background-color: #f7fbfb; color: #2d3748; }
-section[id] { scroll-margin-top: 90px; }
-</style>
-</head>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-<body class="min-h-screen flex flex-col justify-between antialiased font-sans">
+    html {
+      scroll-behavior: smooth;
+    }
 
-<!-- TOP NAVIGATION BAR -->
-<nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-brand-seafoamDark shadow-sm">
-  <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-    <a href="#" class="font-display font-extrabold text-xl sm:text-2xl text-brand-oceanDark flex items-center gap-2">
-      <span>🐾</span> Coastline Canine
-    </a>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--slate);
+      background-color: var(--sand);
+      line-height: 1.6;
+    }
 
-    <div class="hidden md:flex items-center gap-8 font-semibold text-sm text-brand-oceanDark">
-      <a href="#about" class="hover:text-brand-ocean transition-colors">Meet Trainer</a>
-      <a href="#programs" class="hover:text-brand-ocean transition-colors">Programs & Pricing</a>
-      <a href="#prep" class="hover:text-brand-ocean transition-colors">Prep Guide</a>
-      <a href="#faq" class="hover:text-brand-ocean transition-colors">FAQ</a>
-    </div>
+    /* Header & Navigation */
+    header {
+      background-color: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
 
-    <div>
-      <a href="#contact" class="bg-brand-ocean hover:bg-brand-oceanDark text-white font-bold text-sm px-5 py-2.5 rounded-xl shadow-sm transition-all">
-        Free Consultation
-      </a>
-    </div>
-  </div>
-</nav>
+    .nav-container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
 
-<!-- HERO SECTION -->
-<header class="relative overflow-hidden bg-brand-seafoam/30 pt-16 pb-20 px-6 text-center border-b border-brand-seafoamDark">
-  <div class="max-w-4xl mx-auto space-y-6">
-    <div class="inline-flex items-center gap-2 bg-brand-seafoam px-4 py-1.5 rounded-full border border-brand-seafoamDark text-brand-ocean text-xs font-extrabold uppercase tracking-widest shadow-sm">
-      <span>📍</span> 100% Fear Free &bull; Nipomo, Arroyo Grande, Santa Maria, and South SLO County
-    </div>
+    .brand {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--navy);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
 
-    <h1 class="text-4xl sm:text-6xl font-display font-extrabold text-brand-oceanDark tracking-tight leading-none">
-      Real-World Dog Training for Central Coast Life
-    </h1>
+    .brand span {
+      color: var(--ocean);
+    }
 
-    <p class="text-base sm:text-lg text-brand-muted max-w-2xl mx-auto font-normal leading-relaxed">
-      Transform leash pulling and reactive stress into wiggle butts, happy dogs, and calm, reliable habits with gentle, 100% Fear Free coaching.
-    </
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--slate);
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--ocean);
+    }
+
+    .btn-nav {
+      background-color: var(--coral);
+      color: var(--white) !important;
+      padding: 0.55rem 1.15rem;
+      border-radius: 8px;
+      font-weight: 700;
+    }
+
+    .btn-nav:hover {
+      background-color: var(--coral-dark);
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--ocean) 100%);
+      color: var(--white);
+      padding: 4.5rem 1.5rem;
+      text-align: center;
+    }
+
+    .hero-inner {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: rgba(255, 255, 255, 0.15);
+      color: var(--white);
+      padding: 0.35rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 4.5vw, 3.1rem);
+      line-height: 1.18;
+      margin-bottom: 1.15rem;
+      font-weight: 800;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      opacity: 0.95;
+      margin-bottom: 2rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background-color: var(--coral);
+      color: var(--white);
+      padding: 0.9rem 1.75rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.05rem;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--coral-dark);
+    }
+
+    .btn-secondary {
+      background-color: rgba(255, 255, 255, 0.14);
+      color: var(--white);
+      padding: 0.9rem 1.75rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05rem;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+    }
+
+    /* Sections */
+    section {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 2.75rem;
+    }
+
+    .section-header h2 {
+      font-size: 2rem;
+      color: var(--navy);
+      margin-bottom: 0.65rem;
+    }
+
+    .section-header p {
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    /* Programs Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.85rem;
+      box
