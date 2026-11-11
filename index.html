@@ -3,25 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Coastline Canine Training | Fear-Free Dog Training on the Central Coast</title>
-  <meta name="description" content="Certified, Fear-Free positive reinforcement dog training serving Nipomo, Arroyo Grande, Pismo Beach, and Santa Maria. Puppy foundations, obedience, and behavior support." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Coastline Canine Training | Certified Dog Training on the Central Coast</title>
+  <meta name="description" content="Fear-Free, positive reinforcement dog training in Nipomo and the California Central Coast. Puppy foundations, obedience, and behavior modification." />
   <style>
     :root {
-      --navy: #0f2942;
-      --ocean: #1e6091;
-      --teal: #2a9d8f;
-      --sand: #fbf9f5;
-      --sand-dark: #f0ebe1;
+      --navy: #1b365d;
+      --ocean: #2b6cb0;
+      --sand: #f7f4ef;
       --white: #ffffff;
-      --coral: #e76f51;
-      --coral-hover: #d65a3b;
-      --text: #1e293b;
-      --muted: #526071;
-      --border: #e5e0d5;
-      --shadow: 0 12px 32px -8px rgba(15, 41, 66, 0.08);
+      --coral: #e06d53;
+      --coral-dark: #c8563d;
+      --slate: #334155;
+      --muted: #64748b;
+      --border: #e2e8f0;
     }
 
     * {
@@ -35,45 +29,23 @@
     }
 
     body {
-      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--slate);
       background-color: var(--sand);
-      line-height: 1.65;
-    }
-
-    h1, h2, h3, h4, .brand {
-      font-family: 'Outfit', sans-serif;
-    }
-
-    /* Top Announcement Bar */
-    .top-bar {
-      background-color: var(--navy);
-      color: var(--white);
-      text-align: center;
-      padding: 0.55rem 1rem;
-      font-size: 0.85rem;
-      font-weight: 500;
-      letter-spacing: 0.01em;
-    }
-
-    .top-bar a {
-      color: #90e0ef;
-      text-decoration: underline;
-      font-weight: 600;
+      line-height: 1.6;
     }
 
     /* Header & Navigation */
     header {
-      background-color: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(10px);
+      background-color: var(--white);
       border-bottom: 1px solid var(--border);
       position: sticky;
       top: 0;
-      z-index: 1000;
+      z-index: 100;
     }
 
-    .nav-wrap {
-      max-width: 1160px;
+    .nav-container {
+      max-width: 1120px;
       margin: 0 auto;
       padding: 1rem 1.5rem;
       display: flex;
@@ -84,100 +56,88 @@
     }
 
     .brand {
-      font-size: 1.45rem;
+      font-size: 1.35rem;
       font-weight: 800;
       color: var(--navy);
       text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
+      letter-spacing: -0.02em;
     }
 
     .brand span {
-      color: var(--teal);
+      color: var(--ocean);
     }
 
     nav {
       display: flex;
       align-items: center;
-      gap: 1.75rem;
+      gap: 1.5rem;
       flex-wrap: wrap;
     }
 
     nav a {
       text-decoration: none;
-      color: var(--text);
+      color: var(--slate);
       font-weight: 600;
       font-size: 0.95rem;
       transition: color 0.2s;
     }
 
     nav a:hover {
-      color: var(--teal);
+      color: var(--ocean);
     }
 
-    .btn-cta {
+    .btn-nav {
       background-color: var(--coral);
       color: var(--white) !important;
-      padding: 0.65rem 1.3rem;
-      border-radius: 999px;
+      padding: 0.55rem 1.15rem;
+      border-radius: 8px;
       font-weight: 700;
-      box-shadow: 0 4px 12px rgba(231, 111, 81, 0.28);
-      transition: transform 0.15s, background-color 0.2s;
     }
 
-    .btn-cta:hover {
-      background-color: var(--coral-hover);
-      transform: translateY(-1px);
+    .btn-nav:hover {
+      background-color: var(--coral-dark);
     }
 
     /* Hero Section */
     .hero {
-      background: linear-gradient(135deg, var(--navy) 0%, var(--ocean) 60%, var(--teal) 100%);
+      background: linear-gradient(135deg, var(--navy) 0%, var(--ocean) 100%);
       color: var(--white);
-      padding: 5.5rem 1.5rem 5rem;
-      position: relative;
-      overflow: hidden;
+      padding: 4.5rem 1.5rem;
+      text-align: center;
     }
 
-    .hero-container {
-      max-width: 1120px;
+    .hero-inner {
+      max-width: 780px;
       margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 3rem;
-      align-items: center;
     }
 
-    .pill-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.45rem;
-      background: rgba(255, 255, 255, 0.16);
-      border: 1px solid rgba(255, 255, 255, 0.28);
-      padding: 0.4rem 1rem;
+    .badge {
+      display: inline-block;
+      background-color: rgba(255, 255, 255, 0.15);
+      color: var(--white);
+      padding: 0.35rem 0.9rem;
       border-radius: 999px;
       font-size: 0.85rem;
       font-weight: 600;
-      margin-bottom: 1.35rem;
+      margin-bottom: 1.25rem;
     }
 
     .hero h1 {
-      font-size: clamp(2.25rem, 4.5vw, 3.4rem);
-      line-height: 1.12;
-      margin-bottom: 1.25rem;
+      font-size: clamp(2rem, 4.5vw, 3.1rem);
+      line-height: 1.18;
+      margin-bottom: 1.15rem;
       font-weight: 800;
     }
 
     .hero p {
       font-size: 1.15rem;
-      opacity: 0.94;
+      opacity: 0.95;
       margin-bottom: 2rem;
-      max-width: 580px;
     }
 
-    .hero-buttons {
+    .hero-actions {
       display: flex;
+      justify-content: center;
       gap: 1rem;
       flex-wrap: wrap;
     }
@@ -185,75 +145,350 @@
     .btn-primary {
       background-color: var(--coral);
       color: var(--white);
-      padding: 0.95rem 1.85rem;
-      border-radius: 999px;
+      padding: 0.9rem 1.75rem;
+      border-radius: 8px;
       text-decoration: none;
       font-weight: 700;
       font-size: 1.05rem;
       border: none;
       cursor: pointer;
-      transition: background-color 0.2s, transform 0.15s;
-      display: inline-block;
-    }
-
-    .btn-primary:hover {
-      background-color: var(--coral-hover);
-      transform: translateY(-2px);
-    }
-
-    .btn-outline {
-      background-color: rgba(255, 255, 255, 0.12);
-      color: var(--white);
-      padding: 0.95rem 1.85rem;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1.05rem;
-      border: 1px solid rgba(255, 255, 255, 0.4);
       transition: background-color 0.2s;
     }
 
-    .btn-outline:hover {
-      background-color: rgba(255, 255, 255, 0.22);
+    .btn-primary:hover {
+      background-color: var(--coral-dark);
     }
 
-    .hero-card {
-      background: rgba(255, 255, 255, 0.12);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.25);
-      border-radius: 20px;
-      padding: 2rem;
+    .btn-secondary {
+      background-color: rgba(255, 255, 255, 0.14);
+      color: var(--white);
+      padding: 0.9rem 1.75rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05rem;
+      border: 1px solid rgba(255, 255, 255, 0.35);
     }
 
-    .hero-card h3 {
-      font-size: 1.35rem;
-      margin-bottom: 1rem;
-    }
-
-    .trust-list {
-      list-style: none;
-      display: grid;
-      gap: 0.85rem;
-    }
-
-    .trust-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.65rem;
-      font-size: 0.98rem;
-    }
-
-    .trust-list li strong {
-      color: #ffd166;
-    }
-
-    /* Main Sections */
+    /* Sections */
     section {
-      max-width: 1160px;
+      max-width: 1120px;
       margin: 0 auto;
-      padding: 4.5rem 1.5rem;
+      padding: 4rem 1.5rem;
     }
 
-    .section-title {
+    .section-header {
       text-align: center;
-      max-width: 68
+      max-width: 680px;
+      margin: 0 auto 2.75rem;
+    }
+
+    .section-header h2 {
+      font-size: 2rem;
+      color: var(--navy);
+      margin-bottom: 0.65rem;
+    }
+
+    .section-header p {
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    /* Programs Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.85rem;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+    }
+
+    .card h3 {
+      color: var(--navy);
+      font-size: 1.3rem;
+      margin-bottom: 0.65rem;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .card ul {
+      list-style: none;
+      margin-top: 0.75rem;
+    }
+
+    .card ul li {
+      padding: 0.3rem 0;
+      font-size: 0.95rem;
+      color: var(--slate);
+    }
+
+    .card ul li::before {
+      content: "✓ ";
+      color: var(--ocean);
+      font-weight: 800;
+    }
+
+    /* Philosophy Banner */
+    .philosophy {
+      background-color: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 2.5rem;
+      text-align: center;
+    }
+
+    .philosophy h2 {
+      color: var(--navy);
+      margin-bottom: 0.75rem;
+    }
+
+    .philosophy p {
+      max-width: 760px;
+      margin: 0 auto;
+      color: var(--slate);
+    }
+
+    /* Form Section */
+    .form-card {
+      background-color: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 2.25rem;
+      max-width: 680px;
+      margin: 0 auto;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.15rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--navy);
+      margin-bottom: 0.4rem;
+    }
+
+    input, select, textarea {
+      padding: 0.75rem 0.9rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: inherit;
+      color: var(--slate);
+      background-color: #fcfcfd;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--ocean);
+      box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.15);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 110px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      margin-top: 2rem;
+    }
+
+    footer p {
+      opacity: 0.9;
+      font-size: 0.95rem;
+      margin: 0.35rem 0;
+    }
+
+    footer a {
+      color: #93c5fd;
+      text-decoration: none;
+    }
+
+    @media (max-width: 640px) {
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="brand">Coastline <span>Canine Training</span></a>
+      <nav>
+        <a href="#programs">Programs</a>
+        <a href="#approach">Our Approach</a>
+        <a href="#contact" class="btn-nav">Book Consultation</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-inner">
+      <div class="badge">Fear-Free Certified • Positive Reinforcement • Central Coast, CA</div>
+      <h1>Calm, Confident Dogs Through Science-Backed Training</h1>
+      <p>Personalized, reward-based dog training serving Nipomo and the Five Cities area. Build real-world manners and a lasting bond with your dog.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Request a Consultation</a>
+        <a href="#programs" class="btn-secondary">Explore Programs</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Training Programs -->
+  <section id="programs">
+    <div class="section-header">
+      <h2>Training Programs</h2>
+      <p>Tailored one-on-one coaching designed around your dog's temperament and your household goals.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Puppy Foundations</h3>
+        <p>Start your puppy off right during their critical socialization window with gentle, structured guidance.</p>
+        <ul>
+          <li>House training &amp; crate comfort</li>
+          <li>Puppy biting &amp; chew redirection</li>
+          <li>Confidence building &amp; socialization</li>
+          <li>Name response, sit, down &amp; polite greetings</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Everyday Manners &amp; Obedience</h3>
+        <p>Practical life skills so you can enjoy relaxed walks, calm greetings, and beach or patio outings together.</p>
+        <ul>
+          <li>Loose-leash walking without pulling</li>
+          <li>Reliable recall ("Come" when called)</li>
+          <li>Impulse control, "Leave it" &amp; "Place"</li>
+          <li>Polite door &amp; guest manners</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Confidence &amp; Behavior Support</h3>
+        <p>Compassionate, Fear-Free behavior modification for dogs who need extra patience and support.</p>
+        <ul>
+          <li>Leash reactivity toward dogs or people</li>
+          <li>Fearfulness, shyness &amp; new environments</li>
+          <li>Cooperative care &amp; grooming readiness</li>
+          <li>Calm decompression &amp; enrichment plans</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy -->
+  <section id="approach">
+    <div class="philosophy">
+      <h2>Fear-Free, Force-Free Philosophy</h2>
+      <p>Training should never rely on intimidation, pain, or fear. We use humane, positive reinforcement methods rooted in modern animal behavior science—teaching your dog what to do while keeping both ends of the leash happy and stress-free.</p>
+    </div>
+  </section>
+
+  <!-- Consultation Form -->
+  <section id="contact">
+    <div class="section-header">
+      <h2>Request a Training Consultation</h2>
+      <p>Fill out the form below or email us directly at <strong>info@coastlinecaninetraining.com</strong> and we will reach out during your preferred time window.</p>
+    </div>
+
+    <div class="form-card">
+      <form action="https://formsubmit.co/info@coastlinecaninetraining.com" method="POST">
+        <input type="hidden" name="_subject" value="New Training Inquiry - Coastline Canine Training" />
+        <input type="hidden" name="_captcha" value="false" />
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="owner_name">Your Name *</label>
+            <input type="text" id="owner_name" name="Owner Name" required placeholder="Jane Doe" />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number (805 or local) *</label>
+            <input type="tel" id="phone" name="Phone Number" required placeholder="(805) 555-0123" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="Email" required placeholder="you@example.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="city">City / Area *</label>
+            <input type="text" id="city" name="City" required placeholder="Nipomo, Arroyo Grande, etc." />
+          </div>
+
+          <div class="form-group">
+            <label for="dog_info">Dog's Name, Breed &amp; Age *</label>
+            <input type="text" id="dog_info" name="Dog Name, Breed & Age" required placeholder="Barnaby - Golden Mix, 8 mos" />
+          </div>
+
+          <div class="form-group">
+            <label for="call_window">Best Time to Call/Text *</label>
+            <select id="call_window" name="Preferred Contact Window" required>
+              <option value="">Select a time window...</option>
+              <option value="Mornings (9am - 12pm)">Mornings (9am - 12pm)</option>
+              <option value="Afternoons (12pm - 4pm)">Afternoons (12pm - 4pm)</option>
+              <option value="Evenings (4pm - 7pm)">Evenings (4pm - 7pm)</option>
+              <option value="Text Me First">Text Me First to Coordinate</option>
+            </select>
+          </div>
+
+          <div class="form-group full">
+            <label for="goals">What training goals would you like help with? *</label>
+            <textarea id="goals" name="Training Goals" required placeholder="Tell us a little about your dog and what you'd like to work on..."></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-primary submit-btn">Send Consultation Request</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p><strong>Coastline Canine Training</strong> — Serving Nipomo &amp; the California Central Coast</p>
+    <p>Email: <a href="mailto:info@coastlinecaninetraining.com">info@coastlinecaninetraining.com</a></p>
+    <p>&copy; 2026 Coastline Canine Training. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
