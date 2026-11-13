@@ -67,15 +67,15 @@ section[id] { scroll-margin-top: 90px; }
   </div>
 </nav>
 
-<!-- HERO SECTION WITH FLOATING TEXT OVER JACKIE BEACH IMAGE -->
+<!-- HERO SECTION WITH FLOATING TEXT OVER JACK BEACH IMAGE -->
 <header class="relative overflow-hidden min-h-[520px] sm:min-h-[600px] flex items-center justify-center px-4 sm:px-6 py-16 sm:py-24 text-center border-b border-brand-seafoamDark bg-brand-oceanDark">
   
-  <!-- Background Image of Jackie Running on the Beach (Aligned Left) -->
+  <!-- Background Image of Jack Running on the Beach (Aligned Left) -->
   <img 
     src="jack-running.jpg" 
-    alt="Aussie Heeler mix Jackie happily running along the Central Coast ocean shoreline" 
+    alt="Aussie Heeler mix Jack happily running along the Central Coast ocean shoreline" 
     class="absolute inset-0 w-full h-full object-cover object-left"
-    onerror="this.onerror=null; this.src='https://placehold.co/1600x900/05373c/e2f4f4?text=Jackie+Running+on+the+Central+Coast+Beach';"
+    onerror="this.onerror=null; this.src='https://placehold.co/1600x900/05373c/e2f4f4?text=Jack+Running+on+the+Central+Coast+Beach';"
   />
 
   <!-- Soft Dark Ocean Gradient Overlay so Floating Text is Always Easy to Read -->
@@ -113,42 +113,68 @@ section[id] { scroll-margin-top: 90px; }
   </div>
 </header>
 
-<!-- ABOUT ME -->
-<section id="about" class="py-16 px-6 max-w-4xl mx-auto">
-  <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark p-8 sm:p-12 shadow-sm space-y-6 relative overflow-hidden">
-    <div class="absolute top-0 right-0 w-32 h-32 bg-brand-seafoam/40 rounded-bl-full -mr-8 -mt-8 pointer-events-none"></div>
-
-    <div class="relative z-10 space-y-6">
-      <!-- Two-Column Layout: Photo + Fear Free Badge on Left, Hi I'm Kris! + Bio Text on Right -->
-      <div class="flex flex-col md:flex-row items-center md:items-center gap-8 sm:gap-10">
-        
-        <!-- LEFT COLUMN: Photo + Fear Free Certified Badge Underneath -->
-        <div class="flex flex-col items-center gap-5 shrink-0">
+<!-- ABOUT ME: CLEAR LEFT PORTRAIT WITH JACK + LAYERED PHOTO BACKDROP BOX ON RIGHT -->
+<section id="about" class="py-16 px-4 sm:px-6 max-w-6xl mx-auto">
+  <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark p-6 sm:p-10 lg:p-12 shadow-sm space-y-8 relative overflow-hidden">
+    
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
+      
+      <!-- LEFT COLUMN (4 Cols): Clear Unobstructed Picture with Jack + Fear Free Badge -->
+      <div class="lg:col-span-4 flex flex-col items-center justify-between bg-brand-seafoam/25 rounded-3xl p-6 border border-brand-seafoamDark/60 gap-6">
+        <div class="w-full space-y-4 text-center">
           <img 
             src="trainer-profile.jpg" 
-            alt="Kris smiling outdoors on the Central Coast with Aussie Heeler mix Jackie" 
-            class="w-56 h-56 sm:w-64 sm:h-64 rounded-3xl object-cover object-top border-4 border-brand-seafoam shadow-md"
-            onerror="this.onerror=null; this.src='https://placehold.co/400x400/e2f4f4/05373c?text=Kris+%26+Jackie';"
+            alt="Kris smiling outdoors on the Central Coast with Aussie Heeler mix Jack" 
+            class="w-full aspect-square rounded-2xl object-cover object-top border-4 border-white shadow-md mx-auto"
+            onerror="this.onerror=null; this.src='https://placehold.co/600x600/e2f4f4/05373c?text=Kris+%26+Jack';"
           />
+          <p class="text-xs font-bold uppercase tracking-wider text-brand-ocean">
+            Kris &amp; Jack &bull; Central Coast, CA
+          </p>
+        </div>
 
-          <!-- FEAR FREE CERTIFIED PROFESSIONAL BADGE -->
+        <!-- FEAR FREE CERTIFIED PROFESSIONAL BADGE -->
+        <div class="pt-2">
           <img 
             src="FF_CertPro_RGB_REV@2x.webp" 
             alt="Fear Free Certified Professional" 
-            class="h-20 sm:h-24 w-auto object-contain drop-shadow-sm"
+            class="h-20 sm:h-24 w-auto object-contain drop-shadow-sm mx-auto"
             onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 420 250%22><rect x=%226%22 y=%226%22 width=%22408%22 height=%22238%22 rx=%2238%22 fill=%22%2313436b%22 stroke=%22%2313436b%22 stroke-width=%2212%22/><path d=%22M18 165 H402 V206 A26 26 0 0 1 376 232 H44 A26 26 0 0 1 18 206 Z%22 fill=%22%2353a8dc%22/><rect x=%2214%22 y=%2214%22 width=%22392%22 height=%22222%22 rx=%2230%22 fill=%22none%22 stroke=%22%23ffffff%22 stroke-width=%225%22/><text x=%22205%22 y=%2292%22 text-anchor=%22middle%22 fill=%22%23ffffff%22 font-family=%22Outfit, sans-serif%22 font-size=%2264%22 font-weight=%22700%22>FearFree</text><text x=%22350%22 y=%2252%22 fill=%22%23ffffff%22 font-family=%22sans-serif%22 font-size=%2216%22>®</text><circle cx=%2295%22 cy=%22132%22 r=%2220%22 fill=%22none%22 stroke=%22%23ffffff%22 stroke-width=%224%22/><path d=%22M84 132 l8 8 l22 -22%22 fill=%22none%22 stroke=%22%2353a8dc%22 stroke-width=%227%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/><text x=%22238%22 y=%22146%22 text-anchor=%22middle%22 fill=%22%2353a8dc%22 font-family=%22Plus Jakarta Sans, sans-serif%22 font-size=%2240%22 font-weight=%22800%22 letter-spacing=%222%22>CERTIFIED</text><text x=%22210%22 y=%22211%22 text-anchor=%22middle%22 fill=%22%23ffffff%22 font-family=%22Plus Jakarta Sans, sans-serif%22 font-size=%2235%22 font-weight=%22800%22 letter-spacing=%221.5%22>PROFESSIONAL</text></svg>';"
           />
         </div>
+      </div>
 
-        <!-- RIGHT COLUMN: Hi, I'm Kris! Directly Above Bio Story -->
-        <div class="space-y-2 text-left">
-          <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-brand-oceanDark leading-tight text-center md:text-left">
+      <!-- RIGHT COLUMN (8 Cols): Box with Husky & Boxer Photos Side-by-Side (No White Gaps) in Background + Easy-to-Read Foreground Text -->
+      <div class="lg:col-span-8 relative rounded-3xl overflow-hidden border-2 border-brand-seafoamDark shadow-md flex flex-col justify-end min-h-[540px] sm:min-h-[600px]">
+        
+        <!-- Background Photo Collage: Husky & Boxer Touching Edge-to-Edge with Zero Gaps -->
+        <div class="absolute inset-0 grid grid-cols-2 gap-0">
+          <img 
+            src="husky-profile.jpg" 
+            alt="Kris laughing outdoors with a happy black-and-white dog" 
+            class="w-full h-full object-cover object-top"
+            onerror="this.onerror=null; this.src='https://placehold.co/600x800/0d5c63/e2f4f4?text=husky-profile.jpg';"
+          />
+          <img 
+            src="boxer-profile.jpg" 
+            alt="Kris smiling and offering a gentle treat to a black-and-white dog" 
+            class="w-full h-full object-cover object-top"
+            onerror="this.onerror=null; this.src='https://placehold.co/600x800/05373c/e2f4f4?text=boxer-profile.jpg';"
+          />
+        </div>
+
+        <!-- Subtle Gradient Scrim so Top of Photos Stay Clear & Bright While Grounding the Foreground Card -->
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-oceanDark/85 via-brand-oceanDark/35 to-transparent pointer-events-none"></div>
+
+        <!-- Foreground Bio Card: Crisp Frosted Glass for Effortless Readability -->
+        <div class="relative z-10 m-4 sm:m-6 lg:m-8 mt-44 sm:mt-56 bg-white/95 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-brand-seafoamDark shadow-lg space-y-3 text-left">
+          <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-brand-oceanDark leading-tight">
             Hi, I’m Kris!
           </h2>
 
-          <div class="space-y-4 text-brand-muted text-sm sm:text-base leading-relaxed">
+          <div class="space-y-3.5 text-brand-muted text-sm sm:text-base leading-relaxed font-medium">
             <p>
-              My love for training started with Jackie, my late dad’s 10-year-old Aussie Heeler. Working with him taught me how powerful positive reinforcement can be—reducing years of heavy leash pulling and giving him an amazing 100-foot recall!
+              My love for training started with Jack, my late dad’s 10-year-old Aussie Heeler. Working with him taught me how powerful positive reinforcement can be—reducing years of heavy leash pulling and giving him an amazing 100-foot recall!
             </p>
             <p>
               Since then, I’ve worked with countless dogs and behaviors all across the Central Coast. I’ve helped newly adopted dogs with high fear and anxiety—who used to need to be carried wherever they went—blossom into expert walkers and certified "big chillers." I’ve also guided dogs who once recoiled from people into holding a calm, confident down-stay no matter where they are.
@@ -161,14 +187,16 @@ section[id] { scroll-margin-top: 90px; }
 
       </div>
 
-      <!-- FULL-WIDTH BOTTOM CALLOUT -->
-      <div class="bg-brand-seafoam/40 rounded-2xl p-5 border border-brand-seafoamDark space-y-1">
-        <h3 class="font-display font-extrabold text-brand-oceanDark text-sm sm:text-base">100% Fear Free Guarantee</h3>
-        <p class="text-xs sm:text-sm text-brand-muted leading-relaxed">
-          No shock collars, prong collars, e-collars, or intimidation—ever. Just positive reinforcement, clear communication, and gentle leads paired with proper desensitization so your dog always feels safe and confident.
-        </p>
-      </div>
     </div>
+
+    <!-- FULL-WIDTH BOTTOM CALLOUT -->
+    <div class="bg-brand-seafoam/40 rounded-2xl p-5 border border-brand-seafoamDark space-y-1">
+      <h3 class="font-display font-extrabold text-brand-oceanDark text-sm sm:text-base">100% Fear Free Guarantee</h3>
+      <p class="text-xs sm:text-sm text-brand-muted leading-relaxed">
+        No shock collars, prong collars, e-collars, or intimidation—ever. Just positive reinforcement, clear communication, and gentle leads paired with proper desensitization so your dog always feels safe and confident.
+      </p>
+    </div>
+
   </div>
 </section>
 
