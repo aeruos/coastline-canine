@@ -1,1 +1,923 @@
 
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coastline Canine Training | 6-Week 1-on-1 Dog Training in Nipomo, SLO &amp; Santa Barbara County</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        brand: {
+          ocean: '#0d5c63',
+          oceanDark: '#05373c',
+          seafoam: '#e2f4f4',
+          seafoamDark: '#b8e3e3',
+          accent: '#f2a65a',
+          sand: '#faf9f6',
+          muted: '#4a5568',
+          border: '#e2e8f0'
+        }
+      },
+      fontFamily: {
+        sans: ['Plus Jakarta Sans', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        display: ['Outfit', 'sans-serif']
+      }
+    }
+  }
+}
+</script>
+
+<style>
+html { scroll-behavior: smooth; }
+body { background-color: #f7fbfb; color: #2d3748; }
+section[id] { scroll-margin-top: 32px; }
+</style>
+</head>
+
+<body class="min-h-screen flex flex-col justify-between antialiased font-sans text-base sm:text-lg">
+
+<!-- TOP SERVICE AREA RIBBON -->
+<div class="bg-brand-oceanDark text-brand-seafoam text-xs sm:text-sm font-semibold tracking-wide py-3 px-4 text-center">
+  100% Fear Free Certified &bull; Serving Nipomo, Arroyo Grande, SLO County &amp; Santa Barbara County
+</div>
+
+<!-- CLEAN EDITORIAL HEADER (SCROLLS NATURALLY WITH PAGE) -->
+<header class="bg-white border-b border-brand-seafoamDark/70">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <a href="#" class="font-display font-extrabold text-2xl sm:text-3xl text-brand-oceanDark flex items-center gap-2.5 tracking-tight">
+      <svg class="w-8 h-8 text-brand-ocean shrink-0 -rotate-12" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+        <path d="M16 17.5c-4.2 0-7.6 2.5-8.6 6-.5 1.9.8 3.8 2.8 3.8 1.8 0 3.6-.8 5.8-.8s4 .8 5.8.8c2 0 3.3-1.9 2.8-3.8-1-3.5-4.4-6-8.6-6z"/>
+        <ellipse cx="6.8" cy="14.5" rx="2.7" ry="3.8" transform="rotate(-24 6.8 14.5)"/>
+        <ellipse cx="12.4" cy="9.5" rx="2.9" ry="4.1" transform="rotate(-8 12.4 9.5)"/>
+        <ellipse cx="19.6" cy="9.5" rx="2.9" ry="4.1" transform="rotate(8 19.6 9.5)"/>
+        <ellipse cx="25.2" cy="14.5" rx="2.7" ry="3.8" transform="rotate(24 25.2 14.5)"/>
+      </svg>
+      <span>Coastline Canine</span>
+    </a>
+
+    <nav class="flex flex-wrap items-center justify-center gap-5 sm:gap-8 font-bold text-sm sm:text-base text-brand-oceanDark">
+      <a href="#about" class="hover:text-brand-ocean transition-colors">About Me</a>
+      <a href="#programs" class="hover:text-brand-ocean transition-colors">Programs &amp; Pricing</a>
+      <a href="#prep" class="hover:text-brand-ocean transition-colors">Prep Guide</a>
+      <a href="#faq" class="hover:text-brand-ocean transition-colors">FAQ</a>
+      <a href="#contact" class="bg-brand-seafoam hover:bg-brand-seafoamDark text-brand-oceanDark px-5 py-2.5 rounded-full transition-colors">
+        Free Consult
+      </a>
+    </nav>
+  </div>
+</header>
+
+<!-- FULL-WIDTH HERO SECTION WITH JACK RUNNING ON THE BEACH -->
+<section class="relative overflow-hidden min-h-[520px] sm:min-h-[600px] flex items-center justify-center px-4 sm:px-6 py-16 sm:py-24 text-center border-b border-brand-seafoamDark bg-brand-oceanDark">
+  
+  <!-- Background Image of Jack Running on the Beach (Aligned Left) -->
+  <img 
+    src="jack-running.jpg" 
+    alt="Aussie Heeler mix Jack happily running along the Central Coast ocean shoreline" 
+    class="absolute inset-0 w-full h-full object-cover object-left"
+    onerror="this.onerror=null; this.src='https://placehold.co/1600x900/05373c/e2f4f4?text=Jack+Running+on+the+Central+Coast+Beach';"
+  />
+
+  <!-- Soft Dark Ocean Gradient Overlay so Floating Text is Always Easy to Read -->
+  <div class="absolute inset-0 bg-gradient-to-b from-brand-oceanDark/70 via-brand-oceanDark/55 to-brand-oceanDark/75"></div>
+
+  <!-- Floating Center Content -->
+  <div class="relative z-10 max-w-4xl mx-auto space-y-6 sm:space-y-8">
+
+    <!-- Floating Headline & Sub-text -->
+    <div class="space-y-5 max-w-3xl mx-auto px-1">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-display font-extrabold text-white tracking-tight leading-tight drop-shadow-md">
+        Helping Central Coast Dogs <br class="hidden sm:inline"><span class="text-brand-seafoam">Put Their Best Paw Forward</span>
+      </h1>
+
+      <p class="text-base sm:text-xl text-white/95 max-w-2xl mx-auto font-medium leading-relaxed drop-shadow">
+        With positive reinforcement and gentle Fear Free guidance, we help your dog trade jumping and leash pulling for strong foundations, a closer bond, and confident wiggle butts.
+      </p>
+    </div>
+
+    <!-- Call to Action Buttons -->
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+      <a href="#contact" class="w-full sm:w-auto bg-brand-ocean hover:bg-brand-oceanDark text-white border-2 border-brand-seafoam/30 font-bold px-8 py-4 rounded-2xl shadow-lg transition-all text-center text-base sm:text-lg">
+        Book Your Free 15 Min Consultation
+      </a>
+      <a href="#programs" class="w-full sm:w-auto bg-white/95 hover:bg-white text-brand-oceanDark font-bold px-8 py-4 rounded-2xl shadow-lg transition-all text-center text-base sm:text-lg">
+        Explore 6-Week Programs
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT ME -->
+<section id="about" class="py-16 px-6 max-w-4xl mx-auto">
+  <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark p-8 sm:p-12 shadow-sm space-y-6 relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-32 h-32 bg-brand-seafoam/40 rounded-bl-full -mr-8 -mt-8 pointer-events-none"></div>
+
+    <div class="relative z-10 space-y-6">
+      <!-- Two-Column Layout: Photo + Fear Free Badge on Left, Hi I'm Kris! + Bio Text on Right -->
+      <div class="flex flex-col md:flex-row items-center md:items-center gap-8 sm:gap-10">
+        
+        <!-- LEFT COLUMN: Photo + Fear Free Certified Badge Underneath -->
+        <div class="flex flex-col items-center gap-5 shrink-0">
+          <img 
+            src="trainer-profile.jpg" 
+            alt="Kris smiling outdoors on the Central Coast with Aussie Heeler mix Jack" 
+            class="w-56 h-56 sm:w-64 sm:h-64 rounded-3xl object-cover object-top border-4 border-brand-seafoam shadow-md"
+            onerror="this.onerror=null; this.src='https://placehold.co/400x400/e2f4f4/05373c?text=Kris+%26+Jack';"
+          />
+
+          <!-- FEAR FREE CERTIFIED PROFESSIONAL BADGE -->
+          <img 
+            src="FF_CertPro_RGB_REV@2x.webp" 
+            alt="Fear Free Certified Professional" 
+            class="h-20 sm:h-24 w-auto object-contain drop-shadow-sm"
+            onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 420 250%22><rect x=%226%22 y=%226%22 width=%22408%22 height=%22238%22 rx=%2238%22 fill=%22%2313436b%22 stroke=%22%2313436b%22 stroke-width=%2212%22/><path d=%22M18 165 H402 V206 A26 26 0 0 1 376 232 H44 A26 26 0 0 1 18 206 Z%22 fill=%22%2353a8dc%22/><rect x=%2214%22 y=%2214%22 width=%22392%22 height=%22222%22 rx=%2230%22 fill=%22none%22 stroke=%22%23ffffff%22 stroke-width=%225%22/><text x=%22205%22 y=%2292%22 text-anchor=%22middle%22 fill=%22%23ffffff%22 font-family=%22Outfit, sans-serif%22 font-size=%2264%22 font-weight=%22700%22>FearFree</text><text x=%22350%22 y=%2252%22 fill=%22%23ffffff%22 font-family=%22sans-serif%22 font-size=%2216%22>®</text><circle cx=%2295%22 cy=%22132%22 r=%2220%22 fill=%22none%22 stroke=%22%23ffffff%22 stroke-width=%224%22/><path d=%22M84 132 l8 8 l22 -22%22 fill=%22none%22 stroke=%22%2353a8dc%22 stroke-width=%227%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/><text x=%22238%22 y=%22146%22 text-anchor=%22middle%22 fill=%22%2353a8dc%22 font-family=%22Plus Jakarta Sans, sans-serif%22 font-size=%2240%22 font-weight=%22800%22 letter-spacing=%222%22>CERTIFIED</text><text x=%22210%22 y=%22211%22 text-anchor=%22middle%22 fill=%22%23ffffff%22 font-family=%22Plus Jakarta Sans, sans-serif%22 font-size=%2235%22 font-weight=%22800%22 letter-spacing=%221.5%22>PROFESSIONAL</text></svg>';"
+          />
+        </div>
+
+        <!-- RIGHT COLUMN: Hi, I'm Kris! Directly Above Bio Story -->
+        <div class="space-y-3 text-left">
+          <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-brand-oceanDark leading-tight text-center md:text-left">
+            Hi, I’m Kris!
+          </h2>
+
+          <div class="space-y-4 text-brand-muted text-base sm:text-lg leading-relaxed">
+            <p>
+              My love for training started with Jack, my late dad’s 10-year-old Aussie Heeler. Working with him taught me how powerful positive reinforcement can be—reducing years of heavy leash pulling and giving him an amazing 100-foot recall!
+            </p>
+            <p>
+              Since then, I’ve worked with countless dogs and behaviors all across the Central Coast. I’ve helped newly adopted dogs with high fear and anxiety—who used to need to be carried wherever they went—blossom into expert walkers and certified "big chillers." I’ve also guided dogs who once recoiled from people into holding a calm, confident down-stay no matter where they are.
+            </p>
+            <p>
+              After two years of professional training, I know how much it means to pet parents to help their dog be the best good boy or girl they can be. I’m here to provide gentle guidance and help build a stronger, lifelong bond between you and your dog.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- FULL-WIDTH BOTTOM CALLOUT -->
+      <div class="bg-brand-seafoam/40 rounded-2xl p-6 border border-brand-seafoamDark space-y-1.5">
+        <h3 class="font-display font-extrabold text-brand-oceanDark text-lg sm:text-xl">100% Fear Free Guarantee</h3>
+        <p class="text-base text-brand-muted leading-relaxed">
+          No shock collars, prong collars, e-collars, or intimidation—ever. Just positive reinforcement, clear communication, and gentle leads paired with proper desensitization so your dog always feels safe and confident.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING & PROGRAMS SECTION -->
+<section id="programs" class="py-16 px-4 sm:px-6 max-w-6xl mx-auto space-y-10">
+  <div class="text-center space-y-3">
+    <span class="text-sm font-extrabold uppercase tracking-widest text-brand-ocean">Programs &amp; Pricing</span>
+    <h2 class="text-3xl sm:text-5xl font-display font-extrabold text-brand-oceanDark">6-Week Training Programs</h2>
+    <p class="text-base sm:text-lg text-brand-muted max-w-2xl mx-auto leading-relaxed">
+      All in-home coaching is based on an approachable <strong class="text-brand-oceanDark">$50/hour rate</strong>, with a complimentary 45-minute in-home assessment included in every 6-week package.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-7 items-stretch pt-2">
+
+    <!-- CARD 1: 1-ON-1 PRIVATE TRAINING -->
+    <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark/80 overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+      <div>
+        <!-- Top Dog Training Photo Slot -->
+        <div class="h-48 w-full bg-brand-seafoam/50 overflow-hidden border-b border-brand-seafoamDark/60">
+          <img 
+            src="program-private.jpg" 
+            alt="1-on-1 private in-home dog training session" 
+            class="w-full h-full object-cover object-center"
+            onerror="this.onerror=null; this.src='https://placehold.co/600x360/e2f4f4/05373c?text=Add+1-on-1+Training+Photo+(program-private.jpg)';"
+          />
+        </div>
+
+        <div class="p-7 sm:p-8 space-y-6">
+          <span class="inline-block bg-brand-seafoam text-brand-ocean px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
+            In-Home Private
+          </span>
+
+          <div>
+            <h3 class="text-2xl sm:text-3xl font-display font-extrabold text-brand-oceanDark leading-tight">1-on-1 Private Training</h3>
+            <p class="text-brand-muted text-base mt-2 leading-relaxed">
+              1-on-1 weekly coaching in your home to build great manners and focus where it matters most.
+            </p>
+          </div>
+
+          <div class="border-b border-brand-border pb-4">
+            <div class="text-4xl sm:text-5xl font-display font-extrabold text-brand-oceanDark">$300</div>
+          </div>
+
+          <!-- Scannable Visible Curriculum -->
+          <ul class="space-y-5">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-brand-ocean shrink-0 mt-1 -rotate-12" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                <path d="M16 17.5c-4.2 0-7.6 2.5-8.6 6-.5 1.9.8 3.8 2.8 3.8 1.8 0 3.6-.8 5.8-.8s4 .8 5.8.8c2 0 3.3-1.9 2.8-3.8-1-3.5-4.4-6-8.6-6z"/>
+                <ellipse cx="6.8" cy="14.5" rx="2.7" ry="3.8" transform="rotate(-24 6.8 14.5)"/>
+                <ellipse cx="12.4" cy="9.5" rx="2.9" ry="4.1" transform="rotate(-8 12.4 9.5)"/>
+                <ellipse cx="19.6" cy="9.5" rx="2.9" ry="4.1" transform="rotate(8 19.6 9.5)"/>
+                <ellipse cx="25.2" cy="14.5" rx="2.7" ry="3.8" transform="rotate(24 25.2 14.5)"/>
+              </svg>
+              <div>
+                <div class="font-bold text-brand-oceanDark text-lg">45-Min Assessment</div>
+                <div class="text-brand-muted text-base mt-0.5 leading-relaxed">Meeting your dog and doing a behavioral assessment to make a 6-week plan for your dog's success</div>
+              </div>
+            </li>
+
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-brand-ocean shrink-0 mt-1 -rotate-12" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                <path d="M16 17.5c-4.2 0-7.6 2.5-8.6 6-.5 1.9.8 3.8 2.8 3.8 1.8 0 3.6-.8 5.8-.8s4 .8 5.8.8c2 0 3.3-1.9 2.8-3.8-1-3.5-4.4-6-8.6-6z"/>
+                <ellipse cx="6.8" cy="14.5" rx="2.7" ry="3.8" transform="rotate(-24 6.8 14.5)"/>
+                <ellipse cx="12.4" cy="9.5" rx="2.9" ry="4.1" transform="rotate(-8 12.4 9.5)"/>
+                <ellipse cx="19.6" cy="9.5" rx="2.9" ry="4.1" transform="rotate(8 19.6 9.5)"/>
+                <ellipse cx="25.2" cy="14.5" rx="2.7" ry="3.8" transform="rotate(24 25.2 14.5)"/>
+              </svg>
+              <div>
+                <div class="font-bold text-brand-oceanDark text-lg">6 Weeks of Training</div>
+                <div class="text-brand-muted text-base mt-0.5 leading-relaxed">1 hour per week for 6 weeks of training</div>
+              </div>
+            </li>
+
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-brand-ocean shrink-0 mt-1 -rotate-12" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                <path d="M16 17.5c-4.2 0-7.6 2.5-8.6 6-.5 1.9.8 3.8 2.8 3.8 1.8 0 3.6-.8 5.8-.8s4 .8 5.8.8c2 0 3.3-1.9 2.8-3.8-1-3.5-4.4-6-8.6-6z"/>
+                <ellipse cx="6.8" cy="14.5" rx="2.7" ry="3.8" transform="rotate(-24 6.8 14.5)"/>
+                <ellipse cx="12.4" cy="9.5" rx="2.9" ry="4.1" transform="rotate(-8 12.4 9.5)"/>
+                <ellipse cx="19.6" cy="9.5" rx="2.9" ry="4.1" transform="rotate(8 19.6 9.5)"/>
+                <ellipse cx="25.2" cy="14.5" rx="2.7" ry="3.8" transform="rotate(24 25.2 14.5)"/>
+              </svg>
+              <div class="space-y-2">
+                <div class="font-bold text-brand-oceanDark text-lg">Personalized Plan &amp; Basics</div>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Canine Education</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Behavior Basics Tailored to Your Dog</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-brand-ocean shrink-0 mt-1 -rotate-12" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                <path d="M16 17.5c-4.2 0-7.6 2.5-8.6 6-.5 1.9.8 3.8 2.8 3.8 1.8 0 3.6-.8 5.8-.8s4 .8 5.8.8c2 0 3.3-1.9 2.8-3.8-1-3.5-4.4-6-8.6-6z"/>
+                <ellipse cx="6.8" cy="14.5" rx="2.7" ry="3.8" transform="rotate(-24 6.8 14.5)"/>
+                <ellipse cx="12.4" cy="9.5" rx="2.9" ry="4.1" transform="rotate(-8 12.4 9.5)"/>
+                <ellipse cx="19.6" cy="9.5" rx="2.9" ry="4.1" transform="rotate(8 19.6 9.5)"/>
+                <ellipse cx="25.2" cy="14.5" rx="2.7" ry="3.8" transform="rotate(24 25.2 14.5)"/>
+              </svg>
+              <div class="space-y-2">
+                <div class="font-bold text-brand-oceanDark text-lg">Core Foundations</div>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Sit / Down / Stand</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Recall</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Touch</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Stay &amp; Wait</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Place</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Leave It &amp; Drop It</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Release Word</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Back-Up (Beep Beep)</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Weave</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Crate &amp; Potty Training</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Loose-Leash Walking</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-brand-ocean shrink-0 mt-1 -rotate-12" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                <path d="M16 17.5c-4.2 0-7.6 2.5-8.6 6-.5 1.9.8 3.8 2.8 3.8 1.8 0 3.6-.8 5.8-.8s4 .8 5.8.8c2 0 3.3-1.9 2.8-3.8-1-3.5-4.4-6-8.6-6z"/>
+                <ellipse cx="6.8" cy="14.5" rx="2.7" ry="3.8" transform="rotate(-24 6.8 14.5)"/>
+                <ellipse cx="12.4" cy="9.5" rx="2.9" ry="4.1" transform="rotate(-8 12.4 9.5)"/>
+                <ellipse cx="19.6" cy="9.5" rx="2.9" ry="4.1" transform="rotate(8 19.6 9.5)"/>
+                <ellipse cx="25.2" cy="14.5" rx="2.7" ry="3.8" transform="rotate(24 25.2 14.5)"/>
+              </svg>
+              <div class="space-y-2">
+                <div class="font-bold text-brand-oceanDark text-lg">Decompression &amp; Enrichment</div>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Calming Brain Games</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Enrichment Activities at Home</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-brand-ocean shrink-0 mt-1 -rotate-12" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                <path d="M16 17.5c-4.2 0-7.6 2.5-8.6 6-.5 1.9.8 3.8 2.8 3.8 1.8 0 3.6-.8 5.8-.8s4 .8 5.8.8c2 0 3.3-1.9 2.8-3.8-1-3.5-4.4-6-8.6-6z"/>
+                <ellipse cx="6.8" cy="14.5" rx="2.7" ry="3.8" transform="rotate(-24 6.8 14.5)"/>
+                <ellipse cx="12.4" cy="9.5" rx="2.9" ry="4.1" transform="rotate(-8 12.4 9.5)"/>
+                <ellipse cx="19.6" cy="9.5" rx="2.9" ry="4.1" transform="rotate(8 19.6 9.5)"/>
+                <ellipse cx="25.2" cy="14.5" rx="2.7" ry="3.8" transform="rotate(24 25.2 14.5)"/>
+              </svg>
+              <div class="space-y-2">
+                <div class="font-bold text-brand-oceanDark text-lg">Fear Free Handling &amp; Slow Desensitization</div>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Bucket Game (Cooperative Care)</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Paw, Nail Clipper &amp; Dremel Desensitization</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Toothbrushing Training</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Coat Brushing &amp; Grooming Tools</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Harness &amp; Body Handling</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="p-7 sm:p-8 pt-0">
+        <a href="#contact" onclick="selectProgram('1-on-1 Private Training ($300)')" class="block w-full text-center bg-white hover:bg-brand-seafoam/50 text-brand-oceanDark border-2 border-brand-oceanDark font-bold py-4 rounded-2xl transition-all text-sm uppercase tracking-wider">
+          Choose 1-on-1 Private
+        </a>
+      </div>
+    </div>
+
+    <!-- CARD 2: DAY PLAY & TRAIN -->
+    <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark/80 overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+      <div>
+        <!-- Top Dog Training Photo Slot -->
+        <div class="h-48 w-full bg-brand-seafoam/50 overflow-hidden border-b border-brand-seafoamDark/60">
+          <img 
+            src="program-dayplay.jpg" 
+            alt="Dog enjoying Day Play and Train in our shaded open-air space" 
+            class="w-full h-full object-cover object-center"
+            onerror="this.onerror=null; this.src='https://placehold.co/600x360/e2f4f4/05373c?text=Add+Day+Play+Photo+(program-dayplay.jpg)';"
+          />
+        </div>
+
+        <div class="p-7 sm:p-8 space-y-6">
+          <span class="inline-block bg-brand-seafoam text-brand-ocean px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
+            Open-Air Space + Home
+          </span>
+
+          <div>
+            <h3 class="text-2xl sm:text-3xl font-display font-extrabold text-brand-oceanDark leading-tight">Day Play &amp; Train</h3>
+            <p class="text-brand-muted text-base mt-2 leading-relaxed">
+              Weekly day training in our private shaded open-air space plus in-home coaching with you.
+            </p>
+          </div>
+
+          <div class="border-b border-brand-border pb-4">
+            <div class="text-4xl sm:text-5xl font-display font-extrabold text-brand-oceanDark">$1,300</div>
+          </div>
+
+          <!-- Scannable Visible Curriculum -->
+          <ul class="space-y-5">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-brand-ocean shrink-0 mt-1 -rotate-12" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                <path d="M16 17.5c-4.2 0-7.6 2.5-8.6 6-.5 1.9.8 3.8 2.8 3.8 1.8 0 3.6-.8 5.8-.8s4 .8 5.8.8c2 0 3.3-1.9 2.8-3.8-1-3.5-4.4-6-8.6-6z"/>
+                <ellipse cx="6.8" cy="14.5" rx="2.7" ry="3.8" transform="rotate(-24 6.8 14.5)"/>
+                <ellipse cx="12.4" cy="9.5" rx="2.9" ry="4.1" transform="rotate(-8 12.4 9.5)"/>
+                <ellipse cx="19.6" cy="9.5" rx="2.9" ry="4.1" transform="rotate(8 19.6 9.5)"/>
+                <ellipse cx="25.2" cy="14.5" rx="2.7" ry="3.8" transform="rotate(24 25.2 14.5)"/>
+              </svg>
+              <div>
+                <div class="font-bold text-brand-oceanDark text-lg">45-Min Assessment</div>
+                <div class="text-brand-muted text-base mt-0.5 leading-relaxed">Meeting your dog and doing a behavioral assessment to make a 6-week plan for your dog's success</div>
+              </div>
+            </li>
+
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-brand-ocean shrink-0 mt-1 -rotate-12" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                <path d="M16 17.5c-4.2 0-7.6 2.5-8.6 6-.5 1.9.8 3.8 2.8 3.8 1.8 0 3.6-.8 5.8-.8s4 .8 5.8.8c2 0 3.3-1.9 2.8-3.8-1-3.5-4.4-6-8.6-6z"/>
+                <ellipse cx="6.8" cy="14.5" rx="2.7" ry="3.8" transform="rotate(-24 6.8 14.5)"/>
+                <ellipse cx="12.4" cy="9.5" rx="2.9" ry="4.1" transform="rotate(-8 12.4 9.5)"/>
+                <ellipse cx="19.6" cy="9.5" rx="2.9" ry="4.1" transform="rotate(8 19.6 9.5)"/>
+                <ellipse cx="25.2" cy="14.5" rx="2.7" ry="3.8" transform="rotate(24 25.2 14.5)"/>
+              </svg>
+              <div class="space-y-2">
+                <div class="font-bold text-brand-oceanDark text-lg">6 Weeks of In-Home &amp; Day Play</div>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Weekly 4-Hour Day Session</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">1-Hour Weekly In-Home Coaching</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-brand-ocean shrink-0 mt-1 -rotate-12" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                <path d="M16 17.5c-4.2 0-7.6 2.5-8.6 6-.5 1.9.8 3.8 2.8 3.8 1.8 0 3.6-.8 5.8-.8s4 .8 5.8.8c2 0 3.3-1.9 2.8-3.8-1-3.5-4.4-6-8.6-6z"/>
+                <ellipse cx="6.8" cy="14.5" rx="2.7" ry="3.8" transform="rotate(-24 6.8 14.5)"/>
+                <ellipse cx="12.4" cy="9.5" rx="2.9" ry="4.1" transform="rotate(-8 12.4 9.5)"/>
+                <ellipse cx="19.6" cy="9.5" rx="2.9" ry="4.1" transform="rotate(8 19.6 9.5)"/>
+                <ellipse cx="25.2" cy="14.5" rx="2.7" ry="3.8" transform="rotate(24 25.2 14.5)"/>
+              </svg>
+              <div class="space-y-3 w-full">
+                <div>
+                  <div class="font-bold text-brand-oceanDark text-lg">4-Hour Day Play in Private Training Space</div>
+                  <div class="text-brand-muted text-base mt-0.5 italic leading-relaxed">Every dog has unique needs, so we follow your dog's lead and go at their pace, which includes:</div>
+                </div>
+
+                <!-- Indented Sub-List for the 4-Hour Day -->
+                <div class="bg-brand-seafoam/35 rounded-2xl p-4 border border-brand-seafoamDark/60 space-y-3 text-base leading-relaxed">
+                  <div>
+                    <span class="font-bold text-brand-oceanDark">&bull; Up to 2 Hrs of Dog Training:</span>
+                    <span class="text-brand-muted"> Core foundations, Fear Free handling &amp; custom behaviors</span>
+                  </div>
+                  <div>
+                    <span class="font-bold text-brand-oceanDark">&bull; Mid-Day Kennel Enrichment &amp; Rest:</span>
+                    <span class="text-brand-muted"> Decompression breaks in a cozy dog kennel with lickmats, stuffed Kongs &amp; pet-parent-approved chews and toys</span>
+                  </div>
+                  <div>
+                    <span class="font-bold text-brand-oceanDark">&bull; 30-Min Sniffari &amp; 30-Min Play:</span>
+                    <span class="text-brand-muted"> Decompression Sniffari leash walk, plus fetch, agility games &amp; enrichment in our 20x20 shaded space</span>
+                  </div>
+                  <div>
+                    <span class="font-bold text-brand-oceanDark">&bull; 15–30 Min Pickup Review:</span>
+                    <span class="text-brand-muted"> Going over what your dog learned and practiced that day</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-brand-ocean shrink-0 mt-1 -rotate-12" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                <path d="M16 17.5c-4.2 0-7.6 2.5-8.6 6-.5 1.9.8 3.8 2.8 3.8 1.8 0 3.6-.8 5.8-.8s4 .8 5.8.8c2 0 3.3-1.9 2.8-3.8-1-3.5-4.4-6-8.6-6z"/>
+                <ellipse cx="6.8" cy="14.5" rx="2.7" ry="3.8" transform="rotate(-24 6.8 14.5)"/>
+                <ellipse cx="12.4" cy="9.5" rx="2.9" ry="4.1" transform="rotate(-8 12.4 9.5)"/>
+                <ellipse cx="19.6" cy="9.5" rx="2.9" ry="4.1" transform="rotate(8 19.6 9.5)"/>
+                <ellipse cx="25.2" cy="14.5" rx="2.7" ry="3.8" transform="rotate(24 25.2 14.5)"/>
+              </svg>
+              <div>
+                <div class="font-bold text-brand-oceanDark text-lg">1-Hour Weekly Pet Parent Coaching</div>
+                <div class="text-brand-muted text-base mt-0.5 leading-relaxed">An in-depth weekly home lesson to practice what we covered during Day Play and review how training is going at home</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="p-7 sm:p-8 pt-0">
+        <a href="#contact" onclick="selectProgram('Day Play & Train ($1,300)')" class="block w-full text-center bg-white hover:bg-brand-seafoam/50 text-brand-oceanDark border-2 border-brand-oceanDark font-bold py-4 rounded-2xl transition-all text-sm uppercase tracking-wider">
+          Choose Day Play &amp; Train
+        </a>
+      </div>
+    </div>
+
+    <!-- CARD 3: FEAR-FREE BEHAVIOR TRAINING -->
+    <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark/80 overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+      <div>
+        <!-- Top Dog Training Photo Slot -->
+        <div class="h-48 w-full bg-brand-seafoam/50 overflow-hidden border-b border-brand-seafoamDark/60">
+          <img 
+            src="program-behavior.jpg" 
+            alt="Fear-Free behavior training session" 
+            class="w-full h-full object-cover object-center"
+            onerror="this.onerror=null; this.src='https://placehold.co/600x360/e2f4f4/05373c?text=Add+Behavior+Training+Photo+(program-behavior.jpg)';"
+          />
+        </div>
+
+        <div class="p-7 sm:p-8 space-y-6">
+          <span class="inline-block bg-brand-seafoam text-brand-ocean px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
+            Behavioral Focus
+          </span>
+
+          <div>
+            <!-- Stacked Cleanly: Fear-Free on Top, Behavior Training on Bottom -->
+            <h3 class="text-2xl sm:text-3xl font-display font-extrabold text-brand-oceanDark leading-tight">
+              <span class="block">Fear-Free</span>
+              <span class="block">Behavior Training</span>
+            </h3>
+            <p class="text-brand-muted text-base mt-2 leading-relaxed">
+              Twice-weekly 1-on-1 help for barking, jumping, anxious behavior, and low-to-moderate reactivity.
+            </p>
+          </div>
+
+          <div class="border-b border-brand-border pb-4">
+            <div class="text-4xl sm:text-5xl font-display font-extrabold text-brand-oceanDark">$600</div>
+          </div>
+
+          <!-- Scannable Visible Curriculum -->
+          <ul class="space-y-5">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-brand-ocean shrink-0 mt-1 -rotate-12" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                <path d="M16 17.5c-4.2 0-7.6 2.5-8.6 6-.5 1.9.8 3.8 2.8 3.8 1.8 0 3.6-.8 5.8-.8s4 .8 5.8.8c2 0 3.3-1.9 2.8-3.8-1-3.5-4.4-6-8.6-6z"/>
+                <ellipse cx="6.8" cy="14.5" rx="2.7" ry="3.8" transform="rotate(-24 6.8 14.5)"/>
+                <ellipse cx="12.4" cy="9.5" rx="2.9" ry="4.1" transform="rotate(-8 12.4 9.5)"/>
+                <ellipse cx="19.6" cy="9.5" rx="2.9" ry="4.1" transform="rotate(8 19.6 9.5)"/>
+                <ellipse cx="25.2" cy="14.5" rx="2.7" ry="3.8" transform="rotate(24 25.2 14.5)"/>
+              </svg>
+              <div>
+                <div class="font-bold text-brand-oceanDark text-lg">45-Min Assessment</div>
+                <div class="text-brand-muted text-base mt-0.5 leading-relaxed">Meeting your dog and doing a behavioral assessment to make a 6-week plan for your dog's success</div>
+              </div>
+            </li>
+
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-brand-ocean shrink-0 mt-1 -rotate-12" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                <path d="M16 17.5c-4.2 0-7.6 2.5-8.6 6-.5 1.9.8 3.8 2.8 3.8 1.8 0 3.6-.8 5.8-.8s4 .8 5.8.8c2 0 3.3-1.9 2.8-3.8-1-3.5-4.4-6-8.6-6z"/>
+                <ellipse cx="6.8" cy="14.5" rx="2.7" ry="3.8" transform="rotate(-24 6.8 14.5)"/>
+                <ellipse cx="12.4" cy="9.5" rx="2.9" ry="4.1" transform="rotate(-8 12.4 9.5)"/>
+                <ellipse cx="19.6" cy="9.5" rx="2.9" ry="4.1" transform="rotate(8 19.6 9.5)"/>
+                <ellipse cx="25.2" cy="14.5" rx="2.7" ry="3.8" transform="rotate(24 25.2 14.5)"/>
+              </svg>
+              <div>
+                <div class="font-bold text-brand-oceanDark text-lg">6 Weeks of Training</div>
+                <div class="text-brand-muted text-base mt-0.5 leading-relaxed">2 hours per week (two 1-hour sessions) for 6 weeks of training</div>
+              </div>
+            </li>
+
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-brand-ocean shrink-0 mt-1 -rotate-12" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                <path d="M16 17.5c-4.2 0-7.6 2.5-8.6 6-.5 1.9.8 3.8 2.8 3.8 1.8 0 3.6-.8 5.8-.8s4 .8 5.8.8c2 0 3.3-1.9 2.8-3.8-1-3.5-4.4-6-8.6-6z"/>
+                <ellipse cx="6.8" cy="14.5" rx="2.7" ry="3.8" transform="rotate(-24 6.8 14.5)"/>
+                <ellipse cx="12.4" cy="9.5" rx="2.9" ry="4.1" transform="rotate(-8 12.4 9.5)"/>
+                <ellipse cx="19.6" cy="9.5" rx="2.9" ry="4.1" transform="rotate(8 19.6 9.5)"/>
+                <ellipse cx="25.2" cy="14.5" rx="2.7" ry="3.8" transform="rotate(24 25.2 14.5)"/>
+              </svg>
+              <div class="space-y-2">
+                <div class="font-bold text-brand-oceanDark text-lg">Behaviors We Tackle</div>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Barking</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Jumping</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Low–Moderate Dog Reactivity</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">People Reactivity</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Fear &amp; Anxiety</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-brand-ocean shrink-0 mt-1 -rotate-12" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                <path d="M16 17.5c-4.2 0-7.6 2.5-8.6 6-.5 1.9.8 3.8 2.8 3.8 1.8 0 3.6-.8 5.8-.8s4 .8 5.8.8c2 0 3.3-1.9 2.8-3.8-1-3.5-4.4-6-8.6-6z"/>
+                <ellipse cx="6.8" cy="14.5" rx="2.7" ry="3.8" transform="rotate(-24 6.8 14.5)"/>
+                <ellipse cx="12.4" cy="9.5" rx="2.9" ry="4.1" transform="rotate(-8 12.4 9.5)"/>
+                <ellipse cx="19.6" cy="9.5" rx="2.9" ry="4.1" transform="rotate(8 19.6 9.5)"/>
+                <ellipse cx="25.2" cy="14.5" rx="2.7" ry="3.8" transform="rotate(24 25.2 14.5)"/>
+              </svg>
+              <div class="space-y-2">
+                <div class="font-bold text-brand-oceanDark text-lg">Motivation &amp; Low-Stress Support</div>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Finding Motivating Rewards</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Positive Luring</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Low-FAS Support</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Calming Home Setup Adjustments</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-brand-ocean shrink-0 mt-1 -rotate-12" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                <path d="M16 17.5c-4.2 0-7.6 2.5-8.6 6-.5 1.9.8 3.8 2.8 3.8 1.8 0 3.6-.8 5.8-.8s4 .8 5.8.8c2 0 3.3-1.9 2.8-3.8-1-3.5-4.4-6-8.6-6z"/>
+                <ellipse cx="6.8" cy="14.5" rx="2.7" ry="3.8" transform="rotate(-24 6.8 14.5)"/>
+                <ellipse cx="12.4" cy="9.5" rx="2.9" ry="4.1" transform="rotate(-8 12.4 9.5)"/>
+                <ellipse cx="19.6" cy="9.5" rx="2.9" ry="4.1" transform="rotate(8 19.6 9.5)"/>
+                <ellipse cx="25.2" cy="14.5" rx="2.7" ry="3.8" transform="rotate(24 25.2 14.5)"/>
+              </svg>
+              <div class="space-y-2">
+                <div class="font-bold text-brand-oceanDark text-lg">Counter-Conditioning &amp; Cooperative Care</div>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Gentle Exposure</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Slow Desensitization</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Impulse Control</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Bucket Game</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Grooming Prep</span>
+                  <span class="bg-brand-seafoam/65 text-brand-oceanDark px-3 py-1 rounded-md text-sm font-semibold">Comfort-Paced Cues</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="p-7 sm:p-8 pt-0">
+        <a href="#contact" onclick="selectProgram('Fear-Free Behavior Training ($600)')" class="block w-full text-center bg-white hover:bg-brand-seafoam/50 text-brand-oceanDark border-2 border-brand-oceanDark font-bold py-4 rounded-2xl transition-all text-sm uppercase tracking-wider">
+          Choose Behavior Training
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- REDESIGNED SQUARE/CARD FEATURE BOX FOR CURRENT & GRADUATE CLIENTS WITH PHOTO -->
+  <div class="max-w-3xl mx-auto bg-white rounded-3xl border-2 border-brand-seafoamDark overflow-hidden shadow-sm mt-10">
+    <div class="grid grid-cols-1 md:grid-cols-12 items-stretch">
+      
+      <!-- Square Dog Training Photo Slot -->
+      <div class="md:col-span-5 bg-brand-seafoam/50 min-h-[260px] md:min-h-full overflow-hidden border-b md:border-b-0 md:border-r border-brand-seafoamDark/60">
+        <img 
+          src="enrichment-play.jpg" 
+          alt="Graduate dog enjoying guided enrichment and play in our shaded training yard" 
+          class="w-full h-full object-cover object-center"
+          onerror="this.onerror=null; this.src='https://placehold.co/500x500/e2f4f4/05373c?text=Add+Dog+Play+Photo+(enrichment-play.jpg)';"
+        />
+      </div>
+
+      <!-- Content & Action Side -->
+      <div class="md:col-span-7 p-7 sm:p-9 flex flex-col justify-between space-y-6">
+        <div class="space-y-3">
+          <span class="inline-block bg-brand-seafoam text-brand-ocean px-3.5 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider">
+            Exclusive for Current &amp; Graduate Clients
+          </span>
+          <h3 class="text-2xl font-display font-extrabold text-brand-oceanDark leading-snug">
+            45-Min Guided Enrichment &amp; Play Sessions &mdash; $30
+          </h3>
+          <p class="text-base text-brand-muted leading-relaxed">
+            Want extra safe playtime with a trainer who already knows your dog? Current and past clients can book 1-on-1 guided enrichment, fetch, agility games, and safe yard exploration in our private shaded space.
+          </p>
+          <p class="text-sm font-bold text-brand-oceanDark">
+            Single 1-hour training brush-up sessions are also available at $50/hr.
+          </p>
+        </div>
+
+        <a href="#contact" onclick="selectProgram('Current Client: 45-Min Enrichment Play Session ($30)')" class="block w-full text-center bg-brand-seafoam hover:bg-brand-seafoamDark text-brand-oceanDark font-bold text-sm uppercase tracking-wider px-6 py-4 rounded-2xl transition-all">
+          Request Play Session
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PREP GUIDE SECTION -->
+<section id="prep" class="py-16 px-6 max-w-5xl mx-auto space-y-10">
+  <div class="text-center space-y-3">
+    <span class="inline-block bg-brand-seafoam text-brand-ocean px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+      Prep Guide
+    </span>
+    <h2 class="text-3xl sm:text-5xl font-display font-extrabold text-brand-oceanDark">What to Pack &amp; Have Ready</h2>
+    <p class="text-base sm:text-lg text-brand-muted max-w-xl mx-auto">
+      A few simple things to help your dog feel comfortable, relaxed, and ready to learn from minute one.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- Item 01 -->
+    <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark/80 p-8 shadow-sm relative space-y-4">
+      <div class="flex items-center justify-between">
+        <span class="w-11 h-11 rounded-xl bg-brand-seafoam flex items-center justify-center font-display font-extrabold text-brand-oceanDark text-base">01</span>
+      </div>
+      <h3 class="text-xl sm:text-2xl font-display font-extrabold text-brand-oceanDark">Something Delicious</h3>
+      <p class="text-base text-brand-muted leading-relaxed">
+        Bringing high-value treats your dog loves (like small pieces of string cheese, chicken, or soft training morsels) helps us celebrate their good choices and keeps learning fun and stress-free.
+      </p>
+    </div>
+
+    <!-- Item 02 -->
+    <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark/80 p-8 shadow-sm relative space-y-4">
+      <div class="flex items-center justify-between">
+        <span class="w-11 h-11 rounded-xl bg-brand-seafoam flex items-center justify-center font-display font-extrabold text-brand-oceanDark text-base">02</span>
+      </div>
+      <h3 class="text-xl sm:text-2xl font-display font-extrabold text-brand-oceanDark">A Standard 6-Foot Leash</h3>
+      <p class="text-base text-brand-muted leading-relaxed">
+        A standard 6-foot leather or flat nylon leash allows for clear, gentle communication. We kindly ask to leave retractable leashes at home so we can practice safe, predictable leash handling together.
+      </p>
+    </div>
+
+    <!-- Item 03 -->
+    <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark/80 p-8 shadow-sm relative space-y-4">
+      <div class="flex items-center justify-between">
+        <span class="w-11 h-11 rounded-xl bg-brand-seafoam flex items-center justify-center font-display font-extrabold text-brand-oceanDark text-base">03</span>
+      </div>
+      <h3 class="text-xl sm:text-2xl font-display font-extrabold text-brand-oceanDark">Comfortable Everyday Gear</h3>
+      <p class="text-base text-brand-muted leading-relaxed">
+        Whatever collar or harness your dog currently wears day-to-day. We'll take a look at fit and comfort together during our first visit to make sure your dog feels completely at ease.
+      </p>
+    </div>
+
+    <!-- Item 04 -->
+    <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark/80 p-8 shadow-sm relative space-y-4">
+      <div class="flex items-center justify-between">
+        <span class="w-11 h-11 rounded-xl bg-brand-oceanDark text-white flex items-center justify-center font-display font-extrabold text-base">04</span>
+      </div>
+      <h3 class="text-xl sm:text-2xl font-display font-extrabold text-brand-oceanDark">A Light Meal Beforehand</h3>
+      <p class="text-base text-brand-muted leading-relaxed">
+        Consider feeding your dog about half their usual meal right before our session. A slightly empty tummy makes treats much more motivating and keeps your dog comfortable while moving around.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section id="faq" class="py-16 px-6 max-w-4xl mx-auto space-y-10">
+  <div class="text-center space-y-3">
+    <span class="text-sm font-extrabold uppercase tracking-widest text-brand-ocean">FAQ</span>
+    <h2 class="text-3xl sm:text-5xl font-display font-extrabold text-brand-oceanDark">Frequently Asked Questions</h2>
+    <p class="text-base sm:text-lg text-brand-muted max-w-xl mx-auto">Everything you need to know before starting your 6-week journey.</p>
+  </div>
+
+  <div class="space-y-5">
+    <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark/80 p-7 sm:p-8 shadow-sm space-y-2">
+      <h3 class="text-xl font-display font-bold text-brand-ocean">Where do training sessions take place?</h3>
+      <p class="text-base text-brand-muted leading-relaxed">
+        Sessions take place in your home, around your neighborhood, or in our private shaded open-air training space in Nipomo depending on your dog's specific needs and program choice.
+      </p>
+    </div>
+
+    <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark/80 p-7 sm:p-8 shadow-sm space-y-2">
+      <h3 class="text-xl font-display font-bold text-brand-ocean">Why choose Day Play &amp; Train, and how does it work?</h3>
+      <p class="text-base text-brand-muted leading-relaxed">
+        Dogs learn best in fun, focused bursts with plenty of playtime and rest—and they thrive most when they get to sleep at home with the family they love! Each week, your dog spends 4 hours in our private shaded training space for 1-on-1 training, Sniffari walks, play, and kennel enrichment while you get a well-deserved break. At pickup, I go over everything we worked on, and then we meet for a 1-hour weekly home lesson so you and your dog can practice together as a team and make every skill stick for life.
+      </p>
+    </div>
+
+    <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark/80 p-7 sm:p-8 shadow-sm space-y-2">
+      <h3 class="text-xl font-display font-bold text-brand-ocean">What training methods do you use?</h3>
+      <p class="text-base text-brand-muted leading-relaxed">
+        We use positive reinforcement and low-stress, Fear Free handling techniques. The goal is clear communication and reliable impulse control without heavy-handed coercion.
+      </p>
+    </div>
+
+    <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark/80 p-7 sm:p-8 shadow-sm space-y-2">
+      <h3 class="text-xl font-display font-bold text-brand-ocean">What areas do you serve?</h3>
+      <p class="text-base text-brand-muted leading-relaxed">
+        We serve Nipomo, Arroyo Grande, all of San Luis Obispo County, and Santa Barbara County.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SCHEDULE CONSULTATION FORM SECTION -->
+<section id="contact" class="py-16 px-6 max-w-3xl mx-auto">
+  <div class="bg-white rounded-[32px] border-2 border-brand-seafoamDark p-8 sm:p-14 shadow-sm space-y-8">
+    
+    <div class="text-center space-y-3">
+      <span class="text-sm font-extrabold uppercase tracking-widest text-brand-ocean">GET STARTED</span>
+      <h2 class="text-3xl sm:text-5xl font-display font-extrabold text-brand-oceanDark leading-tight">
+        Schedule Your Free 15-Min Phone Consultation
+      </h2>
+      <p class="text-base sm:text-lg text-brand-muted max-w-xl mx-auto leading-relaxed pt-1">
+        Fill out this quick form and I'll call you within 24 hours to chat about your dog, answer any questions, and set up your in-home assessment—zero pressure.
+      </p>
+    </div>
+
+    <form id="consultationForm" onsubmit="handleConsultationSubmit(event)" class="space-y-6 pt-2">
+      <!-- Hidden FormSubmit Configuration -->
+      <input type="hidden" name="_subject" value="New 15-Min Consultation Request - Coastline Canine Training">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" style="display:none">
+
+      <!-- Your Name -->
+      <div class="space-y-2">
+        <label for="clientName" class="block text-base font-bold text-brand-oceanDark">Your Name *</label>
+        <input id="clientName" name="Name" type="text" required placeholder="e.g. Jane Doe" 
+          class="w-full bg-[#faf9f6] border border-gray-200 rounded-xl px-4 py-3.5 text-base text-gray-800 placeholder-gray-400 focus:outline-none focus:border-brand-ocean focus:ring-1 focus:ring-brand-ocean transition-all">
+      </div>
+
+      <!-- Phone Number & Email Address -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="space-y-2">
+          <label for="clientPhone" class="block text-base font-bold text-brand-oceanDark">Phone Number *</label>
+          <input id="clientPhone" name="Phone_Number" type="tel" required placeholder="Best number for your 15-min call" 
+            class="w-full bg-[#faf9f6] border border-gray-200 rounded-xl px-4 py-3.5 text-base text-gray-800 placeholder-gray-400 focus:outline-none focus:border-brand-ocean focus:ring-1 focus:ring-brand-ocean transition-all">
+        </div>
+
+        <div class="space-y-2">
+          <label for="clientEmail" class="block text-base font-bold text-brand-oceanDark">Email Address *</label>
+          <input id="clientEmail" name="email" type="email" required placeholder="e.g. jane@example.com" 
+            class="w-full bg-[#faf9f6] border border-gray-200 rounded-xl px-4 py-3.5 text-base text-gray-800 placeholder-gray-400 focus:outline-none focus:border-brand-ocean focus:ring-1 focus:ring-brand-ocean transition-all">
+        </div>
+      </div>
+
+      <!-- Preferred Day & Time to Call -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="space-y-2">
+          <label for="preferredDay" class="block text-base font-bold text-brand-oceanDark">Preferred Day to Call</label>
+          <div class="relative">
+            <select id="preferredDay" name="Preferred_Day" 
+              class="w-full appearance-none bg-[#faf9f6] border border-gray-200 rounded-xl px-4 py-3.5 pr-10 text-base text-gray-700 focus:outline-none focus:border-brand-ocean focus:ring-1 focus:ring-brand-ocean transition-all">
+              <option value="Any Day">Any Day</option>
+              <option value="Monday">Monday</option>
+              <option value="Tuesday">Tuesday</option>
+              <option value="Wednesday">Wednesday</option>
+              <option value="Thursday">Thursday</option>
+              <option value="Friday">Friday</option>
+              <option value="Saturday">Saturday</option>
+              <option value="Sunday">Sunday</option>
+            </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-500">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <label for="preferredTime" class="block text-base font-bold text-brand-oceanDark">Preferred Time Window</label>
+          <div class="relative">
+            <select id="preferredTime" name="Preferred_Time" 
+              class="w-full appearance-none bg-[#faf9f6] border border-gray-200 rounded-xl px-4 py-3.5 pr-10 text-base text-gray-700 focus:outline-none focus:border-brand-ocean focus:ring-1 focus:ring-brand-ocean transition-all">
+              <option value="Morning (9am - 12pm)">Morning (9am - 12pm)</option>
+              <option value="Afternoon (12pm - 4pm)">Afternoon (12pm - 4pm)</option>
+              <option value="Evening (4pm - 7pm)">Evening (4pm - 7pm)</option>
+              <option value="Anytime">Anytime</option>
+            </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-500">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Program of Interest -->
+      <div class="space-y-2">
+        <label for="programSelect" class="block text-base font-bold text-brand-oceanDark">Program of Interest</label>
+        <div class="relative">
+          <select id="programSelect" name="Program_of_Interest" 
+            class="w-full appearance-none bg-[#faf9f6] border border-gray-200 rounded-xl px-4 py-3.5 pr-10 text-base text-gray-700 focus:outline-none focus:border-brand-ocean focus:ring-1 focus:ring-brand-ocean transition-all">
+            <option value="1-on-1 Private Training ($300)">1-on-1 Private Training ($300)</option>
+            <option value="Day Play & Train ($1,300)">Day Play &amp; Train ($1,300)</option>
+            <option value="Fear-Free Behavior Training ($600)">Fear-Free Behavior Training ($600)</option>
+            <option value="Current Client: 45-Min Enrichment Play Session ($30)">Current Client: 45-Min Enrichment Play Session ($30)</option>
+            <option value="Current Client: 1-Hr Brush-Up Session ($50)">Current Client: 1-Hr Brush-Up Session ($50)</option>
+            <option value="Not sure yet - Let's chat!">Not sure yet - Let's chat!</option>
+          </select>
+          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-500">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dog's Name, Age & Breed -->
+      <div class="space-y-2">
+        <label for="dogInfo" class="block text-base font-bold text-brand-oceanDark">Dog's Name, Age &amp; Breed</label>
+        <input id="dogInfo" name="Dog_Name_Age_Breed" type="text" placeholder="e.g. Milo, 1-year Golden Retriever mix" 
+          class="w-full bg-[#faf9f6] border border-gray-200 rounded-xl px-4 py-3.5 text-base text-gray-800 placeholder-gray-400 focus:outline-none focus:border-brand-ocean focus:ring-1 focus:ring-brand-ocean transition-all">
+      </div>
+
+      <!-- What would you like help with? -->
+      <div class="space-y-2">
+        <label for="helpNeeded" class="block text-base font-bold text-brand-oceanDark">What would you like help with?</label>
+        <textarea id="helpNeeded" name="Help_With" rows="4" placeholder="Tell me a little about what's going on (e.g. leash pulling, jumping, nervousness)..." 
+          class="w-full bg-[#faf9f6] border border-gray-200 rounded-xl px-4 py-3.5 text-base text-gray-800 placeholder-gray-400 focus:outline-none focus:border-brand-ocean focus:ring-1 focus:ring-brand-ocean transition-all resize-y"></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="pt-2">
+        <button id="submitBtn" type="submit" class="w-full bg-[#0d5c63] hover:bg-[#05373c] text-white font-extrabold text-sm sm:text-base tracking-widest uppercase py-4 rounded-xl shadow-sm transition-all cursor-pointer">
+          REQUEST MY FREE CONSULTATION
+        </button>
+      </div>
+
+      <!-- Confirmation Message -->
+      <div id="formFeedback" class="hidden text-center p-4 rounded-xl bg-brand-seafoam text-brand-oceanDark text-base font-semibold">
+        Thank you! Your consultation request has been sent. I'll call you during your preferred window!
+      </div>
+    </form>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-white border-t border-brand-border py-8 px-6 text-center text-sm text-brand-muted space-y-2">
+  <p>&copy; 2026 Coastline Canine Training. Serving Nipomo, Arroyo Grande, SLO County, and Santa Barbara County.</p>
+  <p>100% Fear Free Certified Dog Training &bull; <a href="tel:+18053576476" class="text-brand-ocean font-bold underline">(805) 357-6476</a> &bull; <a href="mailto:info@coastlinecaninetraining.com" class="text-brand-ocean underline">info@coastlinecaninetraining.com</a></p>
+</footer>
+
+<script>
+  function selectProgram(programName) {
+    const select = document.getElementById('programSelect');
+    if (select) {
+      select.value = programName;
+    }
+  }
+
+  async function handleConsultationSubmit(e) {
+    e.preventDefault();
+    const form = document.getElementById('consultationForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const feedback = document.getElementById('formFeedback');
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'SENDING REQUEST...';
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/info@coastlinecaninetraining.com', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json'
+        },
+        body: formData
+      });
+
+      if (response.ok) {
+        feedback.textContent = "Thank you! Your consultation request has been sent. I'll call you during your preferred window!";
+        feedback.classList.remove('hidden');
+        form.reset();
+        submitBtn.textContent = 'REQUEST SENT';
+      } else {
+        throw new Error('Submission failed');
+      }
+    } catch (error) {
+      feedback.textContent = 'Something went wrong. Please email us directly at info@coastlinecaninetraining.com or call/text (805) 357-6476.';
+      feedback.classList.remove('hidden');
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'REQUEST MY FREE CONSULTATION';
+    }
+  }
+</script>
+
+</body>
+</html>
