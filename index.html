@@ -190,32 +190,34 @@ section[id] { scroll-margin-top: 32px; }
     <!-- CARD 1: 1-ON-1 PRIVATE TRAINING -->
     <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark/80 overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
       <div>
-        <!-- Top Dog Training Photo Slot -->
-        <div class="h-48 w-full bg-brand-seafoam/50 overflow-hidden border-b border-brand-seafoamDark/60">
+        <!-- Hero-Style Photo Banner with Color Overlay & Program Title On Top -->
+        <div class="relative overflow-hidden p-7 sm:p-8 min-h-[270px] flex flex-col justify-between bg-brand-oceanDark border-b border-brand-seafoamDark/60">
           <img 
             src="program-private.jpg" 
             alt="1-on-1 private in-home dog training session" 
-            class="w-full h-full object-cover object-center"
-            onerror="this.onerror=null; this.src='https://placehold.co/600x360/e2f4f4/05373c?text=Add+1-on-1+Training+Photo+(program-private.jpg)';"
+            class="absolute inset-0 w-full h-full object-cover object-center"
+            onerror="this.style.display='none';"
           />
-        </div>
+          <div class="absolute inset-0 bg-gradient-to-b from-brand-oceanDark/75 via-brand-oceanDark/65 to-brand-oceanDark/85"></div>
 
-        <div class="p-7 sm:p-8 space-y-6">
-          <span class="inline-block bg-brand-seafoam text-brand-ocean px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
-            In-Home Private
-          </span>
-
-          <div>
-            <h3 class="text-2xl sm:text-3xl font-display font-extrabold text-brand-oceanDark leading-tight">1-on-1 Private Training</h3>
-            <p class="text-brand-muted text-base mt-2 leading-relaxed">
+          <div class="relative z-10 space-y-3">
+            <span class="inline-block bg-white/95 text-brand-oceanDark px-3.5 py-1 rounded-full text-xs font-extrabold uppercase tracking-wide shadow-sm">
+              In-Home Private
+            </span>
+            <h3 class="text-2xl sm:text-3xl font-display font-extrabold text-white leading-tight drop-shadow-sm">
+              1-on-1 Private Training
+            </h3>
+            <p class="text-white/95 text-base leading-relaxed drop-shadow-sm">
               1-on-1 weekly coaching in your home to build great manners and focus where it matters most.
             </p>
           </div>
 
-          <div class="border-b border-brand-border pb-4">
-            <div class="text-4xl sm:text-5xl font-display font-extrabold text-brand-oceanDark">$300</div>
+          <div class="relative z-10 pt-5 mt-4 border-t border-white/20">
+            <div class="text-4xl sm:text-5xl font-display font-extrabold text-brand-seafoam drop-shadow-sm">$300</div>
           </div>
+        </div>
 
+        <div class="p-7 sm:p-8">
           <!-- Scannable Visible Curriculum -->
           <ul class="space-y-5">
             <li class="flex items-start gap-3">
@@ -339,32 +341,34 @@ section[id] { scroll-margin-top: 32px; }
     <!-- CARD 2: DAY PLAY & TRAIN -->
     <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark/80 overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
       <div>
-        <!-- Top Dog Training Photo Slot -->
-        <div class="h-48 w-full bg-brand-seafoam/50 overflow-hidden border-b border-brand-seafoamDark/60">
+        <!-- Hero-Style Photo Banner with Color Overlay & Program Title On Top -->
+        <div class="relative overflow-hidden p-7 sm:p-8 min-h-[270px] flex flex-col justify-between bg-brand-oceanDark border-b border-brand-seafoamDark/60">
           <img 
             src="program-dayplay.jpg" 
             alt="Dog enjoying Day Play and Train in our shaded open-air space" 
-            class="w-full h-full object-cover object-center"
-            onerror="this.onerror=null; this.src='https://placehold.co/600x360/e2f4f4/05373c?text=Add+Day+Play+Photo+(program-dayplay.jpg)';"
+            class="absolute inset-0 w-full h-full object-cover object-center"
+            onerror="this.style.display='none';"
           />
-        </div>
+          <div class="absolute inset-0 bg-gradient-to-b from-brand-oceanDark/75 via-brand-oceanDark/65 to-brand-oceanDark/85"></div>
 
-        <div class="p-7 sm:p-8 space-y-6">
-          <span class="inline-block bg-brand-seafoam text-brand-ocean px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
-            Open-Air Space + Home
-          </span>
-
-          <div>
-            <h3 class="text-2xl sm:text-3xl font-display font-extrabold text-brand-oceanDark leading-tight">Day Play &amp; Train</h3>
-            <p class="text-brand-muted text-base mt-2 leading-relaxed">
+          <div class="relative z-10 space-y-3">
+            <span class="inline-block bg-white/95 text-brand-oceanDark px-3.5 py-1 rounded-full text-xs font-extrabold uppercase tracking-wide shadow-sm">
+              Open-Air Space + Home
+            </span>
+            <h3 class="text-2xl sm:text-3xl font-display font-extrabold text-white leading-tight drop-shadow-sm">
+              Day Play &amp; Train
+            </h3>
+            <p class="text-white/95 text-base leading-relaxed drop-shadow-sm">
               Weekly day training in our private shaded open-air space plus in-home coaching with you.
             </p>
           </div>
 
-          <div class="border-b border-brand-border pb-4">
-            <div class="text-4xl sm:text-5xl font-display font-extrabold text-brand-oceanDark">$1,300</div>
+          <div class="relative z-10 pt-5 mt-4 border-t border-white/20">
+            <div class="text-4xl sm:text-5xl font-display font-extrabold text-brand-seafoam drop-shadow-sm">$1,300</div>
           </div>
+        </div>
 
+        <div class="p-7 sm:p-8">
           <!-- Scannable Visible Curriculum -->
           <ul class="space-y-5">
             <li class="flex items-start gap-3">
@@ -461,36 +465,35 @@ section[id] { scroll-margin-top: 32px; }
     <!-- CARD 3: FEAR-FREE BEHAVIOR TRAINING -->
     <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark/80 overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
       <div>
-        <!-- Top Dog Training Photo Slot -->
-        <div class="h-48 w-full bg-brand-seafoam/50 overflow-hidden border-b border-brand-seafoamDark/60">
+        <!-- Hero-Style Photo Banner with Color Overlay & Program Title On Top -->
+        <div class="relative overflow-hidden p-7 sm:p-8 min-h-[270px] flex flex-col justify-between bg-brand-oceanDark border-b border-brand-seafoamDark/60">
           <img 
             src="program-behavior.jpg" 
             alt="Fear-Free behavior training session" 
-            class="w-full h-full object-cover object-center"
-            onerror="this.onerror=null; this.src='https://placehold.co/600x360/e2f4f4/05373c?text=Add+Behavior+Training+Photo+(program-behavior.jpg)';"
+            class="absolute inset-0 w-full h-full object-cover object-center"
+            onerror="this.style.display='none';"
           />
-        </div>
+          <div class="absolute inset-0 bg-gradient-to-b from-brand-oceanDark/75 via-brand-oceanDark/65 to-brand-oceanDark/85"></div>
 
-        <div class="p-7 sm:p-8 space-y-6">
-          <span class="inline-block bg-brand-seafoam text-brand-ocean px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
-            Behavioral Focus
-          </span>
-
-          <div>
-            <!-- Stacked Cleanly: Fear-Free on Top, Behavior Training on Bottom -->
-            <h3 class="text-2xl sm:text-3xl font-display font-extrabold text-brand-oceanDark leading-tight">
+          <div class="relative z-10 space-y-3">
+            <span class="inline-block bg-white/95 text-brand-oceanDark px-3.5 py-1 rounded-full text-xs font-extrabold uppercase tracking-wide shadow-sm">
+              Behavioral Focus
+            </span>
+            <h3 class="text-2xl sm:text-3xl font-display font-extrabold text-white leading-tight drop-shadow-sm">
               <span class="block">Fear-Free</span>
               <span class="block">Behavior Training</span>
             </h3>
-            <p class="text-brand-muted text-base mt-2 leading-relaxed">
+            <p class="text-white/95 text-base leading-relaxed drop-shadow-sm">
               Twice-weekly 1-on-1 help for barking, jumping, anxious behavior, and low-to-moderate reactivity.
             </p>
           </div>
 
-          <div class="border-b border-brand-border pb-4">
-            <div class="text-4xl sm:text-5xl font-display font-extrabold text-brand-oceanDark">$600</div>
+          <div class="relative z-10 pt-5 mt-4 border-t border-white/20">
+            <div class="text-4xl sm:text-5xl font-display font-extrabold text-brand-seafoam drop-shadow-sm">$600</div>
           </div>
+        </div>
 
+        <div class="p-7 sm:p-8">
           <!-- Scannable Visible Curriculum -->
           <ul class="space-y-5">
             <li class="flex items-start gap-3">
@@ -593,42 +596,34 @@ section[id] { scroll-margin-top: 32px; }
 
   </div>
 
-  <!-- REDESIGNED SQUARE/CARD FEATURE BOX FOR CURRENT & GRADUATE CLIENTS WITH PHOTO -->
-  <div class="max-w-3xl mx-auto bg-white rounded-3xl border-2 border-brand-seafoamDark overflow-hidden shadow-sm mt-10">
-    <div class="grid grid-cols-1 md:grid-cols-12 items-stretch">
-      
-      <!-- Square Dog Training Photo Slot -->
-      <div class="md:col-span-5 bg-brand-seafoam/50 min-h-[260px] md:min-h-full overflow-hidden border-b md:border-b-0 md:border-r border-brand-seafoamDark/60">
-        <img 
-          src="enrichment-play.jpg" 
-          alt="Graduate dog enjoying guided enrichment and play in our shaded training yard" 
-          class="w-full h-full object-cover object-center"
-          onerror="this.onerror=null; this.src='https://placehold.co/500x500/e2f4f4/05373c?text=Add+Dog+Play+Photo+(enrichment-play.jpg)';"
-        />
-      </div>
+  <!-- HERO-STYLE SQUARE BOX FOR CURRENT & GRADUATE CLIENTS WITH BACKGROUND PHOTO + OVERLAY -->
+  <div class="relative max-w-2xl mx-auto rounded-3xl border-2 border-brand-seafoamDark overflow-hidden shadow-md mt-10 bg-brand-oceanDark p-8 sm:p-12 text-center">
+    <img 
+      src="enrichment-play.jpg" 
+      alt="Graduate dog enjoying guided enrichment and play in our shaded training yard" 
+      class="absolute inset-0 w-full h-full object-cover object-center"
+      onerror="this.style.display='none';"
+    />
+    <div class="absolute inset-0 bg-gradient-to-b from-brand-oceanDark/75 via-brand-oceanDark/65 to-brand-oceanDark/85"></div>
 
-      <!-- Content & Action Side -->
-      <div class="md:col-span-7 p-7 sm:p-9 flex flex-col justify-between space-y-6">
-        <div class="space-y-3">
-          <span class="inline-block bg-brand-seafoam text-brand-ocean px-3.5 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider">
-            Exclusive for Current &amp; Graduate Clients
-          </span>
-          <h3 class="text-2xl font-display font-extrabold text-brand-oceanDark leading-snug">
-            45-Min Guided Enrichment &amp; Play Sessions &mdash; $30
-          </h3>
-          <p class="text-base text-brand-muted leading-relaxed">
-            Want extra safe playtime with a trainer who already knows your dog? Current and past clients can book 1-on-1 guided enrichment, fetch, agility games, and safe yard exploration in our private shaded space.
-          </p>
-          <p class="text-sm font-bold text-brand-oceanDark">
-            Single 1-hour training brush-up sessions are also available at $50/hr.
-          </p>
-        </div>
-
-        <a href="#contact" onclick="selectProgram('Current Client: 45-Min Enrichment Play Session ($30)')" class="block w-full text-center bg-brand-seafoam hover:bg-brand-seafoamDark text-brand-oceanDark font-bold text-sm uppercase tracking-wider px-6 py-4 rounded-2xl transition-all">
+    <div class="relative z-10 space-y-5 max-w-xl mx-auto">
+      <span class="inline-block bg-white/95 text-brand-oceanDark px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider shadow-sm">
+        Exclusive for Current &amp; Graduate Clients
+      </span>
+      <h3 class="text-2xl sm:text-3xl font-display font-extrabold text-white leading-snug drop-shadow-sm">
+        45-Min Guided Enrichment &amp; Play Sessions &mdash; <span class="text-brand-seafoam">$30</span>
+      </h3>
+      <p class="text-base sm:text-lg text-white/95 leading-relaxed drop-shadow-sm">
+        Want extra safe playtime with a trainer who already knows your dog? Current and past clients can book 1-on-1 guided enrichment, fetch, agility games, and safe yard exploration in our private shaded space.
+      </p>
+      <p class="text-sm sm:text-base font-bold text-brand-seafoam">
+        Single 1-hour training brush-up sessions are also available at $50/hr.
+      </p>
+      <div class="pt-2">
+        <a href="#contact" onclick="selectProgram('Current Client: 45-Min Enrichment Play Session ($30)')" class="inline-block w-full sm:w-auto bg-white hover:bg-brand-seafoam text-brand-oceanDark font-extrabold text-sm uppercase tracking-wider px-8 py-4 rounded-2xl shadow-lg transition-all">
           Request Play Session
         </a>
       </div>
-
     </div>
   </div>
 </section>
