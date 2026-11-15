@@ -9,7 +9,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;1,6..12,400&display=swap" rel="stylesheet">
 
 <script>
 tailwind.config = {
@@ -28,8 +28,8 @@ tailwind.config = {
         }
       },
       fontFamily: {
-        sans: ['Instrument Sans', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
-        display: ['Bricolage Grotesque', 'sans-serif']
+        sans: ['Nunito Sans', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        display: ['Fredoka', 'sans-serif']
       }
     }
   }
@@ -39,16 +39,21 @@ tailwind.config = {
 <style>
 html { scroll-behavior: smooth; }
 body { background-color: #f7fbfb; color: #2d3748; }
-section[id] { scroll-margin-top: 90px; }
+section[id] { scroll-margin-top: 32px; }
 </style>
 </head>
 
 <body class="min-h-screen flex flex-col justify-between antialiased font-sans">
 
-<!-- TOP NAVIGATION BAR -->
-<nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-brand-seafoamDark shadow-sm">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
-    <a href="#" class="font-display font-extrabold text-xl sm:text-2xl text-brand-oceanDark flex items-center gap-2.5 tracking-tight">
+<!-- TOP SERVICE AREA RIBBON (REPLACES GENERIC STICKY FLOATING BAR) -->
+<div class="bg-brand-oceanDark text-brand-seafoam text-[11px] sm:text-xs font-semibold tracking-wide py-2.5 px-4 text-center">
+  100% Fear Free Certified &bull; Nipomo, Arroyo Grande, Santa Maria &amp; South SLO County
+</div>
+
+<!-- CLEAN EDITORIAL HEADER (SCROLLS NATURALLY WITH PAGE) -->
+<header class="bg-white border-b border-brand-seafoamDark/70">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <a href="#" class="font-display font-bold text-2xl sm:text-[26px] text-brand-oceanDark flex items-center gap-2.5 tracking-tight">
       <svg class="w-7 h-7 text-brand-ocean shrink-0 -rotate-12" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
         <path d="M16 17.5c-4.2 0-7.6 2.5-8.6 6-.5 1.9.8 3.8 2.8 3.8 1.8 0 3.6-.8 5.8-.8s4 .8 5.8.8c2 0 3.3-1.9 2.8-3.8-1-3.5-4.4-6-8.6-6z"/>
         <ellipse cx="6.8" cy="14.5" rx="2.7" ry="3.8" transform="rotate(-24 6.8 14.5)"/>
@@ -59,65 +64,60 @@ section[id] { scroll-margin-top: 90px; }
       <span>Coastline Canine</span>
     </a>
 
-    <div class="hidden md:flex items-center gap-8 font-semibold text-sm text-brand-oceanDark">
-      <a href="#about" class="hover:text-brand-ocean transition-colors">Meet Trainer</a>
+    <nav class="flex flex-wrap items-center justify-center gap-5 sm:gap-8 font-bold text-xs sm:text-sm text-brand-oceanDark">
+      <a href="#about" class="hover:text-brand-ocean transition-colors">Meet Kris</a>
       <a href="#programs" class="hover:text-brand-ocean transition-colors">Programs &amp; Pricing</a>
       <a href="#prep" class="hover:text-brand-ocean transition-colors">Prep Guide</a>
       <a href="#faq" class="hover:text-brand-ocean transition-colors">FAQ</a>
-    </div>
-
-    <div>
-      <a href="#contact" class="bg-brand-ocean hover:bg-brand-oceanDark text-white font-bold text-xs sm:text-sm px-4 sm:px-5 py-2.5 rounded-xl shadow-sm transition-all">
-        Free Consultation
+      <a href="#contact" class="bg-brand-seafoam hover:bg-brand-seafoamDark text-brand-oceanDark px-4 py-2 rounded-full transition-colors">
+        Free Consult
       </a>
-    </div>
-  </div>
-</nav>
-
-<!-- HERO SECTION WITH FLOATING TEXT OVER JACK BEACH IMAGE -->
-<header class="relative overflow-hidden min-h-[520px] sm:min-h-[600px] flex items-center justify-center px-4 sm:px-6 py-16 sm:py-24 text-center border-b border-brand-seafoamDark bg-brand-oceanDark">
-  
-  <!-- Background Image of Jack Running on the Beach (Aligned Left) -->
-  <img 
-    src="jack-running.jpg" 
-    alt="Aussie Heeler mix Jack happily running along the Central Coast ocean shoreline" 
-    class="absolute inset-0 w-full h-full object-cover object-left"
-    onerror="this.onerror=null; this.src='https://placehold.co/1600x900/05373c/e2f4f4?text=Jack+Running+on+the+Central+Coast+Beach';"
-  />
-
-  <!-- Soft Dark Ocean Gradient Overlay so Floating Text is Always Easy to Read -->
-  <div class="absolute inset-0 bg-gradient-to-b from-brand-oceanDark/70 via-brand-oceanDark/55 to-brand-oceanDark/75"></div>
-
-  <!-- Floating Center Content -->
-  <div class="relative z-10 max-w-4xl mx-auto space-y-6 sm:space-y-8">
-    
-    <!-- Location Badge -->
-    <div class="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-white/95 backdrop-blur-sm px-3.5 sm:px-4 py-2 sm:py-1.5 rounded-2xl sm:rounded-full border border-brand-seafoamDark text-brand-oceanDark text-[11px] sm:text-xs font-bold uppercase tracking-wider sm:tracking-widest shadow-md max-w-md sm:max-w-none mx-auto leading-snug">
-      <span>100% Fear Free &bull; Nipomo, Arroyo Grande, Santa Maria &amp; South SLO County</span>
-    </div>
-
-    <!-- Floating Headline & Sub-text -->
-    <div class="space-y-4 max-w-3xl mx-auto px-1">
-      <h1 class="text-3xl sm:text-5xl md:text-6xl font-display font-extrabold text-white tracking-tight leading-tight drop-shadow-md">
-        Helping Central Coast Dogs <br class="hidden sm:inline"><span class="text-brand-seafoam">Put Their Best Paw Forward</span>
-      </h1>
-
-      <p class="text-sm sm:text-lg text-white/95 max-w-2xl mx-auto font-medium leading-relaxed drop-shadow">
-        With positive reinforcement and gentle Fear Free guidance, we help your dog trade jumping and leash pulling for strong foundations, a closer bond, and confident wiggle butts.
-      </p>
-    </div>
-
-    <!-- Call to Action Buttons -->
-    <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-4 pt-2">
-      <a href="#contact" class="w-full sm:w-auto bg-brand-ocean hover:bg-brand-oceanDark text-white border-2 border-brand-seafoam/30 font-bold px-8 py-4 rounded-2xl shadow-lg transition-all text-center text-sm sm:text-base">
-        Book Your Free 15 Min Consultation
-      </a>
-      <a href="#programs" class="w-full sm:w-auto bg-white/95 hover:bg-white text-brand-oceanDark font-bold px-8 py-4 rounded-2xl shadow-lg transition-all text-center text-sm sm:text-base">
-        Explore 6-Week Programs
-      </a>
-    </div>
+    </nav>
   </div>
 </header>
+
+<!-- ASYMMETRIC SPLIT HERO SECTION (UNOBSTRUCTED BEACH PHOTO + AIRY LAYOUT) -->
+<section class="bg-gradient-to-b from-white via-brand-sand to-[#f7fbfb] border-b border-brand-seafoamDark/70 py-12 sm:py-20 px-4 sm:px-6">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+    
+    <!-- Left Column: Copy & Actions -->
+    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+      <div class="inline-block bg-brand-seafoam text-brand-oceanDark px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+        Positive Reinforcement &bull; In-Home &amp; Day Play
+      </div>
+
+      <h1 class="text-4xl sm:text-5xl lg:text-[54px] font-display font-bold text-brand-oceanDark tracking-tight leading-[1.12]">
+        Helping Central Coast Dogs <span class="text-brand-ocean">Put Their Best Paw Forward</span>
+      </h1>
+
+      <p class="text-base sm:text-lg text-brand-muted max-w-xl mx-auto lg:mx-0 leading-relaxed">
+        With positive reinforcement and gentle Fear Free guidance, we help your dog trade jumping and leash pulling for strong foundations, a closer bond, and confident wiggle butts.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
+        <a href="#contact" class="w-full sm:w-auto bg-brand-ocean hover:bg-brand-oceanDark text-white font-bold px-7 py-4 rounded-2xl shadow-sm transition-all text-center text-sm sm:text-base">
+          Book Your Free 15 Min Consultation
+        </a>
+        <a href="#programs" class="w-full sm:w-auto bg-white hover:bg-brand-seafoam/40 text-brand-oceanDark border-2 border-brand-seafoamDark font-bold px-7 py-4 rounded-2xl transition-all text-center text-sm sm:text-base">
+          Explore 6-Week Programs
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Column: Framed Unobstructed Photo of Jack -->
+    <div class="lg:col-span-5">
+      <div class="relative rounded-[32px] overflow-hidden border-4 border-white shadow-lg bg-brand-seafoam/40 aspect-[4/3] sm:aspect-[4/3] lg:aspect-[4/4]">
+        <img 
+          src="jack-running.jpg" 
+          alt="Aussie Heeler mix Jack happily running along the Central Coast ocean shoreline" 
+          class="w-full h-full object-cover object-left"
+          onerror="this.onerror=null; this.src='https://placehold.co/800x800/e2f4f4/05373c?text=Jack+on+the+Central+Coast+Beach';"
+        />
+      </div>
+    </div>
+
+  </div>
+</section>
 
 <!-- ABOUT ME -->
 <section id="about" class="py-16 px-6 max-w-4xl mx-auto">
@@ -148,7 +148,7 @@ section[id] { scroll-margin-top: 90px; }
 
         <!-- RIGHT COLUMN: Hi, I'm Kris! Directly Above Bio Story -->
         <div class="space-y-3 text-left">
-          <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-brand-oceanDark leading-tight text-center md:text-left">
+          <h2 class="text-3xl sm:text-4xl font-display font-bold text-brand-oceanDark leading-tight text-center md:text-left">
             Hi, I’m Kris!
           </h2>
 
@@ -169,7 +169,7 @@ section[id] { scroll-margin-top: 90px; }
 
       <!-- FULL-WIDTH BOTTOM CALLOUT -->
       <div class="bg-brand-seafoam/40 rounded-2xl p-5 border border-brand-seafoamDark space-y-1">
-        <h3 class="font-display font-bold text-brand-oceanDark text-base sm:text-lg">100% Fear Free Guarantee</h3>
+        <h3 class="font-display font-semibold text-brand-oceanDark text-base sm:text-lg">100% Fear Free Guarantee</h3>
         <p class="text-xs sm:text-sm text-brand-muted leading-relaxed">
           No shock collars, prong collars, e-collars, or intimidation—ever. Just positive reinforcement, clear communication, and gentle leads paired with proper desensitization so your dog always feels safe and confident.
         </p>
@@ -182,7 +182,7 @@ section[id] { scroll-margin-top: 90px; }
 <section id="programs" class="py-16 px-4 sm:px-6 max-w-6xl mx-auto space-y-8">
   <div class="text-center space-y-2">
     <span class="text-xs font-bold uppercase tracking-widest text-brand-ocean">Programs &amp; Pricing</span>
-    <h2 class="text-3xl sm:text-5xl font-display font-extrabold text-brand-oceanDark">6-Week Training Programs</h2>
+    <h2 class="text-3xl sm:text-5xl font-display font-bold text-brand-oceanDark">6-Week Training Programs</h2>
     <p class="text-sm sm:text-base text-brand-muted max-w-2xl mx-auto">
       All in-home coaching is based on an approachable <strong class="text-brand-oceanDark">$50/hour rate</strong>, with a complimentary 45-minute in-home assessment included in every 6-week package.
     </p>
@@ -198,14 +198,14 @@ section[id] { scroll-margin-top: 90px; }
         </span>
 
         <div>
-          <h3 class="text-2xl font-display font-extrabold text-brand-oceanDark">Private Foundations</h3>
+          <h3 class="text-2xl font-display font-bold text-brand-oceanDark">Private Foundations</h3>
           <p class="text-brand-muted text-xs sm:text-sm mt-1">
             1-on-1 weekly coaching in your home to build great manners and focus where it matters most.
           </p>
         </div>
 
         <div class="border-b border-brand-border pb-4">
-          <div class="text-4xl sm:text-5xl font-display font-extrabold text-brand-oceanDark">$300</div>
+          <div class="text-4xl sm:text-5xl font-display font-bold text-brand-oceanDark">$300</div>
         </div>
 
         <!-- Scannable Visible Curriculum with Paw Print Icons -->
@@ -339,14 +339,14 @@ section[id] { scroll-margin-top: 90px; }
         </span>
 
         <div>
-          <h3 class="text-2xl font-display font-extrabold text-brand-oceanDark">Day Play &amp; Train</h3>
+          <h3 class="text-2xl font-display font-bold text-brand-oceanDark">Day Play &amp; Train</h3>
           <p class="text-brand-muted text-xs sm:text-sm mt-1">
             Weekly day training in our private shaded open-air space plus in-home coaching with you.
           </p>
         </div>
 
         <div class="border-b border-brand-border pb-4">
-          <div class="text-4xl sm:text-5xl font-display font-extrabold text-brand-oceanDark">$1,300</div>
+          <div class="text-4xl sm:text-5xl font-display font-bold text-brand-oceanDark">$1,300</div>
         </div>
 
         <!-- Scannable Visible Curriculum with Paw Print Icons -->
@@ -452,14 +452,14 @@ section[id] { scroll-margin-top: 90px; }
         </span>
 
         <div>
-          <h3 class="text-2xl font-display font-extrabold text-brand-oceanDark">Fear-Free Behavior Training</h3>
+          <h3 class="text-2xl font-display font-bold text-brand-oceanDark">Fear-Free Behavior Training</h3>
           <p class="text-brand-muted text-xs sm:text-sm mt-1">
             Twice-weekly 1-on-1 help for barking, jumping, anxious behavior, and low-to-moderate reactivity.
           </p>
         </div>
 
         <div class="border-b border-brand-border pb-4">
-          <div class="text-4xl sm:text-5xl font-display font-extrabold text-brand-oceanDark">$600</div>
+          <div class="text-4xl sm:text-5xl font-display font-bold text-brand-oceanDark">$600</div>
         </div>
 
         <!-- Scannable Visible Curriculum with Paw Print Icons -->
@@ -593,7 +593,7 @@ section[id] { scroll-margin-top: 90px; }
     <span class="inline-block bg-brand-seafoam text-brand-ocean px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
       Prep Guide
     </span>
-    <h2 class="text-3xl sm:text-5xl font-display font-extrabold text-brand-oceanDark">What to Pack &amp; Have Ready</h2>
+    <h2 class="text-3xl sm:text-5xl font-display font-bold text-brand-oceanDark">What to Pack &amp; Have Ready</h2>
     <p class="text-sm sm:text-base text-brand-muted max-w-xl mx-auto">
       A few simple things to help your dog feel comfortable, relaxed, and ready to learn from minute one.
     </p>
@@ -650,34 +650,34 @@ section[id] { scroll-margin-top: 90px; }
 <section id="faq" class="py-16 px-6 max-w-4xl mx-auto space-y-10">
   <div class="text-center space-y-3">
     <span class="text-xs font-bold uppercase tracking-widest text-brand-ocean">FAQ</span>
-    <h2 class="text-3xl sm:text-5xl font-display font-extrabold text-brand-oceanDark">Frequently Asked Questions</h2>
+    <h2 class="text-3xl sm:text-5xl font-display font-bold text-brand-oceanDark">Frequently Asked Questions</h2>
     <p class="text-sm sm:text-base text-brand-muted max-w-xl mx-auto">Everything you need to know before starting your 6-week journey.</p>
   </div>
 
   <div class="space-y-4">
     <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark/80 p-6 sm:p-8 shadow-sm space-y-2">
-      <h3 class="text-lg font-display font-bold text-brand-ocean">Where do training sessions take place?</h3>
+      <h3 class="text-lg font-display font-semibold text-brand-ocean">Where do training sessions take place?</h3>
       <p class="text-xs sm:text-sm text-brand-muted leading-relaxed">
         Sessions take place in your home, around your neighborhood, or in our private shaded open-air training space in Nipomo depending on your dog's specific needs and program choice.
       </p>
     </div>
 
     <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark/80 p-6 sm:p-8 shadow-sm space-y-2">
-      <h3 class="text-lg font-display font-bold text-brand-ocean">Why choose Day Play &amp; Train, and how does it work?</h3>
+      <h3 class="text-lg font-display font-semibold text-brand-ocean">Why choose Day Play &amp; Train, and how does it work?</h3>
       <p class="text-xs sm:text-sm text-brand-muted leading-relaxed">
         Dogs learn best in fun, focused bursts with plenty of playtime and rest—and they thrive most when they get to sleep at home with the family they love! Each week, your dog spends 4 hours in our private shaded training space for 1-on-1 training, Sniffari walks, play, and kennel enrichment while you get a well-deserved break. At pickup, I go over everything we worked on, and then we meet for a 1-hour weekly home lesson so you and your dog can practice together as a team and make every skill stick for life.
       </p>
     </div>
 
     <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark/80 p-6 sm:p-8 shadow-sm space-y-2">
-      <h3 class="text-lg font-display font-bold text-brand-ocean">What training methods do you use?</h3>
+      <h3 class="text-lg font-display font-semibold text-brand-ocean">What training methods do you use?</h3>
       <p class="text-xs sm:text-sm text-brand-muted leading-relaxed">
         We use positive reinforcement and low-stress, Fear Free handling techniques. The goal is clear communication and reliable impulse control without heavy-handed coercion.
       </p>
     </div>
 
     <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark/80 p-6 sm:p-8 shadow-sm space-y-2">
-      <h3 class="text-lg font-display font-bold text-brand-ocean">What areas do you serve?</h3>
+      <h3 class="text-lg font-display font-semibold text-brand-ocean">What areas do you serve?</h3>
       <p class="text-xs sm:text-sm text-brand-muted leading-relaxed">
         Primary service areas include Nipomo, Santa Maria, Arroyo Grande, and surrounding South San Luis Obispo County locations.
       </p>
@@ -691,7 +691,7 @@ section[id] { scroll-margin-top: 90px; }
     
     <div class="text-center space-y-3">
       <span class="text-xs font-bold uppercase tracking-widest text-brand-ocean">GET STARTED</span>
-      <h2 class="text-3xl sm:text-5xl font-display font-extrabold text-brand-oceanDark leading-tight">
+      <h2 class="text-3xl sm:text-5xl font-display font-bold text-brand-oceanDark leading-tight">
         Schedule Your Free 15-Min Phone Consultation
       </h2>
       <p class="text-xs sm:text-base text-brand-muted max-w-xl mx-auto leading-relaxed pt-1">
