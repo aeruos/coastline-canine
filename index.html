@@ -45,7 +45,7 @@ section[id] { scroll-margin-top: 32px; }
 
 <body class="min-h-screen flex flex-col justify-between antialiased font-sans">
 
-<!-- TOP SERVICE AREA RIBBON (REPLACES GENERIC STICKY FLOATING BAR) -->
+<!-- TOP SERVICE AREA RIBBON -->
 <div class="bg-brand-oceanDark text-brand-seafoam text-[11px] sm:text-xs font-semibold tracking-wide py-2.5 px-4 text-center">
   100% Fear Free Certified &bull; Nipomo, Arroyo Grande, Santa Maria &amp; South SLO County
 </div>
@@ -76,46 +76,48 @@ section[id] { scroll-margin-top: 32px; }
   </div>
 </header>
 
-<!-- ASYMMETRIC SPLIT HERO SECTION (UNOBSTRUCTED BEACH PHOTO + AIRY LAYOUT) -->
-<section class="bg-gradient-to-b from-white via-brand-sand to-[#f7fbfb] border-b border-brand-seafoamDark/70 py-12 sm:py-20 px-4 sm:px-6">
-  <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-    
-    <!-- Left Column: Copy & Actions -->
-    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-      <div class="inline-block bg-brand-seafoam text-brand-oceanDark px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
-        Positive Reinforcement &bull; In-Home &amp; Day Play
-      </div>
+<!-- FULL-WIDTH HERO SECTION WITH JACK RUNNING ON THE BEACH -->
+<section class="relative overflow-hidden min-h-[520px] sm:min-h-[600px] flex items-center justify-center px-4 sm:px-6 py-16 sm:py-24 text-center border-b border-brand-seafoamDark bg-brand-oceanDark">
+  
+  <!-- Background Image of Jack Running on the Beach (Aligned Left) -->
+  <img 
+    src="jack-running.jpg" 
+    alt="Aussie Heeler mix Jack happily running along the Central Coast ocean shoreline" 
+    class="absolute inset-0 w-full h-full object-cover object-left"
+    onerror="this.onerror=null; this.src='https://placehold.co/1600x900/05373c/e2f4f4?text=Jack+Running+on+the+Central+Coast+Beach';"
+  />
 
-      <h1 class="text-4xl sm:text-5xl lg:text-[54px] font-display font-bold text-brand-oceanDark tracking-tight leading-[1.12]">
-        Helping Central Coast Dogs <span class="text-brand-ocean">Put Their Best Paw Forward</span>
+  <!-- Soft Dark Ocean Gradient Overlay so Floating Text is Always Easy to Read -->
+  <div class="absolute inset-0 bg-gradient-to-b from-brand-oceanDark/70 via-brand-oceanDark/55 to-brand-oceanDark/75"></div>
+
+  <!-- Floating Center Content -->
+  <div class="relative z-10 max-w-4xl mx-auto space-y-6 sm:space-y-8">
+    
+    <!-- Location Badge -->
+    <div class="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-white/95 backdrop-blur-sm px-3.5 sm:px-4 py-2 sm:py-1.5 rounded-2xl sm:rounded-full border border-brand-seafoamDark text-brand-oceanDark text-[11px] sm:text-xs font-extrabold uppercase tracking-wider sm:tracking-widest shadow-md max-w-md sm:max-w-none mx-auto leading-snug">
+      <span>100% Fear Free &bull; Nipomo, Arroyo Grande, Santa Maria &amp; South SLO County</span>
+    </div>
+
+    <!-- Floating Headline & Sub-text -->
+    <div class="space-y-4 max-w-3xl mx-auto px-1">
+      <h1 class="text-3xl sm:text-5xl md:text-6xl font-display font-bold text-white tracking-tight leading-tight drop-shadow-md">
+        Helping Central Coast Dogs <br class="hidden sm:inline"><span class="text-brand-seafoam">Put Their Best Paw Forward</span>
       </h1>
 
-      <p class="text-base sm:text-lg text-brand-muted max-w-xl mx-auto lg:mx-0 leading-relaxed">
+      <p class="text-sm sm:text-lg text-white/95 max-w-2xl mx-auto font-medium leading-relaxed drop-shadow">
         With positive reinforcement and gentle Fear Free guidance, we help your dog trade jumping and leash pulling for strong foundations, a closer bond, and confident wiggle butts.
       </p>
-
-      <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
-        <a href="#contact" class="w-full sm:w-auto bg-brand-ocean hover:bg-brand-oceanDark text-white font-bold px-7 py-4 rounded-2xl shadow-sm transition-all text-center text-sm sm:text-base">
-          Book Your Free 15 Min Consultation
-        </a>
-        <a href="#programs" class="w-full sm:w-auto bg-white hover:bg-brand-seafoam/40 text-brand-oceanDark border-2 border-brand-seafoamDark font-bold px-7 py-4 rounded-2xl transition-all text-center text-sm sm:text-base">
-          Explore 6-Week Programs
-        </a>
-      </div>
     </div>
 
-    <!-- Right Column: Framed Unobstructed Photo of Jack -->
-    <div class="lg:col-span-5">
-      <div class="relative rounded-[32px] overflow-hidden border-4 border-white shadow-lg bg-brand-seafoam/40 aspect-[4/3] sm:aspect-[4/3] lg:aspect-[4/4]">
-        <img 
-          src="jack-running.jpg" 
-          alt="Aussie Heeler mix Jack happily running along the Central Coast ocean shoreline" 
-          class="w-full h-full object-cover object-left"
-          onerror="this.onerror=null; this.src='https://placehold.co/800x800/e2f4f4/05373c?text=Jack+on+the+Central+Coast+Beach';"
-        />
-      </div>
+    <!-- Call to Action Buttons -->
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-4 pt-2">
+      <a href="#contact" class="w-full sm:w-auto bg-brand-ocean hover:bg-brand-oceanDark text-white border-2 border-brand-seafoam/30 font-bold px-8 py-4 rounded-2xl shadow-lg transition-all text-center text-sm sm:text-base">
+        Book Your Free 15 Min Consultation
+      </a>
+      <a href="#programs" class="w-full sm:w-auto bg-white/95 hover:bg-white text-brand-oceanDark font-bold px-8 py-4 rounded-2xl shadow-lg transition-all text-center text-sm sm:text-base">
+        Explore 6-Week Programs
+      </a>
     </div>
-
   </div>
 </section>
 
