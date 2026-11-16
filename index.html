@@ -193,26 +193,30 @@ section[id] { scroll-margin-top: 32px; }
 <!-- PRICING & PROGRAMS SECTION -->
 <section id="programs" class="py-16 px-4 sm:px-6 max-w-6xl mx-auto space-y-10">
   
-  <!-- WIDE PHOTO BANNER BAR FOR PROGRAMS & PRICING -->
-  <div class="relative overflow-hidden rounded-3xl border-2 border-brand-seafoamDark shadow-sm min-h-[240px] sm:min-h-[280px] flex items-center justify-center px-6 py-12 text-center bg-brand-oceanDark">
+  <!-- WIDE PHOTO BANNER WITH FLOATING TEXT CARD ON LEFT (SO DOG ON RIGHT IS UNOBSTRUCTED) -->
+  <div class="relative overflow-hidden rounded-3xl border-4 border-brand-seafoamDark shadow-sm min-h-[340px] sm:min-h-[400px] flex items-center justify-center md:justify-start p-6 sm:p-10 md:p-12 bg-brand-oceanDark">
+    
+    <!-- Background Dog Photo (Aligned Right so the Dog Stays in the Open Area) -->
     <img 
       src="programs-banner.jpg" 
       alt="Happy dog training outdoors on the Central Coast" 
-      class="absolute inset-0 w-full h-full object-cover object-center"
+      class="absolute inset-0 w-full h-full object-cover object-right"
       onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1600&q=80';"
     />
-    <!-- Matching Coastal Ocean Gradient Overlay -->
-    <div class="absolute inset-0 bg-gradient-to-b from-brand-oceanDark/75 via-brand-oceanDark/60 to-brand-oceanDark/80 pointer-events-none"></div>
 
-    <div class="relative z-10 max-w-3xl mx-auto space-y-3">
-      <span class="inline-block bg-brand-seafoam/95 text-brand-oceanDark px-4 py-1 rounded-full text-xs sm:text-sm font-extrabold uppercase tracking-widest shadow-sm">
+    <!-- Subtle Vignette Overlay so the Dog Photo Stays Bright & Clear -->
+    <div class="absolute inset-0 photo-edge-vignette pointer-events-none"></div>
+
+    <!-- Floating Text Card Inside the Picture (Tucked to the Left) -->
+    <div class="relative z-10 w-full max-w-xl bg-white/95 backdrop-blur-md rounded-2xl border-2 border-brand-seafoamDark p-6 sm:p-8 shadow-lg space-y-3 text-center md:text-left">
+      <span class="inline-block bg-brand-seafoam text-brand-ocean px-3.5 py-1 rounded-full text-xs font-extrabold uppercase tracking-widest">
         Programs &amp; Pricing
       </span>
-      <h2 class="text-3xl sm:text-5xl font-display font-extrabold text-white tracking-tight drop-shadow-md">
+      <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-brand-oceanDark tracking-tight leading-tight">
         6-Week Training Programs
       </h2>
-      <p class="text-base sm:text-lg text-white/95 max-w-2xl mx-auto leading-relaxed drop-shadow">
-        All in-home coaching is based on an approachable <strong class="text-brand-seafoam font-extrabold">$50/hour rate</strong>, with a complimentary 45-minute in-home assessment included in every 6-week package.
+      <p class="text-base sm:text-lg text-brand-muted leading-relaxed">
+        All in-home coaching is based on an approachable <strong class="text-brand-oceanDark font-extrabold">$50/hour rate</strong>, with a complimentary 45-minute in-home assessment included in every 6-week package.
       </p>
     </div>
   </div>
