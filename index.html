@@ -41,18 +41,16 @@ html { scroll-behavior: smooth; }
 body { background-color: #f7fbfb; color: #2d3748; }
 section[id] { scroll-margin-top: 32px; }
 
-/* Balanced Center Teal Wash (27%) + Deep Top & Bottom Ocean Bands (90%) */
+/* Balanced Center Teal Wash (27%) + Deep Top & Bottom Ocean Bands (92% at bottom for text legibility) */
 .photo-edge-vignette {
   background: linear-gradient(
     to bottom,
-    rgba(5, 55, 60, 0.90) 0%,
-    rgba(5, 55, 60, 0.70) 18%,
-    rgba(13, 92, 99, 0.43) 32%,
-    rgba(13, 92, 99, 0.27) 45%,
-    rgba(13, 92, 99, 0.27) 55%,
-    rgba(13, 92, 99, 0.43) 68%,
-    rgba(5, 55, 60, 0.70) 82%,
-    rgba(5, 55, 60, 0.90) 100%
+    rgba(5, 55, 60, 0.88) 0%,
+    rgba(5, 55, 60, 0.65) 16%,
+    rgba(13, 92, 99, 0.27) 35%,
+    rgba(13, 92, 99, 0.27) 58%,
+    rgba(5, 55, 60, 0.78) 78%,
+    rgba(5, 55, 60, 0.94) 100%
   );
 }
 </style>
@@ -222,7 +220,7 @@ section[id] { scroll-margin-top: 32px; }
     <!-- CARD 1: 1-ON-1 PRIVATE TRAINING -->
     <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark/80 overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
       <div>
-        <!-- Connected Square Photo with 27% Center Wash + Deeper Top/Bottom Vignette -->
+        <!-- Connected Square Photo with Title & Teal Highlight Tucked into Bottom -->
         <div class="relative w-full aspect-square bg-brand-seafoam/30 overflow-hidden border-b-4 border-brand-seafoamDark">
           <img 
             src="program-private.jpg" 
@@ -231,23 +229,27 @@ section[id] { scroll-margin-top: 32px; }
             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=800&q=80';"
           />
           <div class="absolute inset-0 photo-edge-vignette pointer-events-none"></div>
+
+          <!-- Bottom-Aligned Badge + Teal-Highlighted Title (Keeps Center & Dog's Face Clear) -->
+          <div class="absolute inset-x-0 bottom-0 p-5 sm:p-6 flex flex-col items-start gap-2 z-10">
+            <span class="inline-block bg-brand-seafoam/95 text-brand-oceanDark px-3 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider shadow-sm">
+              In-Home Private
+            </span>
+            <h3 class="text-2xl sm:text-3xl font-display font-extrabold text-white leading-tight bg-brand-oceanDark/75 backdrop-blur-sm px-4 py-2 rounded-2xl border border-brand-seafoam/35 shadow-md">
+              1-on-1 Private Training
+            </h3>
+          </div>
         </div>
 
         <div class="p-7 sm:p-8 space-y-6">
-          <span class="inline-block bg-brand-seafoam text-brand-ocean px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
-            In-Home Private
-          </span>
-
-          <div>
-            <h3 class="text-2xl sm:text-3xl font-display font-extrabold text-brand-oceanDark leading-tight">1-on-1 Private Training</h3>
-            <p class="text-brand-muted text-base mt-2 leading-relaxed">
-              1-on-1 weekly coaching in your home to build great manners and focus where it matters most.
-            </p>
-          </div>
-
-          <div class="border-b border-brand-border pb-4">
+          <div class="flex items-baseline justify-between gap-4 border-b border-brand-border pb-4">
             <div class="text-4xl sm:text-5xl font-display font-extrabold text-brand-oceanDark">$300</div>
+            <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-brand-ocean">6-Week Package</span>
           </div>
+
+          <p class="text-brand-muted text-base leading-relaxed">
+            1-on-1 weekly coaching in your home to build great manners and focus where it matters most.
+          </p>
 
           <!-- Scannable Visible Curriculum -->
           <ul class="space-y-5">
@@ -372,7 +374,7 @@ section[id] { scroll-margin-top: 32px; }
     <!-- CARD 2: DAY PLAY & TRAIN -->
     <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark/80 overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
       <div>
-        <!-- Connected Square Photo with 27% Center Wash + Deeper Top/Bottom Vignette -->
+        <!-- Connected Square Photo with Title & Teal Highlight Tucked into Bottom -->
         <div class="relative w-full aspect-square bg-brand-seafoam/30 overflow-hidden border-b-4 border-brand-seafoamDark">
           <img 
             src="program-dayplay.jpg" 
@@ -381,23 +383,27 @@ section[id] { scroll-margin-top: 32px; }
             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=800&q=80';"
           />
           <div class="absolute inset-0 photo-edge-vignette pointer-events-none"></div>
+
+          <!-- Bottom-Aligned Badge + Teal-Highlighted Title (Keeps Center & Dog's Face Clear) -->
+          <div class="absolute inset-x-0 bottom-0 p-5 sm:p-6 flex flex-col items-start gap-2 z-10">
+            <span class="inline-block bg-brand-seafoam/95 text-brand-oceanDark px-3 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider shadow-sm">
+              Open-Air Space + Home
+            </span>
+            <h3 class="text-2xl sm:text-3xl font-display font-extrabold text-white leading-tight bg-brand-oceanDark/75 backdrop-blur-sm px-4 py-2 rounded-2xl border border-brand-seafoam/35 shadow-md">
+              Day Play &amp; Train
+            </h3>
+          </div>
         </div>
 
         <div class="p-7 sm:p-8 space-y-6">
-          <span class="inline-block bg-brand-seafoam text-brand-ocean px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
-            Open-Air Space + Home
-          </span>
-
-          <div>
-            <h3 class="text-2xl sm:text-3xl font-display font-extrabold text-brand-oceanDark leading-tight">Day Play &amp; Train</h3>
-            <p class="text-brand-muted text-base mt-2 leading-relaxed">
-              Weekly day training in our private shaded open-air space plus in-home coaching with you.
-            </p>
-          </div>
-
-          <div class="border-b border-brand-border pb-4">
+          <div class="flex items-baseline justify-between gap-4 border-b border-brand-border pb-4">
             <div class="text-4xl sm:text-5xl font-display font-extrabold text-brand-oceanDark">$1,300</div>
+            <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-brand-ocean">6-Week Package</span>
           </div>
+
+          <p class="text-brand-muted text-base leading-relaxed">
+            Weekly day training in our private shaded open-air space plus in-home coaching with you.
+          </p>
 
           <!-- Scannable Visible Curriculum -->
           <ul class="space-y-5">
@@ -498,7 +504,7 @@ section[id] { scroll-margin-top: 32px; }
     <!-- CARD 3: FEAR-FREE BEHAVIOR TRAINING -->
     <div class="bg-white rounded-3xl border-2 border-brand-seafoamDark/80 overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
       <div>
-        <!-- Connected Square Photo with 27% Center Wash + Deeper Top/Bottom Vignette -->
+        <!-- Connected Square Photo with Title & Teal Highlight Tucked into Bottom -->
         <div class="relative w-full aspect-square bg-brand-seafoam/30 overflow-hidden border-b-4 border-brand-seafoamDark">
           <img 
             src="program-behavior.jpg" 
@@ -507,27 +513,27 @@ section[id] { scroll-margin-top: 32px; }
             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=800&q=80';"
           />
           <div class="absolute inset-0 photo-edge-vignette pointer-events-none"></div>
+
+          <!-- Bottom-Aligned Badge + Teal-Highlighted Title (Keeps Center & Dog's Face Clear) -->
+          <div class="absolute inset-x-0 bottom-0 p-5 sm:p-6 flex flex-col items-start gap-2 z-10">
+            <span class="inline-block bg-brand-seafoam/95 text-brand-oceanDark px-3 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider shadow-sm">
+              Behavioral Focus
+            </span>
+            <h3 class="text-2xl sm:text-3xl font-display font-extrabold text-white leading-tight bg-brand-oceanDark/75 backdrop-blur-sm px-4 py-2 rounded-2xl border border-brand-seafoam/35 shadow-md">
+              Fear-Free Behavior Training
+            </h3>
+          </div>
         </div>
 
         <div class="p-7 sm:p-8 space-y-6">
-          <span class="inline-block bg-brand-seafoam text-brand-ocean px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
-            Behavioral Focus
-          </span>
-
-          <div>
-            <!-- Stacked Cleanly: Fear-Free on Top, Behavior Training on Bottom -->
-            <h3 class="text-2xl sm:text-3xl font-display font-extrabold text-brand-oceanDark leading-tight">
-              <span class="block">Fear-Free</span>
-              <span class="block">Behavior Training</span>
-            </h3>
-            <p class="text-brand-muted text-base mt-2 leading-relaxed">
-              Twice-weekly 1-on-1 help for barking, jumping, anxious behavior, and low-to-moderate reactivity.
-            </p>
-          </div>
-
-          <div class="border-b border-brand-border pb-4">
+          <div class="flex items-baseline justify-between gap-4 border-b border-brand-border pb-4">
             <div class="text-4xl sm:text-5xl font-display font-extrabold text-brand-oceanDark">$600</div>
+            <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-brand-ocean">6-Week Package</span>
           </div>
+
+          <p class="text-brand-muted text-base leading-relaxed">
+            Twice-weekly 1-on-1 help for barking, jumping, anxious behavior, and low-to-moderate reactivity.
+          </p>
 
           <!-- Scannable Visible Curriculum -->
           <ul class="space-y-5">
