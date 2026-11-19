@@ -226,7 +226,7 @@ tailwind.config = {
       </div>
     </div>
 
-    <!-- MAIN 3-COLUMN ARCHITECTURAL COMPARISON GRID (OPEN 1PX HAIRLINES + TACTILE WARMTH) -->
+    <!-- MAIN 3-COLUMN ARCHITECTURAL COMPARISON GRID (EVENLY ALIGNED ACROSS ALL 3 COLUMNS) -->
     <div class="bg-white border border-coastal-hairline rounded-2xl overflow-hidden shadow-sm">
       <!-- Subtle Double-Rule Studio Accent Across Top -->
       <div class="h-1.5 bg-coastal-ocean"></div>
@@ -257,13 +257,11 @@ tailwind.config = {
               </div>
             </div>
 
-            <!-- Warm Terracotta Price Bar (Aligned Height Across All 3 Columns) -->
-            <div class="px-6 sm:px-8 py-4 bg-coastal-sand border-b border-coastal-hairline lg:min-h-[96px] flex flex-col justify-end text-left">
-              <div class="flex flex-wrap items-baseline justify-between gap-2">
-                <div class="text-4xl sm:text-5xl font-serif font-extrabold text-[#c86d51] tracking-tight leading-none">$300</div>
-                <span class="text-xs font-extrabold uppercase tracking-wider text-coastal-deep whitespace-nowrap">
-                  6 Weeks &bull; 1 hr / week
-                </span>
+            <!-- Aligned Price Bar -->
+            <div class="px-6 sm:px-8 py-5 bg-coastal-sand border-b border-coastal-hairline lg:min-h-[112px] flex flex-col justify-center gap-1.5 text-left">
+              <div class="text-4xl sm:text-5xl font-serif font-extrabold text-coastal-terracotta tracking-tight leading-none">$300</div>
+              <div class="text-xs font-extrabold uppercase tracking-wider text-coastal-deep">
+                6 Weeks &bull; 1 hr / week
               </div>
             </div>
 
@@ -425,13 +423,11 @@ tailwind.config = {
               </div>
             </div>
 
-            <!-- Warm Terracotta Price Bar (Aligned Height Across All 3 Columns) -->
-            <div class="px-6 sm:px-8 py-4 bg-coastal-sandWarm/85 border-b border-coastal-hairline lg:min-h-[96px] flex flex-col justify-end text-left">
-              <div class="flex flex-wrap items-baseline justify-between gap-2">
-                <div class="text-4xl sm:text-5xl font-serif font-extrabold text-[#c86d51] tracking-tight leading-none">$1,300</div>
-                <span class="text-xs font-extrabold uppercase tracking-wider text-coastal-deep whitespace-nowrap">
-                  4-hr day + 1-hr lesson / wk
-                </span>
+            <!-- Aligned Price Bar (Matches Left & Right Columns) -->
+            <div class="px-6 sm:px-8 py-5 bg-coastal-sand border-b border-coastal-hairline lg:min-h-[112px] flex flex-col justify-center gap-1.5 text-left">
+              <div class="text-4xl sm:text-5xl font-serif font-extrabold text-coastal-terracotta tracking-tight leading-none">$1,300</div>
+              <div class="text-xs font-extrabold uppercase tracking-wider text-coastal-deep">
+                6 Weeks &bull; 4-hr day + 1-hr lesson / wk
               </div>
             </div>
 
@@ -586,13 +582,11 @@ tailwind.config = {
               </div>
             </div>
 
-            <!-- Warm Terracotta Price Bar (Aligned Height Across All 3 Columns) -->
-            <div class="px-6 sm:px-8 py-4 bg-coastal-sand border-b border-coastal-hairline lg:min-h-[96px] flex flex-col justify-end text-left">
-              <div class="flex flex-wrap items-baseline justify-between gap-2">
-                <div class="text-4xl sm:text-5xl font-serif font-extrabold text-[#c86d51] tracking-tight leading-none">$600</div>
-                <span class="text-xs font-extrabold uppercase tracking-wider text-coastal-deep whitespace-nowrap">
-                  2 hrs / week (two 1-hr sessions)
-                </span>
+            <!-- Aligned Price Bar -->
+            <div class="px-6 sm:px-8 py-5 bg-coastal-sand border-b border-coastal-hairline lg:min-h-[112px] flex flex-col justify-center gap-1.5 text-left">
+              <div class="text-4xl sm:text-5xl font-serif font-extrabold text-coastal-terracotta tracking-tight leading-none">$600</div>
+              <div class="text-xs font-extrabold uppercase tracking-wider text-coastal-deep">
+                6 Weeks &bull; 2 hrs / week (two 1-hr sessions)
               </div>
             </div>
 
@@ -856,8 +850,15 @@ tailwind.config = {
     </div>
 
     <div class="bg-white border border-coastal-hairline rounded-2xl overflow-hidden shadow-sm">
-      <div class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 divide-coastal-hairline">
-        <div class="p-7 sm:p-9 md:border-r md:border-b border-coastal-hairline space-y-2.5 text-left">
+      <!-- Training Location Arrival Note -->
+      <div class="px-7 sm:px-9 py-5 bg-coastal-sandWarm/80 border-b border-coastal-hairline text-left">
+        <p class="text-sm sm:text-base text-coastal-muted leading-relaxed">
+          <strong class="text-coastal-deep font-bold">Training Location:</strong> Sessions are held at our quiet, shaded training space, located on our private rural property in Nipomo (or in your home for private lessons). Exact directions and parking details are shared once your consult is scheduled.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="p-7 sm:p-9 border-b md:border-r border-coastal-hairline space-y-2.5 text-left">
           <span class="font-serif font-extrabold text-2xl text-coastal-terracotta block">01</span>
           <h3 class="text-xl sm:text-2xl font-serif font-extrabold text-coastal-deep">Something Delicious</h3>
           <p class="text-base text-coastal-muted leading-relaxed">
@@ -865,7 +866,7 @@ tailwind.config = {
           </p>
         </div>
 
-        <div class="p-7 sm:p-9 md:border-b border-coastal-hairline space-y-2.5 text-left">
+        <div class="p-7 sm:p-9 border-b border-coastal-hairline space-y-2.5 text-left">
           <span class="font-serif font-extrabold text-2xl text-coastal-terracotta block">02</span>
           <h3 class="text-xl sm:text-2xl font-serif font-extrabold text-coastal-deep">A Standard 6-Foot Leash</h3>
           <p class="text-base text-coastal-muted leading-relaxed">
@@ -873,7 +874,7 @@ tailwind.config = {
           </p>
         </div>
 
-        <div class="p-7 sm:p-9 md:border-r border-coastal-hairline space-y-2.5 text-left">
+        <div class="p-7 sm:p-9 border-b md:border-b-0 md:border-r border-coastal-hairline space-y-2.5 text-left">
           <span class="font-serif font-extrabold text-2xl text-coastal-terracotta block">03</span>
           <h3 class="text-xl sm:text-2xl font-serif font-extrabold text-coastal-deep">Comfortable Everyday Gear</h3>
           <p class="text-base text-coastal-muted leading-relaxed">
@@ -882,7 +883,7 @@ tailwind.config = {
         </div>
 
         <div class="p-7 sm:p-9 space-y-2.5 text-left bg-coastal-sand/50">
-          <span class="font-serif font-extrabold text-2xl text-coastal-ocean block">04</span>
+          <span class="font-serif font-extrabold text-2xl text-coastal-terracotta block">04</span>
           <h3 class="text-xl sm:text-2xl font-serif font-extrabold text-coastal-deep">A Light Meal Beforehand</h3>
           <p class="text-base text-coastal-muted leading-relaxed">
             Consider feeding your dog about half their usual meal right before our session. A slightly empty tummy makes treats much more motivating and keeps your dog comfortable while moving around.
@@ -904,7 +905,7 @@ tailwind.config = {
       <div class="p-7 sm:p-8 space-y-2 text-left">
         <h3 class="text-xl font-serif font-bold text-coastal-ocean">Where do training sessions take place?</h3>
         <p class="text-base text-coastal-muted leading-relaxed">
-          Every program gives you the option to train in your home, in our private shaded open-air training space in Nipomo, or a mix of both! Dependent on when your dog is ready to explore, we also practice in dog-friendly stores and public spaces like local parks or occasional beach trips to desensitize them a little at a time based on their needs.
+          Sessions are held at our quiet, shaded training space, located on our private rural property in Nipomo—or in your home for private lessons (or a mix of both!). Dependent on when your dog is ready to explore, we also practice in dog-friendly stores and public spaces like local parks or occasional beach trips to desensitize them a little at a time based on their needs.
         </p>
       </div>
 
