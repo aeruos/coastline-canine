@@ -850,43 +850,82 @@ tailwind.config = {
     </div>
 
     <div class="bg-white border border-coastal-hairline rounded-2xl overflow-hidden shadow-sm">
-      <!-- Training Location Arrival Note -->
-      <div class="px-7 sm:px-9 py-5 bg-coastal-sandWarm/80 border-b border-coastal-hairline text-left">
-        <p class="text-sm sm:text-base text-coastal-muted leading-relaxed">
-          <strong class="text-coastal-deep font-bold">Training Location:</strong> Sessions are held at our quiet, shaded training space, located on our private rural property in Nipomo (or in your home for private lessons). Exact directions and parking details are shared once your consult is scheduled.
-        </p>
+      <!-- Subtle Double-Rule Studio Accent -->
+      <div class="h-1.5 bg-coastal-ocean"></div>
+      <div class="h-px bg-coastal-terracotta/40"></div>
+
+      <!-- Photo Slot for Prep Guide Dog -->
+      <div class="relative w-full h-56 sm:h-72 bg-coastal-seafoam/20 overflow-hidden border-b border-coastal-hairline">
+        <img 
+          src="prep-dog.jpg" 
+          alt="Happy dog ready for training with favorite treats and gear" 
+          class="w-full h-full object-cover object-center"
+          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=1400&q=80';"
+        />
+        <div class="absolute inset-0 photo-editorial-bottom pointer-events-none"></div>
+        <div class="absolute inset-x-0 bottom-0 p-6 sm:p-7 z-10 text-left">
+          <span class="text-[11px] font-extrabold uppercase tracking-[0.2em] text-coastal-seafoam block mb-1">
+            Session Checklist
+          </span>
+          <p class="text-lg sm:text-xl font-serif font-bold text-white drop-shadow">
+            Setting your pup up for a relaxed, successful first day
+          </p>
+        </div>
       </div>
 
+      <!-- 6-Item Grid (01 through 06 with Uniform Terracotta Numbers & Clean Dividers) -->
       <div class="grid grid-cols-1 md:grid-cols-2">
+        <!-- 01 -->
         <div class="p-7 sm:p-9 border-b md:border-r border-coastal-hairline space-y-2.5 text-left">
           <span class="font-serif font-extrabold text-2xl text-coastal-terracotta block">01</span>
-          <h3 class="text-xl sm:text-2xl font-serif font-extrabold text-coastal-deep">Something Delicious</h3>
+          <h3 class="text-xl sm:text-2xl font-serif font-extrabold text-coastal-deep">Current Vaccinations</h3>
           <p class="text-base text-coastal-muted leading-relaxed">
-            Bringing high-value treats your dog loves (like small pieces of string cheese, chicken, or soft training morsels) helps us celebrate their good choices and keeps learning fun and stress-free.
+            Please have your dog’s current vaccination records (Rabies, DHPP, and Bordetella) up to date before our first session so every pup stays safe and healthy.
           </p>
         </div>
 
+        <!-- 02 -->
         <div class="p-7 sm:p-9 border-b border-coastal-hairline space-y-2.5 text-left">
           <span class="font-serif font-extrabold text-2xl text-coastal-terracotta block">02</span>
-          <h3 class="text-xl sm:text-2xl font-serif font-extrabold text-coastal-deep">A Standard 6-Foot Leash</h3>
+          <h3 class="text-xl sm:text-2xl font-serif font-extrabold text-coastal-deep">Tasty Treats</h3>
           <p class="text-base text-coastal-muted leading-relaxed">
-            A standard 6-foot leather or flat nylon leash allows for clear, gentle communication. We kindly ask to leave retractable leashes at home so we can practice safe, predictable leash handling together.
+            Your dog’s favorite tasty treats—usually soft, chewy, and strong (smelly) treats! Things like Beggin' Strips or dry biscuits are fine for an occasional snack, but not the best for training. Bringing <strong>2–3 different types of treats</strong> is recommended, and I’m happy to share trainer treat recommendations if needed!
           </p>
         </div>
 
-        <div class="p-7 sm:p-9 border-b md:border-b-0 md:border-r border-coastal-hairline space-y-2.5 text-left">
+        <!-- 03 -->
+        <div class="p-7 sm:p-9 border-b md:border-r border-coastal-hairline space-y-2.5 text-left">
           <span class="font-serif font-extrabold text-2xl text-coastal-terracotta block">03</span>
-          <h3 class="text-xl sm:text-2xl font-serif font-extrabold text-coastal-deep">Comfortable Everyday Gear</h3>
+          <h3 class="text-xl sm:text-2xl font-serif font-extrabold text-coastal-deep">Standard 6-Foot Leash, Collar &amp; Harness</h3>
           <p class="text-base text-coastal-muted leading-relaxed">
-            Whatever collar or harness your dog currently wears day-to-day. We'll take a look at fit and comfort together during our first visit to make sure your dog feels completely at ease.
+            Just a regular nylon 6-foot leash for basic obedience (a <strong>20-foot leash will be provided</strong> for recall practice), paired with your dog's everyday collar or harness. Gentle leads may be used later if a pet parent wishes to try one, but only with slow desensitization to prevent stress for your dog.
           </p>
         </div>
 
-        <div class="p-7 sm:p-9 space-y-2.5 text-left bg-coastal-sand/50">
+        <!-- 04 -->
+        <div class="p-7 sm:p-9 border-b border-coastal-hairline space-y-2.5 text-left">
           <span class="font-serif font-extrabold text-2xl text-coastal-terracotta block">04</span>
           <h3 class="text-xl sm:text-2xl font-serif font-extrabold text-coastal-deep">A Light Meal Beforehand</h3>
           <p class="text-base text-coastal-muted leading-relaxed">
-            Consider feeding your dog about half their usual meal right before our session. A slightly empty tummy makes treats much more motivating and keeps your dog comfortable while moving around.
+            Measure how much you feed for breakfast or dinner so that your dog doesn’t come too full for training. A slightly lighter meal beforehand keeps treats motivating and keeps your dog comfortable while moving around.
+          </p>
+        </div>
+
+        <!-- 05 -->
+        <div class="p-7 sm:p-9 border-b md:border-b-0 md:border-r border-coastal-hairline space-y-2.5 text-left">
+          <span class="font-serif font-extrabold text-2xl text-coastal-terracotta block">05</span>
+          <h3 class="text-xl sm:text-2xl font-serif font-extrabold text-coastal-deep">Some Favorite Toys</h3>
+          <p class="text-base text-coastal-muted leading-relaxed">
+            Bring along a couple of your dog’s favorite toys for play breaks and rewards. <span class="italic">*Day Play &amp; Train classes will need to purchase their dog’s recommended enrichment lick/KONG toys so they may be used for training and mid-day decompression.</span>
+          </p>
+        </div>
+
+        <!-- 06 -->
+        <div class="p-7 sm:p-9 space-y-2.5 text-left bg-coastal-sand/50">
+          <span class="font-serif font-extrabold text-2xl text-coastal-terracotta block">06</span>
+          <h3 class="text-xl sm:text-2xl font-serif font-extrabold text-coastal-deep">Training Location</h3>
+          <p class="text-base text-coastal-muted leading-relaxed">
+            Sessions are held at our quiet, shaded training space, located on our private rural property in Nipomo (or in your home for private lessons). Exact directions and parking details are shared once your consult is scheduled.
           </p>
         </div>
       </div>
@@ -901,33 +940,58 @@ tailwind.config = {
       <p class="text-base sm:text-lg text-coastal-muted max-w-xl mx-auto">Everything you need to know before starting your 6-week journey.</p>
     </div>
 
-    <div class="bg-white border border-coastal-hairline rounded-2xl divide-y divide-coastal-hairline overflow-hidden shadow-sm">
-      <div class="p-7 sm:p-8 space-y-2 text-left">
-        <h3 class="text-xl font-serif font-bold text-coastal-ocean">Where do training sessions take place?</h3>
-        <p class="text-base text-coastal-muted leading-relaxed">
-          Sessions are held at our quiet, shaded training space, located on our private rural property in Nipomo—or in your home for private lessons (or a mix of both!). Dependent on when your dog is ready to explore, we also practice in dog-friendly stores and public spaces like local parks or occasional beach trips to desensitize them a little at a time based on their needs.
-        </p>
+    <div class="bg-white border border-coastal-hairline rounded-2xl overflow-hidden shadow-sm">
+      <!-- Subtle Double-Rule Studio Accent -->
+      <div class="h-1.5 bg-coastal-ocean"></div>
+      <div class="h-px bg-coastal-terracotta/40"></div>
+
+      <!-- Photo Slot for FAQ Dog -->
+      <div class="relative w-full h-56 sm:h-72 bg-coastal-seafoam/20 overflow-hidden border-b border-coastal-hairline">
+        <img 
+          src="faq-dog.jpg" 
+          alt="Curious dog smiling outdoors on the Central Coast" 
+          class="w-full h-full object-cover object-center"
+          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=1400&q=80';"
+        />
+        <div class="absolute inset-0 photo-editorial-bottom pointer-events-none"></div>
+        <div class="absolute inset-x-0 bottom-0 p-6 sm:p-7 z-10 text-left">
+          <span class="text-[11px] font-extrabold uppercase tracking-[0.2em] text-coastal-seafoam block mb-1">
+            Good to Know
+          </span>
+          <p class="text-lg sm:text-xl font-serif font-bold text-white drop-shadow">
+            Answers for Central Coast pet parents
+          </p>
+        </div>
       </div>
 
-      <div class="p-7 sm:p-8 space-y-2 text-left bg-coastal-sand/40">
-        <h3 class="text-xl font-serif font-bold text-coastal-ocean">Why choose Day Play &amp; Train, and how does it work?</h3>
-        <p class="text-base text-coastal-muted leading-relaxed">
-          Dogs learn best in fun, focused bursts with plenty of playtime and rest—and they thrive most when they get to sleep at home with the family they love! Each week, your dog spends 4 hours in our private shaded training space for 1-on-1 training, Sniffari walks, play, and kennel enrichment while you get a well-deserved break. At pickup, I go over everything we worked on, and then we meet for a 1-hour weekly coaching lesson (at your home or in our training space) so you and your dog can practice together as a team and make every skill stick for life.
-        </p>
-      </div>
+      <div class="divide-y divide-coastal-hairline">
+        <div class="p-7 sm:p-8 space-y-2 text-left">
+          <h3 class="text-xl font-serif font-bold text-coastal-ocean">Where do training sessions take place?</h3>
+          <p class="text-base text-coastal-muted leading-relaxed">
+            Sessions are held at our quiet, shaded training space, located on our private rural property in Nipomo—or in your home for private lessons (or a mix of both!). Dependent on when your dog is ready to explore, we also practice in dog-friendly stores and public spaces like local parks or occasional beach trips to desensitize them a little at a time based on their needs.
+          </p>
+        </div>
 
-      <div class="p-7 sm:p-8 space-y-2 text-left">
-        <h3 class="text-xl font-serif font-bold text-coastal-ocean">What training methods do you use?</h3>
-        <p class="text-base text-coastal-muted leading-relaxed">
-          We use positive reinforcement and low-stress, Fear Free handling techniques. The goal is clear communication and reliable impulse control without heavy-handed coercion.
-        </p>
-      </div>
+        <div class="p-7 sm:p-8 space-y-2 text-left bg-coastal-sand/40">
+          <h3 class="text-xl font-serif font-bold text-coastal-ocean">Why choose Day Play &amp; Train, and how does it work?</h3>
+          <p class="text-base text-coastal-muted leading-relaxed">
+            Dogs learn best in fun, focused bursts with plenty of playtime and rest—and they thrive most when they get to sleep at home with the family they love! Each week, your dog spends 4 hours in our private shaded training space for 1-on-1 training, Sniffari walks, play, and kennel enrichment while you get a well-deserved break. At pickup, I go over everything we worked on, and then we meet for a 1-hour weekly coaching lesson (at your home or in our training space) so you and your dog can practice together as a team and make every skill stick for life.
+          </p>
+        </div>
 
-      <div class="p-7 sm:p-8 space-y-2 text-left bg-coastal-sand/40">
-        <h3 class="text-xl font-serif font-bold text-coastal-ocean">What areas do you serve?</h3>
-        <p class="text-base text-coastal-muted leading-relaxed">
-          We serve Nipomo, Arroyo Grande, all of San Luis Obispo County, and Santa Barbara County.
-        </p>
+        <div class="p-7 sm:p-8 space-y-2 text-left">
+          <h3 class="text-xl font-serif font-bold text-coastal-ocean">What training methods do you use?</h3>
+          <p class="text-base text-coastal-muted leading-relaxed">
+            We use positive reinforcement and low-stress, Fear Free handling techniques. The goal is clear communication and reliable impulse control without heavy-handed coercion.
+          </p>
+        </div>
+
+        <div class="p-7 sm:p-8 space-y-2 text-left bg-coastal-sand/40">
+          <h3 class="text-xl font-serif font-bold text-coastal-ocean">What areas do you serve?</h3>
+          <p class="text-base text-coastal-muted leading-relaxed">
+            We serve Nipomo, Arroyo Grande, all of San Luis Obispo County, and Santa Barbara County.
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -937,6 +1001,25 @@ tailwind.config = {
     <div class="bg-white border border-coastal-hairline rounded-2xl overflow-hidden shadow-sm">
       <div class="h-1.5 bg-coastal-ocean"></div>
       <div class="h-px bg-coastal-terracotta/40"></div>
+
+      <!-- Photo Slot for Get Started / Consultation Dog -->
+      <div class="relative w-full h-56 sm:h-72 bg-coastal-seafoam/20 overflow-hidden border-b border-coastal-hairline">
+        <img 
+          src="contact-dog.jpg" 
+          alt="Happy dog excited to start training on the Central Coast" 
+          class="w-full h-full object-cover object-center"
+          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=1400&q=80';"
+        />
+        <div class="absolute inset-0 photo-editorial-bottom pointer-events-none"></div>
+        <div class="absolute inset-x-0 bottom-0 p-6 sm:p-7 z-10 text-left">
+          <span class="text-[11px] font-extrabold uppercase tracking-[0.2em] text-coastal-seafoam block mb-1">
+            Let’s Chat About Your Pup
+          </span>
+          <p class="text-lg sm:text-xl font-serif font-bold text-white drop-shadow">
+            Free 15-minute phone consultation &bull; Zero pressure
+          </p>
+        </div>
+      </div>
 
       <div class="p-7 sm:p-12 space-y-8">
         <div class="text-center space-y-3">
