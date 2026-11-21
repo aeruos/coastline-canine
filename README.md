@@ -1,1 +1,1 @@
-HELLO if somehow you find this i am working on a website for dog training. NGL it was vibe coded LMAO but i did design, and write, rewrite when ai made it sound odd, did color designs, and direction the webdesign. 
+HELLO if somehow you find this i am working on a website for dog training. NGL it was vibe coded LMAO. i did adjust and work with the ai a lot so that everything has a flow to it and changed the color and web design. i also reworded and wrote most of what was written on my own, while ai added whatever else needed. 
