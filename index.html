@@ -19,32 +19,29 @@ tailwind.config = {
     extend: {
       colors: {
         coastal: {
-          // Analogous Pastel Trio: Mint Green -> Seafoam -> Sky Blue (Even Value & Muted Saturation)
-          mint: '#e3f4ec',          // Airy Pastel Mint
-          mintLine: '#c8e6d8',      // Soft Mint Border
-          mintMuted: '#7eb09b',     // Equal-Value Muted Mint
+          mint: '#e3f4ec',
+          mintLine: '#c8e6d8',
+          mintMuted: '#7eb09b',
 
-          seafoam: '#e3f3f4',       // Soft Seafoam Mist
-          seafoamLine: '#c5e4e6',   // Pastel Seafoam Border
-          tide: '#659ba0',          // Calm Pale Green-Blue for Pricing Numerals
+          seafoam: '#e3f3f4',
+          seafoamLine: '#c5e4e6',
+          tide: '#659ba0',
 
-          blue: '#7da9bc',          // Muted Pastel Sky Blue
-          blueHover: '#6b98ab',     // Gentle Hover Sky Blue
-          blueSoft: '#e6f1f6',      // Light Sea-Breeze Blue
-          blueLine: '#c8e0eb',      // Soft Sky Divider
+          blue: '#7da9bc',
+          blueHover: '#6b98ab',
+          blueSoft: '#e6f1f6',
+          blueLine: '#c8e0eb',
 
-          // Equal-Value Muted Coastal Peach (Zero Dark/Burnt Orange)
-          peach: '#e5a489',         // Soft Muted Coastal Peach
-          peachSoft: '#fdf1eb',     // Airy Seashell Peach
-          peachLine: '#f4d9cc',     // Soft Peach Border
+          peach: '#e5a489',
+          peachSoft: '#fdf1eb',
+          peachLine: '#f4d9cc',
 
-          // Muted, Low-Contrast Neutrals (No Harsh Black or Dark Green)
-          sand: '#fcfdfb',          // Cloud Sand Background
-          sandWarm: '#f5f9fa',      // Soft Mist Surface
-          heading: '#4a6875',       // Muted Driftwood Slate-Blue (Soft Readable Headings & Bold Text)
-          body: '#5d7682',          // Gentle Coastal Grey-Blue Body Text
-          muted: '#738b96',         // Airy Secondary Text
-          hairline: '#dfecee'       // Whisper-Light Divider
+          sand: '#fcfdfb',
+          sandWarm: '#f5f9fa',
+          heading: '#4a6875',
+          body: '#5d7682',
+          muted: '#738b96',
+          hairline: '#dfecee'
         }
       },
       fontFamily: {
@@ -64,7 +61,6 @@ tailwind.config = {
   }
   section[id], article[id] { scroll-margin-top: 28px; }
 
-  /* Soft, muted coastal slate-blue gradient so photos stay bright and airy */
   .photo-editorial-bottom {
     background: linear-gradient(
       to bottom,
@@ -79,12 +75,12 @@ tailwind.config = {
 
 <body class="min-h-screen flex flex-col justify-between antialiased font-sans text-base sm:text-lg selection:bg-coastal-mint selection:text-coastal-heading">
 
-  <!-- TOP SERVICE AREA RIBBON (ANALOGOUS PASTEL MINT + SEAFOAM) -->
+  <!-- TOP SERVICE AREA RIBBON -->
   <div class="bg-coastal-mint border-b border-coastal-mintLine text-coastal-heading text-xs sm:text-sm font-semibold tracking-wide py-3 px-4 text-center">
     100% Fear Free Certified &bull; Serving Nipomo, Arroyo Grande, SLO County &amp; Santa Barbara County
   </div>
 
-  <!-- CLEAN EDITORIAL HEADER -->
+  <!-- CLEAN EDITORIAL HEADER WITH YOUR LOGO -->
   <header class="bg-white/95 backdrop-blur-sm border-b border-coastal-hairline">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
       <a href="#" class="flex items-center shrink-0">
@@ -105,7 +101,6 @@ tailwind.config = {
         </a>
       </nav>
     </div>
-  </header>
   </header>
 
   <!-- FULL-BLEED HERO SECTION WITH JACK RUNNING ON THE BEACH -->
@@ -147,12 +142,10 @@ tailwind.config = {
   <!-- ABOUT ME SECTION -->
   <section id="about" class="py-16 sm:py-20 px-5 sm:px-8 max-w-5xl mx-auto">
     <div class="bg-white border border-coastal-hairline rounded-2xl overflow-hidden shadow-sm">
-      <!-- Equal-Value Pastel Sky Blue & Peach Double-Rule Accent -->
       <div class="h-1.5 bg-coastal-blue/70"></div>
       <div class="h-1 bg-coastal-peach/65"></div>
 
       <div class="p-7 sm:p-12 space-y-8">
-        <!-- Top Two-Column Intro: Portrait + Fear Free on Left, Heading + First Paragraph on Right -->
         <div class="flex flex-col md:flex-row items-center gap-8 sm:gap-12">
           <div class="flex flex-col items-center gap-5 shrink-0">
             <div class="p-2 bg-coastal-blueSoft/75 border border-coastal-blueLine rounded-2xl">
@@ -188,9 +181,7 @@ tailwind.config = {
           </div>
         </div>
 
-        <!-- Middle Centered Homage Photo & Remaining Story -->
         <div class="max-w-3xl mx-auto space-y-6 text-coastal-body text-base sm:text-lg leading-relaxed text-left pt-2">
-          <!-- Subtle Small Horizontal Photo of Dad & Jackie -->
           <div class="max-w-md mx-auto p-1.5 bg-coastal-peachSoft/60 border border-coastal-peachLine rounded-xl">
             <img 
               src="dad-and-jackie.jpg" 
@@ -209,7 +200,6 @@ tailwind.config = {
           </p>
         </div>
 
-        <!-- Full-Width 100% Fear Free Guarantee Callout Band (Analogous Pastel Mint) -->
         <div class="bg-coastal-mint/75 border border-coastal-mintLine border-l-4 border-l-coastal-mintMuted rounded-xl p-6 space-y-1.5 text-left">
           <h3 class="font-serif font-bold text-coastal-heading text-xl">100% Fear Free Guarantee</h3>
           <p class="text-base text-coastal-body leading-relaxed">
@@ -222,8 +212,6 @@ tailwind.config = {
 
   <!-- PROGRAMS & PRICING SECTION -->
   <section id="programs" class="py-12 sm:py-16 px-4 sm:px-6 max-w-7xl mx-auto space-y-10">
-    
-    <!-- WIDE COASTAL BANNER BAR (MOBILE FRAMING & PADDING OPTIMIZED) -->
     <div class="relative overflow-hidden rounded-2xl border border-coastal-hairline shadow-sm min-h-[220px] sm:min-h-[280px] flex items-center justify-center px-5 sm:px-6 py-9 sm:py-12 text-center bg-coastal-blue">
       <img 
         src="programs-banner.jpg" 
@@ -251,9 +239,7 @@ tailwind.config = {
       </div>
     </div>
 
-    <!-- MAIN 3-COLUMN ARCHITECTURAL COMPARISON GRID (ALL 3 CARDS MATCHING WHITE) -->
     <div class="bg-white border border-coastal-hairline rounded-2xl overflow-hidden shadow-sm">
-      <!-- Equal-Value Pastel Sky Blue & Peach Double-Rule Accent -->
       <div class="h-1.5 bg-coastal-blue/70"></div>
       <div class="h-1 bg-coastal-peach/65"></div>
 
@@ -281,7 +267,6 @@ tailwind.config = {
               </div>
             </div>
 
-            <!-- Aligned Soft Pastel Peach Price Bar (Pale Green-Blue Numeral + Light Peach Sub-Label) -->
             <div class="px-6 sm:px-8 py-5 bg-coastal-peachSoft/60 border-b border-coastal-hairline lg:min-h-[126px] flex flex-col justify-center gap-1.5 text-left">
               <div class="text-4xl sm:text-5xl font-serif font-extrabold text-coastal-tide tracking-tight leading-none">$300</div>
               <div class="text-xs font-bold uppercase tracking-wider text-coastal-peach">
@@ -289,7 +274,6 @@ tailwind.config = {
               </div>
             </div>
 
-            <!-- Curriculum Body -->
             <div class="p-6 sm:p-8 space-y-5 text-left">
               <p class="text-coastal-body text-base leading-relaxed">
                 1-on-1 weekly coaching in your home or in our private shaded training space to build great manners and focus where it matters most.
@@ -338,7 +322,6 @@ tailwind.config = {
                   </div>
                 </div>
 
-                <!-- Clean 2-Column Core Foundations Checklist -->
                 <div class="flex items-start gap-3 border-t border-coastal-hairline pt-4">
                   <svg class="w-4 h-4 text-coastal-blue shrink-0 mt-1.5 -rotate-12" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true">
                     <ellipse cx="22" cy="48" rx="9" ry="13.5" transform="rotate(-18 22 48)"/>
@@ -447,7 +430,6 @@ tailwind.config = {
               </div>
             </div>
 
-            <!-- Aligned Soft Pastel Peach Price Bar (Pale Green-Blue Numeral + Light Peach Sub-Label + Bundle Reminder) -->
             <div class="px-6 sm:px-8 py-5 bg-coastal-peachSoft/60 border-b border-coastal-hairline lg:min-h-[126px] flex flex-col justify-center gap-1.5 text-left">
               <div class="text-4xl sm:text-5xl font-serif font-extrabold text-coastal-tide tracking-tight leading-none">$1,400</div>
               <div class="text-xs font-bold uppercase tracking-wider text-coastal-peach">
@@ -458,7 +440,6 @@ tailwind.config = {
               </div>
             </div>
 
-            <!-- Curriculum Body -->
             <div class="p-6 sm:p-8 space-y-5 text-left">
               <p class="text-coastal-body text-base leading-relaxed">
                 Twice-weekly day training in our private shaded open-air space in Nipomo, plus a dedicated third-day 1-hour pet parent check-in at our training space.
@@ -507,7 +488,6 @@ tailwind.config = {
                       <div class="text-coastal-body text-sm mt-0.5 italic leading-relaxed">Every dog has unique needs, so we follow your dog's lead and go at their pace, which includes:</div>
                     </div>
 
-                    <!-- 4 Analogous Seafoam Sub-Blocks -->
                     <div class="space-y-2">
                       <div class="bg-coastal-seafoam/45 rounded-lg p-3 border border-coastal-seafoamLine border-l-2 border-l-coastal-blue">
                         <div class="font-bold text-coastal-heading text-sm">Up to 2 Hrs of Dog Training</div>
@@ -608,7 +588,6 @@ tailwind.config = {
               </div>
             </div>
 
-            <!-- Aligned Soft Pastel Peach Price Bar (Pale Green-Blue Numeral + Light Peach Sub-Label) -->
             <div class="px-6 sm:px-8 py-5 bg-coastal-peachSoft/60 border-b border-coastal-hairline lg:min-h-[126px] flex flex-col justify-center gap-1.5 text-left">
               <div class="text-4xl sm:text-5xl font-serif font-extrabold text-coastal-tide tracking-tight leading-none">$600</div>
               <div class="text-xs font-bold uppercase tracking-wider text-coastal-peach">
@@ -616,7 +595,6 @@ tailwind.config = {
               </div>
             </div>
 
-            <!-- Curriculum Body -->
             <div class="p-6 sm:p-8 space-y-5 text-left">
               <p class="text-coastal-body text-base leading-relaxed">
                 Twice-weekly 1-on-1 help (in your home or in our private training space) for barking, jumping, anxious behavior, and low-to-moderate reactivity.
@@ -651,7 +629,6 @@ tailwind.config = {
                   </div>
                 </div>
 
-                <!-- Clean 2-Column Behaviors List -->
                 <div class="flex items-start gap-3 border-t border-coastal-hairline pt-4">
                   <svg class="w-4 h-4 text-coastal-blue shrink-0 mt-1.5 -rotate-12" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true">
                     <ellipse cx="22" cy="48" rx="9" ry="13.5" transform="rotate(-18 22 48)"/>
@@ -744,7 +721,7 @@ tailwind.config = {
 
       </div>
 
-      <!-- ASSESSMENT & DOG-PACED TRAINING FOOTER BAR (ANALOGOUS PASTEL MINT) -->
+      <!-- ASSESSMENT & DOG-PACED TRAINING FOOTER BAR -->
       <div class="px-6 sm:px-10 py-6 bg-coastal-mint/65 border-t border-coastal-hairline text-left">
         <div class="max-w-4xl mx-auto space-y-4">
           <div class="flex items-start gap-3.5">
@@ -776,14 +753,13 @@ tailwind.config = {
       </div>
     </div>
 
-    <!-- MATCHING 2-COLUMN ARCHITECTURAL SPLIT: NEXT-STAGE CUE RELIABILITY & CURRENT/GRADUATE CLIENTS (MATCHING WHITE CARDS) -->
+    <!-- NEXT-STAGE CUE RELIABILITY & CURRENT/GRADUATE CLIENTS -->
     <div class="max-w-5xl mx-auto bg-white border border-coastal-hairline rounded-2xl overflow-hidden shadow-sm">
       <div class="h-1.5 bg-coastal-blue/70"></div>
       <div class="h-1 bg-coastal-peach/65"></div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-coastal-hairline items-stretch">
 
-        <!-- LEFT COLUMN: CUE RELIABILITY & THE 3 D'S -->
         <article class="flex flex-col justify-between bg-white">
           <div>
             <div class="relative w-full aspect-square bg-coastal-blueSoft overflow-hidden border-b border-coastal-hairline">
@@ -805,7 +781,6 @@ tailwind.config = {
               </div>
             </div>
 
-            <!-- Soft Pastel Peach Price Bar (Pale Green-Blue Numerals + Light Peach Sub-Label) -->
             <div class="px-6 sm:px-8 py-4 bg-coastal-peachSoft/60 border-b border-coastal-hairline space-y-2 text-left">
               <div class="text-3xl sm:text-4xl font-serif font-extrabold text-coastal-tide tracking-tight">
                 $300 <span class="text-coastal-peachLine font-normal">/</span> $600 <span class="text-coastal-peachLine font-normal">/</span> $1,400
@@ -840,7 +815,6 @@ tailwind.config = {
           </div>
         </article>
 
-        <!-- RIGHT COLUMN: CURRENT & GRADUATE CLIENTS ($30 ENRICHMENT PLAY) -->
         <article class="flex flex-col justify-between bg-white">
           <div>
             <div class="relative w-full aspect-square bg-coastal-seafoam overflow-hidden border-b border-coastal-hairline">
@@ -862,7 +836,6 @@ tailwind.config = {
               </div>
             </div>
 
-            <!-- Soft Pastel Peach Price Bar (Pale Green-Blue Numeral + Light Peach Sub-Label) -->
             <div class="flex items-baseline justify-between px-6 sm:px-8 py-4 bg-coastal-peachSoft/60 border-b border-coastal-hairline">
               <div class="text-4xl sm:text-5xl font-serif font-extrabold text-coastal-tide tracking-tight">$30</div>
               <span class="text-xs font-bold uppercase tracking-widest text-coastal-peach">
@@ -894,7 +867,6 @@ tailwind.config = {
 
   <!-- PREP GUIDE SECTION -->
   <section id="prep" class="py-12 sm:py-16 px-4 sm:px-6 max-w-5xl mx-auto space-y-10">
-    <!-- WIDE COASTAL BANNER BAR -->
     <div class="relative overflow-hidden rounded-2xl border border-coastal-hairline shadow-sm min-h-[240px] sm:min-h-[280px] flex items-center justify-center px-6 py-12 text-center bg-coastal-blue">
       <img 
         src="prep-dog.jpg" 
@@ -918,13 +890,10 @@ tailwind.config = {
     </div>
 
     <div class="bg-white border border-coastal-hairline rounded-2xl overflow-hidden shadow-sm">
-      <!-- Equal-Value Pastel Sky Blue & Peach Double-Rule Accent -->
       <div class="h-1.5 bg-coastal-blue/70"></div>
       <div class="h-1 bg-coastal-peach/65"></div>
 
-      <!-- 6-Item Grid (01 through 06 with Soft Pastel Peach Numbers & Clean Dividers) -->
       <div class="grid grid-cols-1 md:grid-cols-2">
-        <!-- 01 -->
         <div class="p-7 sm:p-9 border-b md:border-r border-coastal-hairline space-y-2.5 text-left">
           <span class="font-serif font-extrabold text-2xl text-coastal-peach block">01</span>
           <h3 class="text-xl sm:text-2xl font-serif font-bold text-coastal-heading">Current Vaccinations</h3>
@@ -933,7 +902,6 @@ tailwind.config = {
           </p>
         </div>
 
-        <!-- 02 -->
         <div class="p-7 sm:p-9 border-b border-coastal-hairline space-y-3 text-left">
           <span class="font-serif font-extrabold text-2xl text-coastal-peach block">02</span>
           <h3 class="text-xl sm:text-2xl font-serif font-bold text-coastal-heading">Tasty Treats</h3>
@@ -947,7 +915,6 @@ tailwind.config = {
           </div>
         </div>
 
-        <!-- 03 -->
         <div class="p-7 sm:p-9 border-b md:border-r border-coastal-hairline space-y-2.5 text-left">
           <span class="font-serif font-extrabold text-2xl text-coastal-peach block">03</span>
           <h3 class="text-xl sm:text-2xl font-serif font-bold text-coastal-heading">Standard 6-Foot Leash, Collar &amp; Harness</h3>
@@ -956,7 +923,6 @@ tailwind.config = {
           </p>
         </div>
 
-        <!-- 04 -->
         <div class="p-7 sm:p-9 border-b border-coastal-hairline space-y-2.5 text-left">
           <span class="font-serif font-extrabold text-2xl text-coastal-peach block">04</span>
           <h3 class="text-xl sm:text-2xl font-serif font-bold text-coastal-heading">A Light Meal Beforehand</h3>
@@ -965,7 +931,6 @@ tailwind.config = {
           </p>
         </div>
 
-        <!-- 05 -->
         <div class="p-7 sm:p-9 border-b md:border-b-0 md:border-r border-coastal-hairline space-y-3 text-left">
           <span class="font-serif font-extrabold text-2xl text-coastal-peach block">05</span>
           <h3 class="text-xl sm:text-2xl font-serif font-bold text-coastal-heading">Favorite Toys &amp; Enrichment</h3>
@@ -979,7 +944,6 @@ tailwind.config = {
           </div>
         </div>
 
-        <!-- 06 -->
         <div class="p-7 sm:p-9 space-y-2.5 text-left bg-coastal-seafoam/35">
           <span class="font-serif font-extrabold text-2xl text-coastal-peach block">06</span>
           <h3 class="text-xl sm:text-2xl font-serif font-bold text-coastal-heading">Training Location</h3>
@@ -993,7 +957,6 @@ tailwind.config = {
 
   <!-- FAQ SECTION -->
   <section id="faq" class="py-12 sm:py-16 px-4 sm:px-6 max-w-4xl mx-auto space-y-10">
-    <!-- WIDE COASTAL BANNER BAR -->
     <div class="relative overflow-hidden rounded-2xl border border-coastal-hairline shadow-sm min-h-[240px] sm:min-h-[280px] flex items-center justify-center px-6 py-12 text-center bg-coastal-blue">
       <img 
         src="faq-dog.jpg" 
@@ -1017,7 +980,6 @@ tailwind.config = {
     </div>
 
     <div class="bg-white border border-coastal-hairline rounded-2xl overflow-hidden shadow-sm">
-      <!-- Equal-Value Pastel Sky Blue & Peach Double-Rule Accent -->
       <div class="h-1.5 bg-coastal-blue/70"></div>
       <div class="h-1 bg-coastal-peach/65"></div>
 
@@ -1065,7 +1027,6 @@ tailwind.config = {
 
   <!-- SCHEDULE CONSULTATION FORM SECTION -->
   <section id="contact" class="py-12 sm:py-16 px-4 sm:px-6 max-w-3xl mx-auto space-y-10">
-    <!-- WIDE COASTAL BANNER BAR -->
     <div class="relative overflow-hidden rounded-2xl border border-coastal-hairline shadow-sm min-h-[240px] sm:min-h-[280px] flex items-center justify-center px-6 py-12 text-center bg-coastal-blue">
       <img 
         src="contact-dog.jpg" 
