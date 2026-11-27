@@ -144,16 +144,16 @@ tailwind.config = {
     </div>
   </section>
 
-  <!-- ABOUT ME SECTION (COMPACT SIDE-BY-SIDE LAYOUT WITH DAD & JACKIE UNDER BADGE) -->
+  <!-- ABOUT ME SECTION -->
   <section id="about" class="py-12 sm:py-16 px-5 sm:px-8 max-w-5xl mx-auto">
     <div class="bg-white border border-coastal-hairline rounded-2xl overflow-hidden shadow-sm">
       <div class="h-1.5 bg-coastal-blue/70"></div>
       <div class="h-1 bg-coastal-peach/65"></div>
 
-      <div class="p-6 sm:p-10 space-y-6">
-        <div class="flex flex-col md:flex-row items-start gap-8 sm:gap-10">
-          <!-- Left Side Column: Profile Photo, Fear Free Badge, and Compact Dad & Jackie Keepsake Photo -->
-          <div class="flex flex-col items-center gap-4 shrink-0 mx-auto md:mx-0">
+      <div class="p-6 sm:p-10 space-y-7">
+        <!-- Top Row: Profile Photo + Fear Free Badge + Intro -->
+        <div class="flex flex-col md:flex-row items-center gap-8 sm:gap-10">
+          <div class="flex flex-col items-center gap-4 shrink-0">
             <div class="p-2 bg-coastal-blueSoft/75 border border-coastal-blueLine rounded-2xl">
               <img 
                 src="trainer-profile.jpg" 
@@ -169,19 +169,9 @@ tailwind.config = {
               class="h-16 sm:h-20 w-auto object-contain"
               onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 420 250%22><rect x=%226%22 y=%226%22 width=%22408%22 height=%22238%22 rx=%2238%22 fill=%22%2313436b%22 stroke=%22%2313436b%22 stroke-width=%2212%22/><path d=%22M18 165 H402 V206 A26 26 0 0 1 376 232 H44 A26 26 0 0 1 18 206 Z%22 fill=%22%2353a8dc%22/><rect x=%2214%22 y=%2214%22 width=%22392%22 height=%22222%22 rx=%2230%22 fill=%22none%22 stroke=%22%23ffffff%22 stroke-width=%225%22/><text x=%22205%22 y=%2292%22 text-anchor=%22middle%22 fill=%22%23ffffff%22 font-family=%22Outfit, sans-serif%22 font-size=%2264%22 font-weight=%22700%22>FearFree</text><text x=%22350%22 y=%2252%22 fill=%22%23ffffff%22 font-family=%22sans-serif%22 font-size=%2216%22>®</text><circle cx=%2295%22 cy=%22132%22 r=%2220%22 fill=%22none%22 stroke=%22%23ffffff%22 stroke-width=%224%22/><path d=%22M84 132 l8 8 l22 -22%22 fill=%22none%22 stroke=%22%2353a8dc%22 stroke-width=%227%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/><text x=%22238%22 y=%22146%22 text-anchor=%22middle%22 fill=%22%2353a8dc%22 font-family=%22Plus Jakarta Sans, sans-serif%22 font-size=%2240%22 font-weight=%22800%22 letter-spacing=%222%22>CERTIFIED</text><text x=%22210%22 y=%22211%22 text-anchor=%22middle%22 fill=%22%23ffffff%22 font-family=%22Plus Jakarta Sans, sans-serif%22 font-size=%2235%22 font-weight=%22800%22 letter-spacing=%221.5%22>PROFESSIONAL</text></svg>';"
             />
-
-            <div class="w-44 sm:w-48 p-1.5 bg-coastal-peachSoft/60 border border-coastal-peachLine rounded-xl">
-              <img 
-                src="dad-and-jackie.jpg" 
-                alt="Kris's late dad with Jack, the 10 year old Aussie Heeler" 
-                class="w-full h-36 sm:h-40 object-cover rounded-lg"
-                onerror="this.onerror=null; this.src='https://placehold.co/400x320/fdf1eb/4a6875?text=Dad+%26+Jackie';"
-              />
-            </div>
           </div>
 
-          <!-- Right Side Column: Complete Trainer Story -->
-          <div class="space-y-4 text-left text-coastal-body text-base leading-relaxed">
+          <div class="space-y-3 text-left">
             <div class="space-y-1 text-center md:text-left">
               <span class="text-xs font-bold uppercase tracking-[0.2em] text-coastal-peach block">
                 About Your Trainer
@@ -191,18 +181,30 @@ tailwind.config = {
               </h2>
             </div>
 
-            <p>
+            <p class="text-coastal-body text-base sm:text-lg leading-relaxed">
               Before creating Coastline Canine Training, I spent nearly two years working professionally as a dog trainer leading both group classes and private sessions, and previously worked as a Dog Care Specialist at the former Santa Maria Valley Humane Society (now Santa Barbara Humane). As a Fear Free Certified Professional studying for my CCPDT-KA certification in March of 2027, I specialize in gentle, Fear Free training, especially for dogs dealing with high fear, anxiety, and stress (FAS).
             </p>
-
-            <p>
-              My love for training started at home with Jack, my late dad’s 10 year old Aussie Heeler. Using positive reinforcement with him, we were able to turn years of heavy leash pulling into relaxed walks and reinforce his recall to over 100 feet! As long as he got a tasty bit of cheese or a small piece of beef, he was excited and happy to come running. Since then, I’ve seen the most incredible changes in behavior. I have watched dogs who needed to be carried from a truck because they were too scared to walk blossom into walking with full ease. I have also guided pet parents who recently adopted a nervous dog to build up his confidence, allowing him to hold the most beautiful down stay in the busiest of places and become a social butterfly.
-            </p>
-
-            <p>
-              I know how much it means to want to help your dog be the best good boy or girl they can be, and I am here to offer gentle guidance that will build a stronger, lifelong bond between you and your puppy son or daughter.
-            </p>
           </div>
+        </div>
+
+        <!-- Middle Story Section with Wide-but-Short Dad & Jackie Photo -->
+        <div class="max-w-3xl mx-auto space-y-5 text-coastal-body text-base sm:text-lg leading-relaxed text-left">
+          <div class="max-w-xl mx-auto p-1.5 bg-coastal-peachSoft/60 border border-coastal-peachLine rounded-xl">
+            <img 
+              src="dad-and-jackie.jpg" 
+              alt="Kris's late dad with Jack, the 10 year old Aussie Heeler" 
+              class="w-full h-48 sm:h-56 object-cover object-center rounded-lg"
+              onerror="this.onerror=null; this.src='https://placehold.co/700x300/fdf1eb/4a6875?text=Dad+%26+Jackie';"
+            />
+          </div>
+
+          <p>
+            My love for training started at home with Jack, my late dad’s 10 year old Aussie Heeler. Using positive reinforcement with him, we were able to turn years of heavy leash pulling into relaxed walks and reinforce his recall to over 100 feet! As long as he got a tasty bit of cheese or a small piece of beef, he was excited and happy to come running. Since then, I’ve seen the most incredible changes in behavior. I have watched dogs who needed to be carried from a truck because they were too scared to walk blossom into walking with full ease. I have also guided pet parents who recently adopted a nervous dog to build up his confidence, allowing him to hold the most beautiful down stay in the busiest of places and become a social butterfly.
+          </p>
+
+          <p>
+            I know how much it means to want to help your dog be the best good boy or girl they can be, and I am here to offer gentle guidance that will build a stronger, lifelong bond between you and your puppy son or daughter.
+          </p>
         </div>
 
         <div class="bg-coastal-mint/75 border border-coastal-mintLine border-l-4 border-l-coastal-mintMuted rounded-xl p-5 space-y-1 text-left">
@@ -560,7 +562,7 @@ tailwind.config = {
 
         </div>
 
-        <!-- WHY DAY PLAY & TRAIN BEATS TRADITIONAL BOARD & TRAIN (YOUR EXACT WORDING) -->
+        <!-- WHY DAY PLAY & TRAIN BEATS TRADITIONAL BOARD & TRAIN -->
         <div class="px-6 sm:px-10 py-6 bg-coastal-mint/65 border-t border-coastal-hairline text-left">
           <div class="max-w-5xl mx-auto space-y-3">
             <div class="space-y-0.5">
