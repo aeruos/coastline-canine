@@ -39,6 +39,7 @@ tailwind.config = {
           sand: '#fcfdfb',
           sandWarm: '#f5f9fa',
           heading: '#4a6875',
+          headingDeep: '#2c424c',
           body: '#5d7682',
           muted: '#738b96',
           hairline: '#dfecee'
@@ -69,6 +70,11 @@ tailwind.config = {
       rgba(74, 104, 117, 0.44) 78%,
       rgba(74, 104, 117, 0.72) 100%
     );
+  }
+
+  /* High-contrast readable text over dog photos */
+  .banner-text-shadow {
+    text-shadow: 0 2px 12px rgba(28, 43, 50, 0.72), 0 1px 3px rgba(28, 43, 50, 0.85);
   }
 
   /* Clean accordion arrow rotation */
@@ -116,19 +122,19 @@ tailwind.config = {
       class="absolute inset-0 w-full h-full object-cover object-[25%_center] sm:object-left"
       onerror="this.onerror=null; this.src='https://placehold.co/1600x900/7da9bc/e6f1f6?text=Jack+Running+on+the+Central+Coast+Beach';"
     />
-    <div class="absolute inset-0 bg-gradient-to-b from-coastal-heading/50 via-coastal-heading/35 to-coastal-heading/55"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-coastal-headingDeep/70 via-coastal-headingDeep/55 to-coastal-headingDeep/75"></div>
 
     <div class="relative z-10 max-w-4xl mx-auto space-y-6 sm:space-y-8">
       <div class="space-y-5 max-w-3xl mx-auto">
-        <p class="text-xs sm:text-sm font-bold uppercase tracking-[0.22em] text-coastal-mint drop-shadow">
+        <p class="text-xs sm:text-sm font-bold uppercase tracking-[0.22em] text-coastal-mint banner-text-shadow">
           Central Coast Positive Reinforcement Training
         </p>
 
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-serif font-extrabold text-white tracking-tight leading-tight drop-shadow">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-serif font-extrabold text-white tracking-tight leading-tight banner-text-shadow">
           Helping Central Coast Dogs <br class="hidden sm:inline"><span class="text-coastal-peachSoft">Put Their Best Paw Forward</span>
         </h1>
 
-        <p class="text-base sm:text-xl text-white/95 max-w-2xl mx-auto font-medium leading-relaxed drop-shadow">
+        <p class="text-base sm:text-xl text-white max-w-2xl mx-auto font-medium leading-relaxed banner-text-shadow">
           With positive reinforcement and gentle Fear Free guidance, we help your dog trade jumping and leash pulling for strong foundations, a closer bond, and confident wiggle butts.
         </p>
       </div>
@@ -229,16 +235,16 @@ tailwind.config = {
           class="absolute inset-0 w-full h-full object-cover object-center"
           onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=1600&q=80';"
         />
-        <div class="absolute inset-0 bg-gradient-to-b from-coastal-heading/55 via-coastal-heading/42 to-coastal-heading/60 pointer-events-none"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-coastal-headingDeep/75 via-coastal-headingDeep/68 to-coastal-headingDeep/80 backdrop-blur-[1px] pointer-events-none"></div>
 
         <div class="relative z-10 max-w-3xl mx-auto space-y-2">
           <span class="inline-block bg-coastal-peachSoft text-coastal-heading px-3.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-[0.2em] shadow-sm">
             Included in Every Program
           </span>
-          <h2 class="text-2xl sm:text-4xl font-serif font-extrabold text-white tracking-tight drop-shadow">
+          <h2 class="text-2xl sm:text-4xl font-serif font-extrabold text-white tracking-tight banner-text-shadow">
             Core Foundations, Puppy Basics &amp; Cooperative Care
           </h2>
-          <p class="text-sm sm:text-base text-white/95 max-w-2xl mx-auto leading-relaxed drop-shadow">
+          <p class="text-sm sm:text-base text-white max-w-2xl mx-auto font-medium leading-relaxed banner-text-shadow">
             No matter which program format you choose below, every dog receives a custom plan and customized training across these essential foundations:
           </p>
         </div>
@@ -340,16 +346,16 @@ tailwind.config = {
           class="absolute inset-0 w-full h-full object-cover object-[30%_center] sm:object-center"
           onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1600&q=80';"
         />
-        <div class="absolute inset-0 bg-gradient-to-b from-coastal-heading/55 via-coastal-heading/42 to-coastal-heading/60 pointer-events-none"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-coastal-headingDeep/75 via-coastal-headingDeep/68 to-coastal-headingDeep/80 backdrop-blur-[1px] pointer-events-none"></div>
 
         <div class="relative z-10 max-w-3xl mx-auto space-y-3">
           <span class="inline-block bg-coastal-peachSoft text-coastal-heading px-4 py-1 rounded-full text-xs sm:text-sm font-bold uppercase tracking-[0.2em] shadow-sm">
             Programs &amp; Pricing
           </span>
-          <h2 class="text-3xl sm:text-4xl font-serif font-extrabold text-white tracking-tight drop-shadow">
+          <h2 class="text-3xl sm:text-4xl font-serif font-extrabold text-white tracking-tight banner-text-shadow">
             Training Programs
           </h2>
-          <div class="space-y-2.5 text-sm sm:text-base text-white/95 max-w-2xl mx-auto leading-relaxed drop-shadow">
+          <div class="space-y-2.5 text-sm sm:text-base text-white max-w-2xl mx-auto font-medium leading-relaxed banner-text-shadow">
             <p>
               Our approachable <strong class="text-coastal-mint font-bold">$50/hour rate</strong> applies to all private coaching, and a complimentary 45-minute assessment is included in all our programs. Our immersive 36-hour Day Play &amp; Train program is offered at a <strong class="text-coastal-mint font-bold">bundled package rate</strong> to reward the extra weekly commitment.
             </p>
@@ -379,10 +385,10 @@ tailwind.config = {
                 <div class="absolute inset-0 photo-editorial-bottom pointer-events-none"></div>
 
                 <div class="absolute inset-x-0 bottom-0 p-6 z-10 text-left">
-                  <span class="text-[11px] font-bold uppercase tracking-[0.2em] text-coastal-peachSoft block mb-1">
+                  <span class="text-[11px] font-bold uppercase tracking-[0.2em] text-coastal-peachSoft block mb-1 banner-text-shadow">
                     Weekly Coaching
                   </span>
-                  <h3 class="text-2xl sm:text-3xl font-serif font-extrabold text-white leading-tight drop-shadow">
+                  <h3 class="text-2xl sm:text-3xl font-serif font-extrabold text-white leading-tight banner-text-shadow">
                     1-on-1 Private Training
                   </h3>
                 </div>
@@ -429,10 +435,10 @@ tailwind.config = {
                 <div class="absolute inset-0 photo-editorial-bottom pointer-events-none"></div>
 
                 <div class="absolute inset-x-0 bottom-0 p-6 z-10 text-left">
-                  <span class="text-[11px] font-bold uppercase tracking-[0.2em] text-coastal-peachSoft block mb-1">
+                  <span class="text-[11px] font-bold uppercase tracking-[0.2em] text-coastal-peachSoft block mb-1 banner-text-shadow">
                     Immersive Day Training
                   </span>
-                  <h3 class="text-2xl sm:text-3xl font-serif font-extrabold text-white leading-tight drop-shadow">
+                  <h3 class="text-2xl sm:text-3xl font-serif font-extrabold text-white leading-tight banner-text-shadow">
                     Day Play &amp; Train
                   </h3>
                 </div>
@@ -511,10 +517,10 @@ tailwind.config = {
                 <div class="absolute inset-0 photo-editorial-bottom pointer-events-none"></div>
 
                 <div class="absolute inset-x-0 bottom-0 p-6 z-10 text-left">
-                  <span class="text-[11px] font-bold uppercase tracking-[0.2em] text-coastal-peachSoft block mb-1">
+                  <span class="text-[11px] font-bold uppercase tracking-[0.2em] text-coastal-peachSoft block mb-1 banner-text-shadow">
                     Twice-Weekly Support
                   </span>
-                  <h3 class="text-2xl sm:text-3xl font-serif font-extrabold text-white leading-tight drop-shadow">
+                  <h3 class="text-2xl sm:text-3xl font-serif font-extrabold text-white leading-tight banner-text-shadow">
                     Fear-Free Behavior Training
                   </h3>
                 </div>
@@ -612,10 +618,10 @@ tailwind.config = {
               <div class="absolute inset-0 photo-editorial-bottom pointer-events-none"></div>
 
               <div class="absolute inset-x-0 bottom-0 p-6 z-10 text-left">
-                <span class="text-[11px] font-bold uppercase tracking-[0.2em] text-coastal-peachSoft block mb-1">
+                <span class="text-[11px] font-bold uppercase tracking-[0.2em] text-coastal-peachSoft block mb-1 banner-text-shadow">
                   Ready for the Next Stage? &bull; Follow-Up Program
                 </span>
-                <h3 class="text-2xl sm:text-3xl font-serif font-extrabold text-white leading-tight drop-shadow">
+                <h3 class="text-2xl sm:text-3xl font-serif font-extrabold text-white leading-tight banner-text-shadow">
                   Cue Reliability &amp; The 3 D’s
                 </h3>
               </div>
@@ -663,10 +669,10 @@ tailwind.config = {
               <div class="absolute inset-0 photo-editorial-bottom pointer-events-none"></div>
 
               <div class="absolute inset-x-0 bottom-0 p-6 z-10 text-left">
-                <span class="text-[11px] font-bold uppercase tracking-[0.2em] text-coastal-peachSoft block mb-1">
+                <span class="text-[11px] font-bold uppercase tracking-[0.2em] text-coastal-peachSoft block mb-1 banner-text-shadow">
                   Exclusive for Current &amp; Graduate Clients
                 </span>
-                <h3 class="text-2xl sm:text-3xl font-serif font-extrabold text-white leading-tight drop-shadow">
+                <h3 class="text-2xl sm:text-3xl font-serif font-extrabold text-white leading-tight banner-text-shadow">
                   Enrichment &amp; Play Sessions
                 </h3>
               </div>
@@ -710,16 +716,16 @@ tailwind.config = {
         class="absolute inset-0 w-full h-full object-cover object-center"
         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=1400&q=80';"
       />
-      <div class="absolute inset-0 bg-gradient-to-b from-coastal-heading/55 via-coastal-heading/42 to-coastal-heading/60 pointer-events-none"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-coastal-headingDeep/75 via-coastal-headingDeep/68 to-coastal-headingDeep/80 backdrop-blur-[1px] pointer-events-none"></div>
 
       <div class="relative z-10 max-w-2xl mx-auto space-y-2">
         <span class="inline-block bg-coastal-peachSoft text-coastal-heading px-3.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-[0.2em] shadow-sm">
           Prep Guide
         </span>
-        <h2 class="text-3xl sm:text-4xl font-serif font-extrabold text-white tracking-tight drop-shadow">
+        <h2 class="text-3xl sm:text-4xl font-serif font-extrabold text-white tracking-tight banner-text-shadow">
           What to Pack &amp; Have Ready
         </h2>
-        <p class="text-sm sm:text-base text-white/95 max-w-xl mx-auto leading-relaxed drop-shadow">
+        <p class="text-sm sm:text-base text-white max-w-xl mx-auto font-medium leading-relaxed banner-text-shadow">
           A few simple things to help your dog feel comfortable, relaxed, and ready to learn from minute one.
         </p>
       </div>
@@ -800,16 +806,16 @@ tailwind.config = {
         class="absolute inset-0 w-full h-full object-cover object-[65%_center] sm:object-center"
         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=1400&q=80';"
       />
-      <div class="absolute inset-0 bg-gradient-to-b from-coastal-heading/55 via-coastal-heading/42 to-coastal-heading/60 pointer-events-none"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-coastal-headingDeep/75 via-coastal-headingDeep/68 to-coastal-headingDeep/80 backdrop-blur-[1px] pointer-events-none"></div>
 
       <div class="relative z-10 max-w-2xl mx-auto space-y-2">
         <span class="inline-block bg-coastal-peachSoft text-coastal-heading px-3.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-[0.2em] shadow-sm">
           FAQ
         </span>
-        <h2 class="text-3xl sm:text-4xl font-serif font-extrabold text-white tracking-tight drop-shadow">
+        <h2 class="text-3xl sm:text-4xl font-serif font-extrabold text-white tracking-tight banner-text-shadow">
           Frequently Asked Questions
         </h2>
-        <p class="text-sm sm:text-base text-white/95 max-w-xl mx-auto leading-relaxed drop-shadow">
+        <p class="text-sm sm:text-base text-white max-w-xl mx-auto font-medium leading-relaxed banner-text-shadow">
           Everything you need to know before starting your training journey.
         </p>
       </div>
@@ -897,16 +903,16 @@ tailwind.config = {
         class="absolute inset-0 w-full h-full object-cover object-center"
         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=1400&q=80';"
       />
-      <div class="absolute inset-0 bg-gradient-to-b from-coastal-heading/55 via-coastal-heading/42 to-coastal-heading/60 pointer-events-none"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-coastal-headingDeep/75 via-coastal-headingDeep/68 to-coastal-headingDeep/80 backdrop-blur-[1px] pointer-events-none"></div>
 
       <div class="relative z-10 max-w-2xl mx-auto space-y-2">
         <span class="inline-block bg-coastal-peachSoft text-coastal-heading px-3.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-[0.2em] shadow-sm">
           Get Started
         </span>
-        <h2 class="text-2xl sm:text-4xl font-serif font-extrabold text-white tracking-tight leading-tight drop-shadow">
+        <h2 class="text-2xl sm:text-4xl font-serif font-extrabold text-white tracking-tight leading-tight banner-text-shadow">
           Schedule Your Free 15-Min Phone Consultation
         </h2>
-        <p class="text-sm sm:text-base text-white/95 max-w-xl mx-auto leading-relaxed drop-shadow">
+        <p class="text-sm sm:text-base text-white max-w-xl mx-auto font-medium leading-relaxed banner-text-shadow">
           Fill out this quick form and I'll call you within 24 hours to chat about your dog and set up your assessment, with zero pressure.
         </p>
       </div>
