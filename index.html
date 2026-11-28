@@ -80,10 +80,10 @@ tailwind.config = {
   /* Unified Coastal Teal Paw Bullet */
   .paw-bullet {
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     flex-shrink: 0;
-    margin-top: 4px;
+    margin-top: 5px;
     transform: rotate(-12deg);
     background-color: #659ba0;
     -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><ellipse cx='22' cy='48' rx='9' ry='13.5' transform='rotate(-18 22 48)'/><ellipse cx='38' cy='27' rx='9.5' ry='15' transform='rotate(-6 38 27)'/><ellipse cx='62' cy='27' rx='9.5' ry='15' transform='rotate(6 62 27)'/><ellipse cx='78' cy='48' rx='9' ry='13.5' transform='rotate(18 78 48)'/><path d='M50 47 C38 47 35 61 27 69 C21 75 23 87 34 88 C41 88.5 46 86 50 86 C54 86 59 88.5 66 88 C77 87 79 75 73 69 C65 61 62 47 50 47 Z'/></svg>") no-repeat center / contain;
@@ -91,17 +91,17 @@ tailwind.config = {
   }
 
   .paw-bullet-sm {
-    width: 12px;
-    height: 12px;
-    margin-top: 4px;
+    width: 14px;
+    height: 14px;
+    margin-top: 5px;
   }
 </style>
 </head>
 
-<body class="min-h-screen flex flex-col justify-between antialiased font-sans text-base sm:text-lg selection:bg-coastal-mint selection:text-coastal-heading">
+<body class="min-h-screen flex flex-col justify-between antialiased font-sans text-lg sm:text-xl selection:bg-coastal-mint selection:text-coastal-heading">
 
   <!-- TOP SERVICE AREA RIBBON (CLEAN WHITE, NO BAR, PHONE ON OWN LINE) -->
-  <div class="bg-white text-coastal-heading text-xs sm:text-sm font-semibold tracking-wide pt-3 pb-1 px-4 text-center leading-relaxed">
+  <div class="bg-white text-coastal-heading text-sm sm:text-base font-semibold tracking-wide pt-3 pb-1 px-4 text-center leading-relaxed">
     <div>Serving Nipomo, Arroyo Grande, Santa Maria, SLO &amp; Santa Barbara County</div>
     <div class="mt-0.5">
       <a href="tel:+18053576476" class="text-coastal-tide hover:text-coastal-heading underline transition-colors whitespace-nowrap">Call or Text: (805) 357-6476</a>
@@ -119,7 +119,7 @@ tailwind.config = {
         />
       </a>
 
-      <nav class="flex flex-wrap items-center justify-center gap-5 sm:gap-8 font-semibold text-sm sm:text-base text-coastal-heading">
+      <nav class="flex flex-wrap items-center justify-center gap-4 sm:gap-8 font-semibold text-base sm:text-lg text-coastal-heading">
         <a href="#about" class="hover:text-coastal-blue transition-colors">About Me</a>
         <a href="#programs" class="hover:text-coastal-blue transition-colors">Programs &amp; Pricing</a>
         <a href="#prep" class="hover:text-coastal-blue transition-colors">Prep Guide</a>
@@ -132,7 +132,7 @@ tailwind.config = {
   </header>
 
   <!-- FULL-BLEED HERO SECTION WITH JACK RUNNING ON THE BEACH (CENTERED ON MOBILE) -->
-  <section class="relative overflow-hidden min-h-[520px] sm:min-h-[600px] flex items-center justify-center px-5 sm:px-8 py-14 sm:py-20 text-center border-b border-coastal-hairline bg-coastal-blue">
+  <section class="relative overflow-hidden min-h-[540px] sm:min-h-[620px] flex items-center justify-center px-5 sm:px-8 py-14 sm:py-20 text-center border-b border-coastal-hairline bg-coastal-blue">
     <img 
       src="jack-running.jpg" 
       alt="Aussie Heeler mix Jack happily running along the Central Coast ocean shoreline" 
@@ -143,7 +143,7 @@ tailwind.config = {
 
     <div class="relative z-10 max-w-4xl mx-auto space-y-6 sm:space-y-8">
       <div class="space-y-5 max-w-3xl mx-auto">
-        <p class="text-xs sm:text-sm font-bold uppercase tracking-[0.22em] text-coastal-mint drop-shadow">
+        <p class="text-sm sm:text-base font-bold uppercase tracking-[0.2em] text-coastal-mint drop-shadow">
           Central Coast Positive Reinforcement Training
         </p>
 
@@ -151,16 +151,16 @@ tailwind.config = {
           Helping Central Coast Dogs <br class="hidden sm:inline"><span class="text-coastal-peachSoft">Put Their Best Paw Forward</span>
         </h1>
 
-        <p class="text-base sm:text-xl text-white/95 max-w-2xl mx-auto font-medium leading-relaxed drop-shadow">
+        <p class="text-lg sm:text-2xl text-white/95 max-w-2xl mx-auto font-medium leading-relaxed drop-shadow">
           With positive reinforcement and gentle Fear Free guidance, we help your dog trade jumping and leash pulling for strong foundations, a closer bond, and confident wiggle butts.
         </p>
       </div>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
-        <a href="#contact" class="w-full sm:w-auto bg-coastal-blue hover:bg-coastal-blueHover text-white border border-white/40 font-semibold px-8 py-4 rounded-xl shadow-sm transition-all text-center text-base sm:text-lg">
+        <a href="#contact" class="w-full sm:w-auto bg-coastal-blue hover:bg-coastal-blueHover text-white border border-white/40 font-semibold px-8 py-4 rounded-xl shadow-sm transition-all text-center text-lg sm:text-xl">
           Book Your Free 15 Min Consultation
         </a>
-        <a href="#programs" class="w-full sm:w-auto bg-white/95 hover:bg-coastal-peachSoft text-coastal-heading font-semibold px-8 py-4 rounded-xl shadow-sm transition-all text-center text-base sm:text-lg">
+        <a href="#programs" class="w-full sm:w-auto bg-white/95 hover:bg-coastal-peachSoft text-coastal-heading font-semibold px-8 py-4 rounded-xl shadow-sm transition-all text-center text-lg sm:text-xl">
           Explore Training Programs
         </a>
       </div>
@@ -196,7 +196,7 @@ tailwind.config = {
 
           <div class="space-y-3 text-left">
             <div class="space-y-1 text-center md:text-left">
-              <span class="text-xs font-bold uppercase tracking-[0.2em] text-coastal-peach block">
+              <span class="text-sm font-bold uppercase tracking-[0.2em] text-coastal-peach block">
                 About Your Trainer
               </span>
               <h2 class="text-3xl sm:text-4xl font-serif font-extrabold text-coastal-heading leading-tight">
@@ -204,14 +204,14 @@ tailwind.config = {
               </h2>
             </div>
 
-            <p class="text-coastal-body text-base sm:text-lg leading-relaxed">
+            <p class="text-coastal-body text-lg sm:text-xl leading-relaxed">
               Before creating Coastline Canine Training, I spent nearly two years working professionally as a dog trainer leading both group classes and private sessions, and previously worked as a Dog Care Specialist at the former Santa Maria Valley Humane Society (now Santa Barbara Humane). As a Fear Free Certified Professional studying for my CCPDT-KA certification in March of 2027, I specialize in gentle, Fear Free training, especially for dogs dealing with high fear, anxiety, and stress (FAS).
             </p>
           </div>
         </div>
 
         <!-- Middle Story Section with Smaller Uncropped Dad & Jackie Photo -->
-        <div class="max-w-3xl mx-auto space-y-5 text-coastal-body text-base sm:text-lg leading-relaxed text-left">
+        <div class="max-w-3xl mx-auto space-y-5 text-coastal-body text-lg sm:text-xl leading-relaxed text-left">
           <div class="max-w-xs sm:max-w-sm mx-auto p-1.5 bg-coastal-peachSoft/60 border border-coastal-peachLine rounded-xl">
             <img 
               src="dad-and-jackie.jpg" 
@@ -230,9 +230,9 @@ tailwind.config = {
           </p>
         </div>
 
-        <div class="bg-coastal-mint/75 border border-coastal-mintLine border-l-4 border-l-coastal-mintMuted rounded-xl p-5 space-y-1 text-left">
-          <h3 class="font-serif font-bold text-coastal-heading text-lg sm:text-xl">100% Fear Free Guarantee</h3>
-          <p class="text-sm sm:text-base text-coastal-body leading-relaxed">
+        <div class="bg-coastal-mint/75 border border-coastal-mintLine border-l-4 border-l-coastal-mintMuted rounded-xl p-5 space-y-1.5 text-left">
+          <h3 class="font-serif font-bold text-coastal-heading text-xl sm:text-2xl">100% Fear Free Guarantee</h3>
+          <p class="text-base sm:text-lg text-coastal-body leading-relaxed">
             No shock collars, prong collars, e-collars, or intimidation. Just positive reinforcement, clear communication, and gentle leads paired with proper desensitization so your dog always feels safe and confident.
           </p>
         </div>
@@ -245,7 +245,7 @@ tailwind.config = {
 
     <!-- STEP 1: INCLUDED IN EVERY PROGRAM (SOFTER BANNER + GRID CARD) -->
     <div class="space-y-8">
-      <div class="relative overflow-hidden rounded-2xl border border-coastal-hairline shadow-sm min-h-[150px] sm:min-h-[180px] flex items-center justify-center px-5 sm:px-6 py-6 sm:py-8 text-center bg-coastal-blue">
+      <div class="relative overflow-hidden rounded-2xl border border-coastal-hairline shadow-sm min-h-[160px] sm:min-h-[190px] flex items-center justify-center px-5 sm:px-6 py-6 sm:py-8 text-center bg-coastal-blue">
         <img 
           src="included-banner.jpg" 
           alt="Happy dog learning core foundations and cooperative care" 
@@ -255,13 +255,13 @@ tailwind.config = {
         <div class="absolute inset-0 bg-gradient-to-b from-coastal-heading/55 via-coastal-heading/45 to-coastal-heading/58 pointer-events-none"></div>
 
         <div class="relative z-10 max-w-3xl mx-auto space-y-2">
-          <span class="inline-block bg-coastal-peachSoft text-coastal-heading px-3.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-[0.2em] shadow-sm">
+          <span class="inline-block bg-coastal-peachSoft text-coastal-heading px-4 py-1 rounded-full text-xs sm:text-sm font-bold uppercase tracking-[0.2em] shadow-sm">
             Included in Every Program
           </span>
           <h2 class="text-2xl sm:text-4xl font-serif font-extrabold text-white tracking-tight banner-text-shadow">
             Core Foundations, Puppy Basics &amp; Cooperative Care
           </h2>
-          <p class="text-sm sm:text-base text-white max-w-2xl mx-auto font-medium leading-relaxed banner-text-shadow">
+          <p class="text-base sm:text-lg text-white max-w-2xl mx-auto font-medium leading-relaxed banner-text-shadow">
             No matter which program format you choose below, every dog receives a custom plan and customized training across these essential foundations:
           </p>
         </div>
@@ -275,33 +275,33 @@ tailwind.config = {
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
             <!-- Left Column: Core Foundations + 45-Min Behavioral Assessment + Always at Your Dog's Pace -->
             <div class="space-y-4">
-              <div class="bg-white border border-coastal-hairline rounded-xl p-5 space-y-2.5">
-                <div class="font-bold text-coastal-heading text-base sm:text-lg">Core Foundations Menu (18 Skills)</div>
-                <ul class="columns-2 gap-x-4 space-y-1.5 text-sm text-coastal-body">
-                  <li class="flex items-start gap-2 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Look at Me / Watch Me</span></li>
-                  <li class="flex items-start gap-2 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Sit / Down / Stand</span></li>
-                  <li class="flex items-start gap-2 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Recall</span></li>
-                  <li class="flex items-start gap-2 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Touch</span></li>
-                  <li class="flex items-start gap-2 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Stay &amp; Wait</span></li>
-                  <li class="flex items-start gap-2 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Place</span></li>
-                  <li class="flex items-start gap-2 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Leave It &amp; Drop It</span></li>
-                  <li class="flex items-start gap-2 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>"Look at That" (LAT)</span></li>
-                  <li class="flex items-start gap-2 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Find It</span></li>
-                  <li class="flex items-start gap-2 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Release Word</span></li>
-                  <li class="flex items-start gap-2 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Back-Up (Beep Beep)</span></li>
-                  <li class="flex items-start gap-2 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Weave</span></li>
-                  <li class="flex items-start gap-2 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Paw</span></li>
-                  <li class="flex items-start gap-2 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Spin</span></li>
-                  <li class="flex items-start gap-2 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Roll-Over</span></li>
-                  <li class="flex items-start gap-2 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Crate Training</span></li>
-                  <li class="flex items-start gap-2 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Potty Training</span></li>
-                  <li class="flex items-start gap-2 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Loose-Leash Walking</span></li>
+              <div class="bg-white border border-coastal-hairline rounded-xl p-5 space-y-3">
+                <div class="font-bold text-coastal-heading text-lg sm:text-xl">Core Foundations Menu (18 Skills)</div>
+                <ul class="columns-1 sm:columns-2 gap-x-4 space-y-2 text-base sm:text-lg text-coastal-body">
+                  <li class="flex items-start gap-2.5 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Look at Me / Watch Me</span></li>
+                  <li class="flex items-start gap-2.5 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Sit / Down / Stand</span></li>
+                  <li class="flex items-start gap-2.5 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Recall</span></li>
+                  <li class="flex items-start gap-2.5 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Touch</span></li>
+                  <li class="flex items-start gap-2.5 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Stay &amp; Wait</span></li>
+                  <li class="flex items-start gap-2.5 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Place</span></li>
+                  <li class="flex items-start gap-2.5 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Leave It &amp; Drop It</span></li>
+                  <li class="flex items-start gap-2.5 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>"Look at That" (LAT)</span></li>
+                  <li class="flex items-start gap-2.5 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Find It</span></li>
+                  <li class="flex items-start gap-2.5 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Release Word</span></li>
+                  <li class="flex items-start gap-2.5 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Back-Up (Beep Beep)</span></li>
+                  <li class="flex items-start gap-2.5 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Weave</span></li>
+                  <li class="flex items-start gap-2.5 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Paw</span></li>
+                  <li class="flex items-start gap-2.5 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Spin</span></li>
+                  <li class="flex items-start gap-2.5 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Roll-Over</span></li>
+                  <li class="flex items-start gap-2.5 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Crate Training</span></li>
+                  <li class="flex items-start gap-2.5 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Potty Training</span></li>
+                  <li class="flex items-start gap-2.5 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Loose-Leash Walking</span></li>
                 </ul>
               </div>
 
-              <div class="bg-white border border-coastal-hairline rounded-xl p-5 space-y-1.5">
-                <div class="font-bold text-coastal-heading text-base sm:text-lg">45-Minute Behavioral Assessment</div>
-                <p class="text-sm text-coastal-body leading-relaxed">
+              <div class="bg-white border border-coastal-hairline rounded-xl p-5 space-y-2">
+                <div class="font-bold text-coastal-heading text-lg sm:text-xl">45-Minute Behavioral Assessment</div>
+                <p class="text-base sm:text-lg text-coastal-body leading-relaxed">
                   Required for all programs with zero pressure to commit on the spot. We’ll meet your dog, talk through your goals, and recommend the best program fit. The $30 non-refundable assessment fee goes directly toward your program total when you enroll within 7 days, and we’ll build your dog’s custom training plan once you're signed up.
                 </p>
               </div>
@@ -310,9 +310,9 @@ tailwind.config = {
               <div class="bg-coastal-mint/75 border border-coastal-mintLine rounded-xl p-5 text-left">
                 <div class="flex items-start gap-3">
                   <span class="paw-bullet" aria-hidden="true"></span>
-                  <div class="space-y-1">
-                    <div class="font-bold text-coastal-heading text-base sm:text-lg">Always at Your Dog’s Pace</div>
-                    <p class="text-sm text-coastal-body leading-relaxed">
+                  <div class="space-y-1.5">
+                    <div class="font-bold text-coastal-heading text-lg sm:text-xl">Always at Your Dog’s Pace</div>
+                    <p class="text-base sm:text-lg text-coastal-body leading-relaxed">
                       Every dog learns differently, so we go at your dog’s pace, meaning we may or may not get through every single cue or activity listed above in 4 or 6 weeks, and that is completely okay! Our goal is a happy, confident, stress-free dog. I’ll always do my very best to help your pup thrive, and I’m open to your questions throughout the week between sessions.
                     </p>
                   </div>
@@ -322,23 +322,23 @@ tailwind.config = {
 
             <!-- Right Column: Puppy Redirection, Cooperative Care & Public Field Trips -->
             <div class="space-y-4">
-              <div class="bg-white border border-coastal-hairline rounded-xl p-5 space-y-1.5">
-                <div class="font-bold text-coastal-heading text-base sm:text-lg">Puppy Teething &amp; Boredom Redirection</div>
-                <p class="text-sm text-coastal-body leading-relaxed">
+              <div class="bg-white border border-coastal-hairline rounded-xl p-5 space-y-2">
+                <div class="font-bold text-coastal-heading text-lg sm:text-xl">Puppy Teething &amp; Boredom Redirection</div>
+                <p class="text-base sm:text-lg text-coastal-body leading-relaxed">
                   For puppies, we work specifically on redirecting teething and bored behaviors—especially mouthiness and biting that escalates or becomes more intense—teaching gentle bite inhibition, appropriate chew outlets, and calm decompression habits.
                 </p>
               </div>
 
-              <div class="bg-white border border-coastal-hairline rounded-xl p-5 space-y-1.5">
-                <div class="font-bold text-coastal-heading text-base sm:text-lg">Fear Free Handling &amp; Cooperative Care</div>
-                <p class="text-sm text-coastal-body leading-relaxed">
+              <div class="bg-white border border-coastal-hairline rounded-xl p-5 space-y-2">
+                <div class="font-bold text-coastal-heading text-lg sm:text-xl">Fear Free Handling &amp; Cooperative Care</div>
+                <p class="text-base sm:text-lg text-coastal-body leading-relaxed">
                   Bucket Game (cooperative care), paw, nail clipper &amp; Dremel desensitization, toothbrushing training, coat brushing &amp; grooming tools, and calm harness &amp; body handling.
                 </p>
               </div>
 
-              <div class="bg-white border border-coastal-hairline rounded-xl p-5 space-y-1.5">
-                <div class="font-bold text-coastal-heading text-base sm:text-lg">Public Field Trips (When Ready)</div>
-                <p class="text-sm text-coastal-body leading-relaxed">
+              <div class="bg-white border border-coastal-hairline rounded-xl p-5 space-y-2">
+                <div class="font-bold text-coastal-heading text-lg sm:text-xl">Public Field Trips (When Ready)</div>
+                <p class="text-base sm:text-lg text-coastal-body leading-relaxed">
                   Dependent on when your dog is ready to explore, we practice in <strong class="text-coastal-heading font-semibold">dog friendly stores, local parks, and occasional beach trips</strong> a little at a time based on their needs.
                 </p>
               </div>
@@ -350,7 +350,7 @@ tailwind.config = {
 
     <!-- STEP 2: PROGRAMS & PRICING BANNER + THE 3 PROGRAM CARDS -->
     <div class="space-y-8">
-      <div class="relative overflow-hidden rounded-2xl border border-coastal-hairline shadow-sm min-h-[180px] sm:min-h-[210px] flex items-center justify-center px-5 sm:px-6 py-7 sm:py-9 text-center bg-coastal-blue">
+      <div class="relative overflow-hidden rounded-2xl border border-coastal-hairline shadow-sm min-h-[190px] sm:min-h-[220px] flex items-center justify-center px-5 sm:px-6 py-7 sm:py-9 text-center bg-coastal-blue">
         <img 
           src="programs-banner.jpg" 
           alt="Happy dog training outdoors on the Central Coast" 
@@ -366,7 +366,7 @@ tailwind.config = {
           <h2 class="text-3xl sm:text-4xl font-serif font-extrabold text-white tracking-tight banner-text-shadow">
             Training Programs
           </h2>
-          <div class="space-y-2.5 text-sm sm:text-base text-white max-w-2xl mx-auto font-medium leading-relaxed banner-text-shadow">
+          <div class="space-y-2.5 text-base sm:text-lg text-white max-w-2xl mx-auto font-medium leading-relaxed banner-text-shadow">
             <p>
               Our approachable <strong class="text-coastal-mint font-bold">$50 per hour rate</strong> applies to all private coaching, and your $30 45-minute assessment fee is <strong class="text-coastal-mint font-bold">credited toward any program</strong> when you enroll within 7 days. Our immersive 36-hour Day Stay &amp; Train program is offered at a <strong class="text-coastal-mint font-bold">bundled package rate</strong> to reward the extra weekly commitment.
             </p>
@@ -396,7 +396,7 @@ tailwind.config = {
                 <div class="absolute inset-0 photo-editorial-bottom pointer-events-none"></div>
 
                 <div class="absolute inset-x-0 bottom-0 p-6 z-10 text-left">
-                  <span class="text-[11px] font-bold uppercase tracking-[0.2em] text-coastal-peachSoft block mb-1 banner-text-shadow">
+                  <span class="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-coastal-peachSoft block mb-1 banner-text-shadow">
                     Weekly Coaching
                   </span>
                   <h3 class="text-2xl sm:text-3xl font-serif font-extrabold text-white leading-tight banner-text-shadow">
@@ -408,18 +408,18 @@ tailwind.config = {
               <!-- Price + Total Hours Only -->
               <div class="px-6 sm:px-7 py-4 bg-coastal-peachSoft/65 border-b border-coastal-hairline lg:min-h-[112px] flex flex-col justify-center gap-1 text-left">
                 <div class="text-4xl font-serif font-extrabold text-coastal-tide tracking-tight leading-none">$300</div>
-                <div class="text-xs sm:text-sm font-bold text-coastal-peach">
+                <div class="text-sm sm:text-base font-bold text-coastal-peach">
                   6 total hours
                 </div>
               </div>
 
               <div class="p-6 sm:p-7 space-y-5 text-left">
-                <p class="text-coastal-body text-base leading-relaxed">
+                <p class="text-coastal-body text-lg leading-relaxed">
                   <strong class="text-coastal-heading font-bold">1 hour each week for 6 weeks</strong> at your home, in our private shaded Nipomo training space, or a mix of both.
                 </p>
 
                 <!-- Clean Editorial Hairline-Divided List -->
-                <ul class="divide-y divide-coastal-hairline border-t border-coastal-hairline text-sm sm:text-base text-coastal-body leading-relaxed">
+                <ul class="divide-y divide-coastal-hairline border-t border-coastal-hairline text-base sm:text-lg text-coastal-body leading-relaxed">
                   <li class="flex items-start gap-3 py-3.5">
                     <span class="paw-bullet" aria-hidden="true"></span>
                     <span>We train together each week with <strong class="text-coastal-heading font-semibold">hands-on parent coaching</strong> so you feel confident practicing between visits.</span>
@@ -441,7 +441,7 @@ tailwind.config = {
             </div>
 
             <div class="p-6 sm:p-7 pt-0">
-              <a href="#contact" onclick="selectProgram('1-on-1 Private Training ($300)')" class="block w-full text-center bg-coastal-blue hover:bg-coastal-blueHover text-white font-semibold py-4 rounded-xl transition-all text-xs sm:text-sm uppercase tracking-wider">
+              <a href="#contact" onclick="selectProgram('1-on-1 Private Training ($300)')" class="block w-full text-center bg-coastal-blue hover:bg-coastal-blueHover text-white font-semibold py-4 rounded-xl transition-all text-sm sm:text-base uppercase tracking-wider">
                 Choose 1-on-1 Private
               </a>
             </div>
@@ -460,7 +460,7 @@ tailwind.config = {
                 <div class="absolute inset-0 photo-editorial-bottom pointer-events-none"></div>
 
                 <div class="absolute inset-x-0 bottom-0 p-6 z-10 text-left">
-                  <span class="text-[11px] font-bold uppercase tracking-[0.2em] text-coastal-peachSoft block mb-1 banner-text-shadow">
+                  <span class="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-coastal-peachSoft block mb-1 banner-text-shadow">
                     Immersive Day Training
                   </span>
                   <h3 class="text-2xl sm:text-3xl font-serif font-extrabold text-white leading-tight banner-text-shadow">
@@ -472,42 +472,42 @@ tailwind.config = {
               <!-- Price + Total Hours + Grey Bundled Rate Note -->
               <div class="px-6 sm:px-7 py-4 bg-coastal-peachSoft/65 border-b border-coastal-hairline lg:min-h-[112px] flex flex-col justify-center gap-1 text-left">
                 <div class="text-4xl font-serif font-extrabold text-coastal-tide tracking-tight leading-none">$1,400</div>
-                <div class="text-xs sm:text-sm font-bold text-coastal-peach">
+                <div class="text-sm sm:text-base font-bold text-coastal-peach">
                   36 total hours
                 </div>
-                <div class="text-xs font-semibold text-coastal-body">
+                <div class="text-sm font-semibold text-coastal-body">
                   Bundled rate (save $400 off our $50 per hour rate)
                 </div>
               </div>
 
               <div class="p-6 sm:p-7 space-y-5 text-left">
-                <p class="text-coastal-body text-base leading-relaxed">
+                <p class="text-coastal-body text-lg leading-relaxed">
                   <strong class="text-coastal-heading font-bold">Two 4-hour training days each week for 4 weeks, plus a 1-hour weekly check-in</strong> in our private shaded Nipomo space, following a customized plan built for your dog's unique needs.
                 </p>
 
                 <div class="space-y-2.5 border-t border-coastal-hairline pt-5">
                   <div class="bg-coastal-seafoam/45 rounded-xl p-3.5 border border-coastal-seafoamLine border-l-2 border-l-coastal-tide">
-                    <div class="font-bold text-coastal-heading text-sm">Up to 2 Hours of Dog Training</div>
-                    <div class="text-coastal-body text-xs sm:text-sm mt-0.5 leading-snug">Core foundations, Fear Free handling &amp; custom behaviors</div>
+                    <div class="font-bold text-coastal-heading text-base sm:text-lg">Up to 2 Hours of Dog Training</div>
+                    <div class="text-coastal-body text-sm sm:text-base mt-0.5 leading-snug">Core foundations, Fear Free handling &amp; custom behaviors</div>
                   </div>
 
                   <div class="bg-coastal-seafoam/45 rounded-xl p-3.5 border border-coastal-seafoamLine border-l-2 border-l-coastal-tide">
-                    <div class="font-bold text-coastal-heading text-sm">Mid-Day Kennel Enrichment &amp; Rest</div>
-                    <div class="text-coastal-body text-xs sm:text-sm mt-0.5 leading-snug">Decompression breaks in a cozy dog kennel with your dog’s own lick mats, stuffed KONGs &amp; favorite chews from home</div>
+                    <div class="font-bold text-coastal-heading text-base sm:text-lg">Mid-Day Kennel Enrichment &amp; Rest</div>
+                    <div class="text-coastal-body text-sm sm:text-base mt-0.5 leading-snug">Decompression breaks in a cozy dog kennel with your dog’s own lick mats, stuffed KONGs &amp; favorite chews from home</div>
                   </div>
 
                   <div class="bg-coastal-seafoam/45 rounded-xl p-3.5 border border-coastal-seafoamLine border-l-2 border-l-coastal-tide">
-                    <div class="font-bold text-coastal-heading text-sm">30-Minute Sniffari &amp; 30-Minute Play</div>
-                    <div class="text-coastal-body text-xs sm:text-sm mt-0.5 leading-snug">Decompression Sniffari leash walk, plus fetch, games &amp; enrichment.</div>
+                    <div class="font-bold text-coastal-heading text-base sm:text-lg">30-Minute Sniffari &amp; 30-Minute Play</div>
+                    <div class="text-coastal-body text-sm sm:text-base mt-0.5 leading-snug">Decompression Sniffari leash walk, plus fetch, games &amp; enrichment.</div>
                   </div>
 
                   <div class="bg-coastal-seafoam/45 rounded-xl p-3.5 border border-coastal-seafoamLine border-l-2 border-l-coastal-tide">
-                    <div class="font-bold text-coastal-heading text-sm">15 to 30 Minute Pickup Review</div>
-                    <div class="text-coastal-body text-xs sm:text-sm mt-0.5 leading-snug">Going over what your dog learned and practiced that day</div>
+                    <div class="font-bold text-coastal-heading text-base sm:text-lg">15 to 30 Minute Pickup Review</div>
+                    <div class="text-coastal-body text-sm sm:text-base mt-0.5 leading-snug">Going over what your dog learned and practiced that day</div>
                   </div>
                 </div>
 
-                <div class="flex items-start gap-3 border-t border-coastal-hairline pt-5 text-sm sm:text-base text-coastal-body leading-relaxed">
+                <div class="flex items-start gap-3 border-t border-coastal-hairline pt-5 text-base sm:text-lg text-coastal-body leading-relaxed">
                   <span class="paw-bullet" aria-hidden="true"></span>
                   <span>We also meet on a <strong class="text-coastal-heading font-semibold">separate third day each week for a 1-hour check-in</strong> at our training space to see how your dog is doing, practice skills together while they're fresh, and help everything stick at home.</span>
                 </div>
@@ -515,7 +515,7 @@ tailwind.config = {
             </div>
 
             <div class="p-6 sm:p-7 pt-0">
-              <a href="#contact" onclick="selectProgram('Day Stay & Train ($1,400)')" class="block w-full text-center bg-coastal-blue hover:bg-coastal-blueHover text-white font-semibold py-4 rounded-xl transition-all text-xs sm:text-sm uppercase tracking-wider">
+              <a href="#contact" onclick="selectProgram('Day Stay & Train ($1,400)')" class="block w-full text-center bg-coastal-blue hover:bg-coastal-blueHover text-white font-semibold py-4 rounded-xl transition-all text-sm sm:text-base uppercase tracking-wider">
                 Choose Day Stay &amp; Train
               </a>
             </div>
@@ -534,7 +534,7 @@ tailwind.config = {
                 <div class="absolute inset-0 photo-editorial-bottom pointer-events-none"></div>
 
                 <div class="absolute inset-x-0 bottom-0 p-6 z-10 text-left">
-                  <span class="text-[11px] font-bold uppercase tracking-[0.2em] text-coastal-peachSoft block mb-1 banner-text-shadow">
+                  <span class="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-coastal-peachSoft block mb-1 banner-text-shadow">
                     Twice-Weekly Support
                   </span>
                   <h3 class="text-2xl sm:text-3xl font-serif font-extrabold text-white leading-tight banner-text-shadow">
@@ -546,31 +546,31 @@ tailwind.config = {
               <!-- Price + Total Hours Only -->
               <div class="px-6 sm:px-7 py-4 bg-coastal-peachSoft/65 border-b border-coastal-hairline lg:min-h-[112px] flex flex-col justify-center gap-1 text-left">
                 <div class="text-4xl font-serif font-extrabold text-coastal-tide tracking-tight leading-none">$600</div>
-                <div class="text-xs sm:text-sm font-bold text-coastal-peach">
+                <div class="text-sm sm:text-base font-bold text-coastal-peach">
                   12 total hours
                 </div>
               </div>
 
               <div class="p-6 sm:p-7 space-y-5 text-left">
-                <p class="text-coastal-body text-base leading-relaxed">
+                <p class="text-coastal-body text-lg leading-relaxed">
                   <strong class="text-coastal-heading font-bold">Two 1-hour sessions each week for 6 weeks</strong> at your home or in our private shaded Nipomo training space, tailored to your dog's specific fears and emotional needs.
                 </p>
 
                 <!-- Divider Line Above Behaviors We Tackle -->
                 <div class="border-t border-coastal-hairline pt-5 space-y-4">
-                  <div class="bg-coastal-seafoam/45 rounded-xl p-4 border border-coastal-seafoamLine space-y-2">
-                    <div class="font-bold text-coastal-heading text-sm sm:text-base">Behaviors We Tackle</div>
-                    <ul class="columns-2 gap-x-4 space-y-1.5 text-sm text-coastal-body">
-                      <li class="flex items-start gap-2 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Barking</span></li>
-                      <li class="flex items-start gap-2 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Jumping</span></li>
-                      <li class="flex items-start gap-2 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Fear &amp; Anxiety</span></li>
-                      <li class="flex items-start gap-2 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Low to Mod Dog Reactivity</span></li>
-                      <li class="flex items-start gap-2 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>People Reactivity</span></li>
+                  <div class="bg-coastal-seafoam/45 rounded-xl p-4 border border-coastal-seafoamLine space-y-2.5">
+                    <div class="font-bold text-coastal-heading text-base sm:text-lg">Behaviors We Tackle</div>
+                    <ul class="columns-1 sm:columns-2 gap-x-4 space-y-2 text-base sm:text-lg text-coastal-body">
+                      <li class="flex items-start gap-2.5 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Barking</span></li>
+                      <li class="flex items-start gap-2.5 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Jumping</span></li>
+                      <li class="flex items-start gap-2.5 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Fear &amp; Anxiety</span></li>
+                      <li class="flex items-start gap-2.5 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>Low to Mod Dog Reactivity</span></li>
+                      <li class="flex items-start gap-2.5 break-inside-avoid"><span class="paw-bullet paw-bullet-sm" aria-hidden="true"></span><span>People Reactivity</span></li>
                     </ul>
                   </div>
 
                   <!-- Clean Editorial Hairline-Divided List -->
-                  <ul class="divide-y divide-coastal-hairline text-sm sm:text-base text-coastal-body leading-relaxed">
+                  <ul class="divide-y divide-coastal-hairline text-base sm:text-lg text-coastal-body leading-relaxed">
                     <li class="flex items-start gap-3 py-3.5">
                       <span class="paw-bullet" aria-hidden="true"></span>
                       <span>We read early stress signals and work well below your dog’s threshold to reduce overall <strong class="text-coastal-heading font-semibold">Fear, Anxiety, and Stress (FAS)</strong> so their baseline anxiety steadily drops.</span>
@@ -593,7 +593,7 @@ tailwind.config = {
             </div>
 
             <div class="p-6 sm:p-7 pt-0">
-              <a href="#contact" onclick="selectProgram('Fear-Free Behavior Training ($600)')" class="block w-full text-center bg-coastal-blue hover:bg-coastal-blueHover text-white font-semibold py-4 rounded-xl transition-all text-xs sm:text-sm uppercase tracking-wider">
+              <a href="#contact" onclick="selectProgram('Fear-Free Behavior Training ($600)')" class="block w-full text-center bg-coastal-blue hover:bg-coastal-blueHover text-white font-semibold py-4 rounded-xl transition-all text-sm sm:text-base uppercase tracking-wider">
                 Choose Behavior Training
               </a>
             </div>
@@ -605,11 +605,11 @@ tailwind.config = {
         <div class="px-6 sm:px-10 py-6 bg-coastal-mint/65 border-t border-coastal-hairline text-left">
           <div class="max-w-4xl mx-auto space-y-2.5">
             <div class="space-y-0.5">
-              <span class="text-xs font-bold uppercase tracking-[0.2em] text-coastal-tide block">A Smarter Board &amp; Train Alternative</span>
+              <span class="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-coastal-tide block">A Smarter Board &amp; Train Alternative</span>
               <h3 class="text-xl sm:text-2xl font-serif font-extrabold text-coastal-heading">Why Choose Day Stay &amp; Train Over Overnight Boarding?</h3>
             </div>
 
-            <div class="space-y-3 text-sm sm:text-base text-coastal-body leading-relaxed">
+            <div class="space-y-3 text-base sm:text-lg text-coastal-body leading-relaxed">
               <p>
                 Overnight boarding can spike cortisol, the body's primary stress hormone, making it much harder for dogs to relax and retain what they learn. With Day Stay &amp; Train, your dog gets my dedicated 1-on-1 attention in a calm space without the chaos of a crowded kennel, then goes home after their four hours to sleep in their own bed with their family.
               </p>
@@ -641,7 +641,7 @@ tailwind.config = {
               <div class="absolute inset-0 photo-editorial-bottom pointer-events-none"></div>
 
               <div class="absolute inset-x-0 bottom-0 p-6 z-10 text-left">
-                <span class="text-[11px] font-bold uppercase tracking-[0.2em] text-coastal-peachSoft block mb-1 banner-text-shadow">
+                <span class="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-coastal-peachSoft block mb-1 banner-text-shadow">
                   Ready for the Next Stage? &bull; Follow-Up Program
                 </span>
                 <h3 class="text-2xl sm:text-3xl font-serif font-extrabold text-white leading-tight banner-text-shadow">
@@ -654,17 +654,17 @@ tailwind.config = {
               <div class="text-3xl font-serif font-extrabold text-coastal-tide tracking-tight">
                 $300 <span class="text-coastal-peachLine font-normal">/</span> $600 <span class="text-coastal-peachLine font-normal">/</span> $1,400
               </div>
-              <div class="text-xs font-semibold text-coastal-peach">
+              <div class="text-sm font-semibold text-coastal-peach">
                 Available in Private, Behavior, or Day Stay formats
               </div>
             </div>
 
             <div class="p-6 sm:p-7 space-y-4 text-left">
-              <p class="text-base text-coastal-body leading-relaxed">
+              <p class="text-lg text-coastal-body leading-relaxed">
                 Once your dog has solid foundations, our follow-up <strong class="text-coastal-heading font-semibold">Cue Reliability course</strong> takes their skills into the real world by building up <strong class="text-coastal-heading font-semibold">Duration, Distance, and Distractions</strong>:
               </p>
 
-              <ul class="divide-y divide-coastal-hairline border-t border-coastal-hairline text-sm sm:text-base text-coastal-body leading-relaxed">
+              <ul class="divide-y divide-coastal-hairline border-t border-coastal-hairline text-base sm:text-lg text-coastal-body leading-relaxed">
                 <li class="flex items-start gap-3 py-3">
                   <span class="paw-bullet" aria-hidden="true"></span>
                   <span>Holding a stay or settling on their mat for longer stretches (<strong class="text-coastal-heading font-semibold">Duration</strong>) while you answer the front door, cook dinner, or relax at a dog-friendly patio.</span>
@@ -686,7 +686,7 @@ tailwind.config = {
           </div>
 
           <div class="p-6 sm:p-7 pt-0">
-            <a href="#contact" onclick="selectProgram('Follow-Up Cue Reliability (The 3 D\'s)')" class="block w-full text-center bg-coastal-blue hover:bg-coastal-blueHover text-white font-semibold py-4 rounded-xl transition-all text-xs sm:text-sm uppercase tracking-wider">
+            <a href="#contact" onclick="selectProgram('Follow-Up Cue Reliability (The 3 D\'s)')" class="block w-full text-center bg-coastal-blue hover:bg-coastal-blueHover text-white font-semibold py-4 rounded-xl transition-all text-sm sm:text-base uppercase tracking-wider">
               Inquire About Next-Stage Course
             </a>
           </div>
@@ -704,7 +704,7 @@ tailwind.config = {
               <div class="absolute inset-0 photo-editorial-bottom pointer-events-none"></div>
 
               <div class="absolute inset-x-0 bottom-0 p-6 z-10 text-left">
-                <span class="text-[11px] font-bold uppercase tracking-[0.2em] text-coastal-peachSoft block mb-1 banner-text-shadow">
+                <span class="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-coastal-peachSoft block mb-1 banner-text-shadow">
                   Exclusive for Current &amp; Graduate Clients
                 </span>
                 <h3 class="text-2xl sm:text-3xl font-serif font-extrabold text-white leading-tight banner-text-shadow">
@@ -715,24 +715,24 @@ tailwind.config = {
 
             <div class="flex items-baseline justify-between px-6 sm:px-7 py-4 bg-coastal-peachSoft/60 border-b border-coastal-hairline">
               <div class="text-3xl font-serif font-extrabold text-coastal-tide tracking-tight">$30</div>
-              <span class="text-xs font-bold uppercase tracking-widest text-coastal-peach">
+              <span class="text-xs sm:text-sm font-bold uppercase tracking-widest text-coastal-peach">
                 45-Minute Session
               </span>
             </div>
 
             <div class="p-6 sm:p-7 space-y-4 text-left">
-              <p class="text-base text-coastal-body leading-relaxed">
+              <p class="text-lg text-coastal-body leading-relaxed">
                 Want extra safe playtime with a trainer who already knows your dog? Current and past clients can book <strong class="text-coastal-heading font-semibold">45-minute</strong> 1-on-1 guided enrichment, fetch, agility games, and safe yard exploration in our private shaded space.
               </p>
 
-              <p class="text-sm sm:text-base font-medium text-coastal-heading border-t border-coastal-hairline pt-4">
+              <p class="text-base sm:text-lg font-medium text-coastal-heading border-t border-coastal-hairline pt-4">
                 Single 1-hour training brush up sessions (at your home or in our training space) are also available at $50 per hour.
               </p>
             </div>
           </div>
 
           <div class="p-6 sm:p-7 pt-0">
-            <a href="#contact" onclick="selectProgram('Current Client: 45-Min Enrichment Play Session ($30)')" class="block w-full text-center bg-coastal-blue hover:bg-coastal-blueHover text-white font-semibold text-xs sm:text-sm uppercase tracking-wider py-4 rounded-xl transition-all">
+            <a href="#contact" onclick="selectProgram('Current Client: 45-Min Enrichment Play Session ($30)')" class="block w-full text-center bg-coastal-blue hover:bg-coastal-blueHover text-white font-semibold text-sm sm:text-base uppercase tracking-wider py-4 rounded-xl transition-all">
               Request Play Session
             </a>
           </div>
@@ -744,7 +744,7 @@ tailwind.config = {
 
   <!-- PREP GUIDE SECTION (SOFTER BANNER) -->
   <section id="prep" class="py-10 sm:py-14 px-4 sm:px-6 max-w-5xl mx-auto space-y-8">
-    <div class="relative overflow-hidden rounded-2xl border border-coastal-hairline shadow-sm min-h-[150px] sm:min-h-[180px] flex items-center justify-center px-6 py-6 sm:py-8 text-center bg-coastal-blue">
+    <div class="relative overflow-hidden rounded-2xl border border-coastal-hairline shadow-sm min-h-[160px] sm:min-h-[190px] flex items-center justify-center px-6 py-6 sm:py-8 text-center bg-coastal-blue">
       <img 
         src="prep-dog.jpg" 
         alt="Happy dog ready for training with favorite treats and gear" 
@@ -754,13 +754,13 @@ tailwind.config = {
       <div class="absolute inset-0 bg-gradient-to-b from-coastal-heading/55 via-coastal-heading/45 to-coastal-heading/58 pointer-events-none"></div>
 
       <div class="relative z-10 max-w-2xl mx-auto space-y-2">
-        <span class="inline-block bg-coastal-peachSoft text-coastal-heading px-3.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-[0.2em] shadow-sm">
+        <span class="inline-block bg-coastal-peachSoft text-coastal-heading px-4 py-1 rounded-full text-xs sm:text-sm font-bold uppercase tracking-[0.2em] shadow-sm">
           Prep Guide
         </span>
         <h2 class="text-3xl sm:text-4xl font-serif font-extrabold text-white tracking-tight banner-text-shadow">
           What to Pack &amp; Have Ready
         </h2>
-        <p class="text-sm sm:text-base text-white max-w-xl mx-auto font-medium leading-relaxed banner-text-shadow">
+        <p class="text-base sm:text-lg text-white max-w-xl mx-auto font-medium leading-relaxed banner-text-shadow">
           A few simple things to help your dog feel comfortable, relaxed, and ready to learn from minute one.
         </p>
       </div>
@@ -772,59 +772,59 @@ tailwind.config = {
 
       <div class="grid grid-cols-1 md:grid-cols-2">
         <div class="p-6 sm:p-8 border-b md:border-r border-coastal-hairline space-y-2 text-left">
-          <span class="font-serif font-extrabold text-2xl text-coastal-peach block">01</span>
-          <h3 class="text-xl font-serif font-bold text-coastal-heading">Current Vaccinations</h3>
-          <p class="text-base text-coastal-body leading-relaxed">
+          <span class="font-serif font-extrabold text-2xl sm:text-3xl text-coastal-peach block">01</span>
+          <h3 class="text-xl sm:text-2xl font-serif font-bold text-coastal-heading">Current Vaccinations</h3>
+          <p class="text-base sm:text-lg text-coastal-body leading-relaxed">
             Please have your dog’s current vaccination records (Rabies, DHPP, and Bordetella) up to date before our first session so every pup stays safe and healthy. <strong class="text-coastal-heading font-semibold">Lepto (Leptospirosis) is recommended, but not required.</strong>
           </p>
         </div>
 
         <div class="p-6 sm:p-8 border-b border-coastal-hairline space-y-2.5 text-left">
-          <span class="font-serif font-extrabold text-2xl text-coastal-peach block">02</span>
-          <h3 class="text-xl font-serif font-bold text-coastal-heading">Tasty Treats</h3>
-          <p class="text-base text-coastal-body leading-relaxed">
+          <span class="font-serif font-extrabold text-2xl sm:text-3xl text-coastal-peach block">02</span>
+          <h3 class="text-xl sm:text-2xl font-serif font-bold text-coastal-heading">Tasty Treats</h3>
+          <p class="text-base sm:text-lg text-coastal-body leading-relaxed">
             Your dog’s favorite soft, chewy, smelly treats! Bringing <strong class="text-coastal-heading font-semibold">2 to 3 different types of treats</strong> is recommended, and I’m happy to share trainer treat recommendations if needed!
           </p>
           <div class="pt-1">
-            <a href="https://www.amazon.com/hz/wishlist/ls/1D34ZMTDKJT05" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sm font-semibold text-coastal-blue hover:text-coastal-heading underline underline-offset-4">
+            <a href="https://www.amazon.com/hz/wishlist/ls/1D34ZMTDKJT05" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-base font-semibold text-coastal-blue hover:text-coastal-heading underline underline-offset-4">
               View Trainer-Recommended Treats on Amazon &rarr;
             </a>
           </div>
         </div>
 
         <div class="p-6 sm:p-8 border-b md:border-r border-coastal-hairline space-y-2 text-left">
-          <span class="font-serif font-extrabold text-2xl text-coastal-peach block">03</span>
-          <h3 class="text-xl font-serif font-bold text-coastal-heading">Standard 6-Foot Leash, Collar &amp; Harness</h3>
-          <p class="text-base text-coastal-body leading-relaxed">
+          <span class="font-serif font-extrabold text-2xl sm:text-3xl text-coastal-peach block">03</span>
+          <h3 class="text-xl sm:text-2xl font-serif font-bold text-coastal-heading">Standard 6-Foot Leash, Collar &amp; Harness</h3>
+          <p class="text-base sm:text-lg text-coastal-body leading-relaxed">
             Just a regular nylon 6-foot leash for basic obedience (a <strong class="text-coastal-heading font-semibold">20-foot leash will be provided</strong> for recall practice), paired with your dog's everyday collar or harness. Gentle leads may be used later if desired, only with slow desensitization.
           </p>
         </div>
 
         <div class="p-6 sm:p-8 border-b border-coastal-hairline space-y-2 text-left">
-          <span class="font-serif font-extrabold text-2xl text-coastal-peach block">04</span>
-          <h3 class="text-xl font-serif font-bold text-coastal-heading">A Light Meal Beforehand</h3>
-          <p class="text-base text-coastal-body leading-relaxed">
+          <span class="font-serif font-extrabold text-2xl sm:text-3xl text-coastal-peach block">04</span>
+          <h3 class="text-xl sm:text-2xl font-serif font-bold text-coastal-heading">A Light Meal Beforehand</h3>
+          <p class="text-base sm:text-lg text-coastal-body leading-relaxed">
             Measure how much you feed for breakfast or dinner so that your dog doesn’t come too full for training. A slightly lighter meal beforehand keeps treats motivating and keeps your dog comfortable while moving around.
           </p>
         </div>
 
         <div class="p-6 sm:p-8 border-b md:border-b-0 md:border-r border-coastal-hairline space-y-2.5 text-left">
-          <span class="font-serif font-extrabold text-2xl text-coastal-peach block">05</span>
-          <h3 class="text-xl font-serif font-bold text-coastal-heading">Favorite Toys &amp; Enrichment</h3>
-          <p class="text-base text-coastal-body leading-relaxed">
+          <span class="font-serif font-extrabold text-2xl sm:text-3xl text-coastal-peach block">05</span>
+          <h3 class="text-xl sm:text-2xl font-serif font-bold text-coastal-heading">Favorite Toys &amp; Enrichment</h3>
+          <p class="text-base sm:text-lg text-coastal-body leading-relaxed">
             We don’t share chewed or licked toys between dogs. Please bring 1 to 2 of your dog’s favorite toys from home for play breaks (<span class="italic">plus your dog’s own KONG or lick mat for Day Stay &amp; Train</span>).
           </p>
           <div class="pt-1">
-            <a href="https://www.amazon.com/hz/wishlist/ls/1D34ZMTDKJT05" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sm font-semibold text-coastal-blue hover:text-coastal-heading underline underline-offset-4">
+            <a href="https://www.amazon.com/hz/wishlist/ls/1D34ZMTDKJT05" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-base font-semibold text-coastal-blue hover:text-coastal-heading underline underline-offset-4">
               Browse Recommended Enrichment &amp; Puzzle Toys on Amazon &rarr;
             </a>
           </div>
         </div>
 
         <div class="p-6 sm:p-8 space-y-2 text-left bg-coastal-seafoam/35">
-          <span class="font-serif font-extrabold text-2xl text-coastal-peach block">06</span>
-          <h3 class="text-xl font-serif font-bold text-coastal-heading">Training Location</h3>
-          <p class="text-base text-coastal-body leading-relaxed">
+          <span class="font-serif font-extrabold text-2xl sm:text-3xl text-coastal-peach block">06</span>
+          <h3 class="text-xl sm:text-2xl font-serif font-bold text-coastal-heading">Training Location</h3>
+          <p class="text-base sm:text-lg text-coastal-body leading-relaxed">
             Sessions are held at our quiet, shaded training space, located on our private rural property in Nipomo (or in your home for private lessons). Exact directions and parking details are shared once your consult is scheduled.
           </p>
         </div>
@@ -834,7 +834,7 @@ tailwind.config = {
 
   <!-- FAQ SECTION (SOFTER BANNER + ALWAYS-OPEN STATIC Q&As) -->
   <section id="faq" class="py-10 sm:py-14 px-4 sm:px-6 max-w-4xl mx-auto space-y-8">
-    <div class="relative overflow-hidden rounded-2xl border border-coastal-hairline shadow-sm min-h-[150px] sm:min-h-[180px] flex items-center justify-center px-6 py-6 sm:py-8 text-center bg-coastal-blue">
+    <div class="relative overflow-hidden rounded-2xl border border-coastal-hairline shadow-sm min-h-[160px] sm:min-h-[190px] flex items-center justify-center px-6 py-6 sm:py-8 text-center bg-coastal-blue">
       <img 
         src="faq-dog.jpg" 
         alt="Curious dog smiling outdoors on the Central Coast" 
@@ -844,13 +844,13 @@ tailwind.config = {
       <div class="absolute inset-0 bg-gradient-to-b from-coastal-heading/55 via-coastal-heading/45 to-coastal-heading/58 pointer-events-none"></div>
 
       <div class="relative z-10 max-w-2xl mx-auto space-y-2">
-        <span class="inline-block bg-coastal-peachSoft text-coastal-heading px-3.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-[0.2em] shadow-sm">
+        <span class="inline-block bg-coastal-peachSoft text-coastal-heading px-4 py-1 rounded-full text-xs sm:text-sm font-bold uppercase tracking-[0.2em] shadow-sm">
           FAQ
         </span>
         <h2 class="text-3xl sm:text-4xl font-serif font-extrabold text-white tracking-tight banner-text-shadow">
           Frequently Asked Questions
         </h2>
-        <p class="text-sm sm:text-base text-white max-w-xl mx-auto font-medium leading-relaxed banner-text-shadow">
+        <p class="text-base sm:text-lg text-white max-w-xl mx-auto font-medium leading-relaxed banner-text-shadow">
           Everything you need to know before starting your training journey.
         </p>
       </div>
@@ -862,67 +862,67 @@ tailwind.config = {
 
       <div class="divide-y divide-coastal-hairline">
         <div class="p-6 sm:p-7 text-left space-y-2">
-          <h3 class="font-serif font-bold text-lg sm:text-xl text-coastal-heading">Where do training sessions take place?</h3>
-          <p class="text-base text-coastal-body leading-relaxed">
+          <h3 class="font-serif font-bold text-xl sm:text-2xl text-coastal-heading">Where do training sessions take place?</h3>
+          <p class="text-base sm:text-lg text-coastal-body leading-relaxed">
             Sessions are held in a quiet, shaded training space, located on our private rural property in Nipomo, or in your home for private lessons (or a mix of both!). Dependent on when your dog is ready to explore, we also practice in dog friendly stores and public spaces like local parks or occasional beach trips to desensitize them a little at a time based on their needs.
           </p>
         </div>
 
         <div class="p-6 sm:p-7 text-left bg-coastal-blueSoft/35 space-y-2">
-          <h3 class="font-serif font-bold text-lg sm:text-xl text-coastal-heading">What age can my puppy start training?</h3>
-          <p class="text-base text-coastal-body leading-relaxed">
+          <h3 class="font-serif font-bold text-xl sm:text-2xl text-coastal-heading">What age can my puppy start training?</h3>
+          <p class="text-base sm:text-lg text-coastal-body leading-relaxed">
             Puppies can start training as early as 8 to 10 weeks old! To keep young puppies safe from parvo while they are still finishing their vaccine series, we start with in-home sessions. Once your puppy is fully vaccinated (usually around 16 weeks), they are welcome to train at our private outdoor space in Nipomo as well.
           </p>
         </div>
 
         <div class="p-6 sm:p-7 text-left space-y-2">
-          <h3 class="font-serif font-bold text-lg sm:text-xl text-coastal-heading">Can the whole family (including kids) join our sessions?</h3>
-          <p class="text-base text-coastal-body leading-relaxed">
+          <h3 class="font-serif font-bold text-xl sm:text-2xl text-coastal-heading">Can the whole family (including kids) join our sessions?</h3>
+          <p class="text-base sm:text-lg text-coastal-body leading-relaxed">
             Yes! Getting the whole household on the same page helps your dog learn much faster. Kids are welcome to join, as long as parents help keep them calm and make sure they aren't distracting the dog or interrupting the lesson—too much extra noise or movement can stress a dog out while they're trying to focus and learn.
           </p>
         </div>
 
         <div class="p-6 sm:p-7 text-left bg-coastal-blueSoft/35 space-y-2">
-          <h3 class="font-serif font-bold text-lg sm:text-xl text-coastal-heading">What training methods do you use?</h3>
-          <p class="text-base text-coastal-body leading-relaxed">
+          <h3 class="font-serif font-bold text-xl sm:text-2xl text-coastal-heading">What training methods do you use?</h3>
+          <p class="text-base sm:text-lg text-coastal-body leading-relaxed">
             We use positive reinforcement and low-stress, Fear Free handling techniques. The goal is clear communication and reliable impulse control without heavy-handed coercion.
           </p>
         </div>
 
         <div class="p-6 sm:p-7 text-left space-y-2">
-          <h3 class="font-serif font-bold text-lg sm:text-xl text-coastal-heading">Do you work with aggressive dogs or dogs with a bite history?</h3>
-          <p class="text-base text-coastal-body leading-relaxed">
+          <h3 class="font-serif font-bold text-xl sm:text-2xl text-coastal-heading">Do you work with aggressive dogs or dogs with a bite history?</h3>
+          <p class="text-base sm:text-lg text-coastal-body leading-relaxed">
             I specialize in fear, anxiety, and low-to-moderate reactivity toward people or dogs. Because safety always comes first, I do not currently take on cases involving severe aggression or a history of serious bites, and I’m happy to help point you toward a qualified veterinary behaviorist or aggression specialist if your dog needs that level of support.
           </p>
         </div>
 
         <div class="p-6 sm:p-7 text-left bg-coastal-blueSoft/35 space-y-2">
-          <h3 class="font-serif font-bold text-lg sm:text-xl text-coastal-heading">What happens if it rains on a training day?</h3>
-          <p class="text-base text-coastal-body leading-relaxed">
+          <h3 class="font-serif font-bold text-xl sm:text-2xl text-coastal-heading">What happens if it rains on a training day?</h3>
+          <p class="text-base sm:text-lg text-coastal-body leading-relaxed">
             For private lessons, it’s totally up to you—you’ll have the option to move our session indoors at your home or reschedule for a drier day. For Day Stay &amp; Train, we’ll simply postpone to another day at no extra cost.
           </p>
         </div>
 
         <div class="p-6 sm:p-7 text-left space-y-2">
-          <h3 class="font-serif font-bold text-lg sm:text-xl text-coastal-heading">What areas do you serve?</h3>
-          <p class="text-base text-coastal-body leading-relaxed">
+          <h3 class="font-serif font-bold text-xl sm:text-2xl text-coastal-heading">What areas do you serve?</h3>
+          <p class="text-base sm:text-lg text-coastal-body leading-relaxed">
             We serve Nipomo, Arroyo Grande, Santa Maria, all of San Luis Obispo County, and Santa Barbara County.
           </p>
         </div>
 
         <div class="p-6 sm:p-7 text-left bg-coastal-blueSoft/35 space-y-2">
-          <h3 class="font-serif font-bold text-lg sm:text-xl text-coastal-heading">How does payment work?</h3>
-          <p class="text-base text-coastal-body leading-relaxed">
+          <h3 class="font-serif font-bold text-xl sm:text-2xl text-coastal-heading">How does payment work?</h3>
+          <p class="text-base sm:text-lg text-coastal-body leading-relaxed">
             There is zero pressure to commit on the spot! Your $30 assessment fee is due at your 45-minute assessment, and if you decide to enroll within 7 days, that $30 goes directly toward your program total. Full program payment is due before your first training session to lock in your spot on the calendar and begin building your dog's custom plan. We accept cash, Zelle, Venmo, and all major credit or debit cards.
           </p>
         </div>
 
         <div class="p-6 sm:p-7 text-left space-y-3">
-          <h3 class="font-serif font-bold text-lg sm:text-xl text-coastal-heading">Do you offer refunds, and how does rescheduling work?</h3>
-          <p class="text-base text-coastal-body leading-relaxed">
+          <h3 class="font-serif font-bold text-xl sm:text-2xl text-coastal-heading">Do you offer refunds, and how does rescheduling work?</h3>
+          <p class="text-base sm:text-lg text-coastal-body leading-relaxed">
             We do not offer refunds on assessments or training programs once enrolled. That’s why we always start with a free 15 minute phone call and an in person 45 minute assessment, so we can meet your dog, talk through your goals, and decide together if moving forward is the right fit before you commit.
           </p>
-          <p class="text-base text-coastal-body leading-relaxed">
+          <p class="text-base sm:text-lg text-coastal-body leading-relaxed">
             Once you’re enrolled, consistency and showing up for your scheduled sessions are crucial for your dog’s progress. If you have a planned vacation or trip coming up, please let me know in advance so we can plan your dates ahead of time. Life happens, so if a genuine emergency or sudden illness comes up, just reach out as soon as possible and we’ll work together to reschedule based on availability.
           </p>
         </div>
@@ -932,7 +932,7 @@ tailwind.config = {
 
   <!-- SCHEDULE CONSULTATION FORM SECTION (SOFTER BANNER) -->
   <section id="contact" class="py-10 sm:py-14 px-4 sm:px-6 max-w-3xl mx-auto space-y-8">
-    <div class="relative overflow-hidden rounded-2xl border border-coastal-hairline shadow-sm min-h-[150px] sm:min-h-[180px] flex items-center justify-center px-6 py-6 sm:py-8 text-center bg-coastal-blue">
+    <div class="relative overflow-hidden rounded-2xl border border-coastal-hairline shadow-sm min-h-[160px] sm:min-h-[190px] flex items-center justify-center px-6 py-6 sm:py-8 text-center bg-coastal-blue">
       <img 
         src="contact-dog.jpg" 
         alt="Happy dog excited to start training on the Central Coast" 
@@ -942,13 +942,13 @@ tailwind.config = {
       <div class="absolute inset-0 bg-gradient-to-b from-coastal-heading/55 via-coastal-heading/45 to-coastal-heading/58 pointer-events-none"></div>
 
       <div class="relative z-10 max-w-2xl mx-auto space-y-2">
-        <span class="inline-block bg-coastal-peachSoft text-coastal-heading px-3.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-[0.2em] shadow-sm">
+        <span class="inline-block bg-coastal-peachSoft text-coastal-heading px-4 py-1 rounded-full text-xs sm:text-sm font-bold uppercase tracking-[0.2em] shadow-sm">
           Get Started
         </span>
         <h2 class="text-2xl sm:text-4xl font-serif font-extrabold text-white tracking-tight leading-tight banner-text-shadow">
           Schedule Your Free 15-Min Phone Consultation
         </h2>
-        <p class="text-sm sm:text-base text-white max-w-xl mx-auto font-medium leading-relaxed banner-text-shadow">
+        <p class="text-base sm:text-lg text-white max-w-xl mx-auto font-medium leading-relaxed banner-text-shadow">
           Fill out this quick form and I'll call you within 24 hours to chat about your dog and set up your assessment, with zero pressure.
         </p>
       </div>
@@ -965,31 +965,31 @@ tailwind.config = {
           <input type="text" name="_honey" style="display:none">
 
           <div class="space-y-2">
-            <label for="clientName" class="block text-base font-semibold text-coastal-heading">Your Name *</label>
+            <label for="clientName" class="block text-lg font-semibold text-coastal-heading">Your Name *</label>
             <input id="clientName" name="Name" type="text" required placeholder="e.g. Jane Doe" 
-              class="w-full bg-coastal-sandWarm/70 border border-coastal-hairline rounded-xl px-4 py-3.5 text-base text-coastal-heading placeholder-coastal-muted/65 focus:outline-none focus:border-coastal-blue focus:ring-1 focus:ring-coastal-blue transition-all">
+              class="w-full bg-coastal-sandWarm/70 border border-coastal-hairline rounded-xl px-4 py-3.5 text-lg text-coastal-heading placeholder-coastal-muted/65 focus:outline-none focus:border-coastal-blue focus:ring-1 focus:ring-coastal-blue transition-all">
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div class="space-y-2">
-              <label for="clientPhone" class="block text-base font-semibold text-coastal-heading">Phone Number *</label>
+              <label for="clientPhone" class="block text-lg font-semibold text-coastal-heading">Phone Number *</label>
               <input id="clientPhone" name="Phone_Number" type="tel" required placeholder="Best number for your 15-min call" 
-                class="w-full bg-coastal-sandWarm/70 border border-coastal-hairline rounded-xl px-4 py-3.5 text-base text-coastal-heading placeholder-coastal-muted/65 focus:outline-none focus:border-coastal-blue focus:ring-1 focus:ring-coastal-blue transition-all">
+                class="w-full bg-coastal-sandWarm/70 border border-coastal-hairline rounded-xl px-4 py-3.5 text-lg text-coastal-heading placeholder-coastal-muted/65 focus:outline-none focus:border-coastal-blue focus:ring-1 focus:ring-coastal-blue transition-all">
             </div>
 
             <div class="space-y-2">
-              <label for="clientEmail" class="block text-base font-semibold text-coastal-heading">Email Address *</label>
+              <label for="clientEmail" class="block text-lg font-semibold text-coastal-heading">Email Address *</label>
               <input id="clientEmail" name="email" type="email" required placeholder="e.g. jane@example.com" 
-                class="w-full bg-coastal-sandWarm/70 border border-coastal-hairline rounded-xl px-4 py-3.5 text-base text-coastal-heading placeholder-coastal-muted/65 focus:outline-none focus:border-coastal-blue focus:ring-1 focus:ring-coastal-blue transition-all">
+                class="w-full bg-coastal-sandWarm/70 border border-coastal-hairline rounded-xl px-4 py-3.5 text-lg text-coastal-heading placeholder-coastal-muted/65 focus:outline-none focus:border-coastal-blue focus:ring-1 focus:ring-coastal-blue transition-all">
             </div>
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div class="space-y-2">
-              <label for="preferredDay" class="block text-base font-semibold text-coastal-heading">Preferred Day to Call</label>
+              <label for="preferredDay" class="block text-lg font-semibold text-coastal-heading">Preferred Day to Call</label>
               <div class="relative">
                 <select id="preferredDay" name="Preferred_Day" 
-                  class="w-full appearance-none bg-coastal-sandWarm/70 border border-coastal-hairline rounded-xl px-4 py-3.5 pr-10 text-base text-coastal-heading focus:outline-none focus:border-coastal-blue focus:ring-1 focus:ring-coastal-blue transition-all">
+                  class="w-full appearance-none bg-coastal-sandWarm/70 border border-coastal-hairline rounded-xl px-4 py-3.5 pr-10 text-lg text-coastal-heading focus:outline-none focus:border-coastal-blue focus:ring-1 focus:ring-coastal-blue transition-all">
                   <option value="Any Day">Any Day</option>
                   <option value="Monday">Monday</option>
                   <option value="Tuesday">Tuesday</option>
@@ -1008,10 +1008,10 @@ tailwind.config = {
             </div>
 
             <div class="space-y-2">
-              <label for="preferredTime" class="block text-base font-semibold text-coastal-heading">Preferred Time Window</label>
+              <label for="preferredTime" class="block text-lg font-semibold text-coastal-heading">Preferred Time Window</label>
               <div class="relative">
                 <select id="preferredTime" name="Preferred_Time" 
-                  class="w-full appearance-none bg-coastal-sandWarm/70 border border-coastal-hairline rounded-xl px-4 py-3.5 pr-10 text-base text-coastal-heading focus:outline-none focus:border-coastal-blue focus:ring-1 focus:ring-coastal-blue transition-all">
+                  class="w-full appearance-none bg-coastal-sandWarm/70 border border-coastal-hairline rounded-xl px-4 py-3.5 pr-10 text-lg text-coastal-heading focus:outline-none focus:border-coastal-blue focus:ring-1 focus:ring-coastal-blue transition-all">
                   <option value="Morning (9am to 12pm)">Morning (9am to 12pm)</option>
                   <option value="Afternoon (12pm to 4pm)">Afternoon (12pm to 4pm)</option>
                   <option value="Evening (4pm to 7pm)">Evening (4pm to 7pm)</option>
@@ -1027,10 +1027,10 @@ tailwind.config = {
           </div>
 
           <div class="space-y-2">
-            <label for="programSelect" class="block text-base font-semibold text-coastal-heading">Program of Interest</label>
+            <label for="programSelect" class="block text-lg font-semibold text-coastal-heading">Program of Interest</label>
             <div class="relative">
               <select id="programSelect" name="Program_of_Interest" 
-                class="w-full appearance-none bg-coastal-sandWarm/70 border border-coastal-hairline rounded-xl px-4 py-3.5 pr-10 text-base text-coastal-heading focus:outline-none focus:border-coastal-blue focus:ring-1 focus:ring-coastal-blue transition-all">
+                class="w-full appearance-none bg-coastal-sandWarm/70 border border-coastal-hairline rounded-xl px-4 py-3.5 pr-10 text-lg text-coastal-heading focus:outline-none focus:border-coastal-blue focus:ring-1 focus:ring-coastal-blue transition-all">
                 <option value="1-on-1 Private Training ($300)">1-on-1 Private Training ($300)</option>
                 <option value="Day Stay & Train ($1,400)">Day Stay &amp; Train ($1,400)</option>
                 <option value="Fear-Free Behavior Training ($600)">Fear-Free Behavior Training ($600)</option>
@@ -1048,24 +1048,24 @@ tailwind.config = {
           </div>
 
           <div class="space-y-2">
-            <label for="dogInfo" class="block text-base font-semibold text-coastal-heading">Dog's Name, Age &amp; Breed</label>
+            <label for="dogInfo" class="block text-lg font-semibold text-coastal-heading">Dog's Name, Age &amp; Breed</label>
             <input id="dogInfo" name="Dog_Name_Age_Breed" type="text" placeholder="e.g. Milo, 1-year Golden Retriever mix" 
-              class="w-full bg-coastal-sandWarm/70 border border-coastal-hairline rounded-xl px-4 py-3.5 text-base text-coastal-heading placeholder-coastal-muted/65 focus:outline-none focus:border-coastal-blue focus:ring-1 focus:ring-coastal-blue transition-all">
+              class="w-full bg-coastal-sandWarm/70 border border-coastal-hairline rounded-xl px-4 py-3.5 text-lg text-coastal-heading placeholder-coastal-muted/65 focus:outline-none focus:border-coastal-blue focus:ring-1 focus:ring-coastal-blue transition-all">
           </div>
 
           <div class="space-y-2">
-            <label for="helpNeeded" class="block text-base font-semibold text-coastal-heading">What would you like help with?</label>
+            <label for="helpNeeded" class="block text-lg font-semibold text-coastal-heading">What would you like help with?</label>
             <textarea id="helpNeeded" name="Help_With" rows="4" placeholder="Tell me a little about what's going on (e.g. leash pulling, jumping, nervousness)..." 
-              class="w-full bg-coastal-sandWarm/70 border border-coastal-hairline rounded-xl px-4 py-3.5 text-base text-coastal-heading placeholder-coastal-muted/65 focus:outline-none focus:border-coastal-blue focus:ring-1 focus:ring-coastal-blue transition-all resize-y"></textarea>
+              class="w-full bg-coastal-sandWarm/70 border border-coastal-hairline rounded-xl px-4 py-3.5 text-lg text-coastal-heading placeholder-coastal-muted/65 focus:outline-none focus:border-coastal-blue focus:ring-1 focus:ring-coastal-blue transition-all resize-y"></textarea>
           </div>
 
           <div class="pt-2">
-            <button id="submitBtn" type="submit" class="w-full bg-coastal-blue hover:bg-coastal-blueHover text-white font-bold text-sm sm:text-base tracking-widest uppercase py-4 rounded-xl shadow-sm transition-all cursor-pointer">
+            <button id="submitBtn" type="submit" class="w-full bg-coastal-blue hover:bg-coastal-blueHover text-white font-bold text-base sm:text-lg tracking-widest uppercase py-4 rounded-xl shadow-sm transition-all cursor-pointer">
               REQUEST MY FREE CONSULTATION
             </button>
           </div>
 
-          <div id="formFeedback" class="hidden text-center p-4 rounded-xl bg-coastal-mint text-coastal-heading text-base font-semibold">
+          <div id="formFeedback" class="hidden text-center p-4 rounded-xl bg-coastal-mint text-coastal-heading text-lg font-semibold">
             Thank you! Your consultation request has been sent. I'll call you during your preferred window!
           </div>
         </form>
@@ -1074,7 +1074,7 @@ tailwind.config = {
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-coastal-blueSoft/60 border-t border-coastal-hairline py-8 px-6 text-center text-sm text-coastal-body space-y-2">
+  <footer class="bg-coastal-blueSoft/60 border-t border-coastal-hairline py-8 px-6 text-center text-base text-coastal-body space-y-2">
     <p>&copy; 2026 Coastline Canine Training. Serving Nipomo, Arroyo Grande, Santa Maria, SLO County, and Santa Barbara County.</p>
     <p>100% Fear Free Certified Dog Training &bull; <a href="tel:+18053576476" class="text-coastal-heading font-semibold underline">(805) 357-6476</a> &bull; <a href="mailto:info@coastlinecaninetraining.com" class="text-coastal-heading underline">info@coastlinecaninetraining.com</a></p>
   </footer>
